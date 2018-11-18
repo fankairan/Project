@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index.html</title>
+	  <link rel="shortcut icon" href="favicon.ico">
+     <!--  normalize 里面css 初始化  针对浏览器 -->
+     <link rel="stylesheet" href="css/normalize.css">
+     <!-- base 里面只写公共样式 头部和底部-->
+<!--      <link rel="stylesheet" href="css/base.css"> -->
+     <!-- 首页 css 只写首页 -->
+     <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<!--  顶部导航栏    -->
+     <div id='cyou_top'>
+          <header id='head'>
+               <div class='top_logo fl'>
+                    <a href="#"></a>
+               </div>
+               <div class='cytop fl'>
+					<a href="">
+						<img src="img/logo/cytop_a1.jpg">
+						<img src="">
+					</a>
+			   </div>
+               <ul class='h_nav fr'>
+                    <li class='h_nav_ser' id='h_nav_ser_reg'>
+										     <span class='h_nav_ser_reg_icon'></span>
+                         <a href="#">注册</a>
+                    </li>
+                    <li class='h_nav_ser' id='h_nav_ser_rech'>
+										     <span class='h_nav_ser_rech_icon'></span>
+                         <a href="#">充值</a>
+                    </li>
+                    <li class='h_nav_ser' id='h_nav_ser_jia'>
+												 <span class='h_nav_ser_jia_icon'></span>
+                         <a href="#">畅游+</a>
+                    </li>
+                    <li class='h_nav_ser_tips' id='h_nav_ser_gm'>
+                         <div class='h_nav_ser_tips_gm'>
+                              <b>客服</b>
+							  <span></span>
+                         </div>
+                    </li>
+                    <li class='h_nav_ser_tips'>
+                         <div class='h_nav_ser_tips_cyser'>
+                              <b>畅游全服务</b>
+							  <span></span>
+                         </div>
+                    </li>
+                    <li class='h_nav_ser_tips'>
+                         <div class='h_nav_ser_tips_cygame'>
+                              <b>畅游全游戏</b>
+							  <span></span>
+                         </div>
+                    </li>
+               </ul>
+          </header>
+     </div>
+
+     <!--  顶部导航栏 结束   -->
+
+		 <div id='header_middle'>
+				<h1 class='activtiy'></h1>
+				<div class='game_logo'>
+					<a href="#" title='幻想神域官方网站'></a>
+				</div>	
+				
+				<div class='main_link'>
+					<a href="#" title='进入官网'></a>
+				</div>
+				<div class='index_btn01'>
+					<a href="#"></a>
+				</div>
+				<div class='index_btn02'>
+					<a href="#"></a>
+				</div>
+				<div class='index_btn03'>
+					<a href="#"></a>
+				</div>	
+       <!-- 新服 -->
+			    <div id='new_ser'>
+					<strong>新服推荐:</strong>
+					双线6区 【手里剑】
+				</div>
+		 </div>
+<!-- 	内容主体		 -->
+		 <div id='main_body'>
+			 <!--  主体盒子--1   -->
+				<div class='main_box_1'>
+     <!-- 		上部分			 -->
+					<div class='box_top_part'>
+						<ul>
+							<li>
+								<a href="#">
+									<img src="img/lun/lunbo_01.jpg">
+								</a>
+							</li>
+							<li style='display:none;'>
+								<a href="#">
+									<img src="img/lun/lunbo_02.jpg">
+								</a>
+							</li>
+							<li style='display:none;'>
+								<a href="#">
+									<img src="img/lun/lunbo_03.jpg">
+								</a>
+							</li>
+							<li style='display:none;'>
+								<a href="">
+									<img src="img/lun/lunbo_04.jpg">
+								</a>
+							</li>
+						</ul>	
+					</div>
+       <!-- 		下部分			 -->
+					<div class='box_bott_part'>
+						<ul>
+							<li class='box_bott_1'>
+								<a href="#" title='妖尾乱斗'></a>
+							</li>
+							<li class='box_bott_2'>
+								<a href="#"  title='全新职业'></a>
+							</li>
+							<li class='box_bott_3'>
+								<a href="#" title='声优阵容'></a>
+							</li>
+							<li class='box_bott_4'>
+								<a href="#" title='情景剧'></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+            <!--  game 下载链接  -->
+				<a href="" class='down_butn'></a>
+           <!--  账户注册  -->
+				<div id='user_reg'>
+					<div class='reg_header'>
+						<span class='phone_reg'>
+							<a href=""></a>
+						</span>
+						<span class='email_reg'>
+							<a href=""></a>
+						</span>
+						<span class='person_reg'>
+							<a href=""></a>
+						</span>
+					</div>
+              <!--  注册主体   -->
+					<div class='reg_body'>
+						<ul class='fl'>
+							<li class='err'>
+								<p id='error' style='display:none;'></p>
+							</li>
+							<li>
+								<label for="phone">手机号码：</label>
+								<input type="tel" name='phone' id='phone' 								autocomplete='off' placeholder='真实有效手机号码' 								onblur='verPhone()'>
+							</li>
+							<li>
+								<label for="email">设置密码：</label>
+								<input type="email" name='email' id='email' 								placeholder='4-16位与账号不同' onblur='verUpwd'>
+							</li>
+							<li>
+								<label for="user_name">真实姓名：</label>
+								<input type="text" name='user_name' id='user_name' 								placeholder='通行证归属凭证'>
+							</li>
+							<li>
+								<label for="id_card">身份证号：</label>
+								<input type="text" name='id_card' id='id_card' 								placeholder='通行证归属凭证'>
+							</li>
+							<li>
+								<label for="ver_code">验证码：</label>
+								<input type="text" id='ver_code'>
+							</li>
+							<li class='ver'>
+								<img src="">
+								<a href="" class='toHelp'>换一张</a>
+							</li>
+							<li class='agreement'>
+								<p>
+									<input type="checkbox" id='phoneAgreement' 									checked>
+									我已阅读并同意&nbsp
+									<a href=""  class='toHelp'>畅游用户协议</a>
+								</p>
+							</li>
+							<li>
+								<a href="#" class='submit'>
+									<input type="button">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			 <!--  主体盒子--2  -->
+			 <div id="main_box_2">
+				 <!-- 盒子头部 -->
+				 <div class="box_top_2">
+					 <ul>
+						 <li>
+							 <a href="#" title="15大职业" id="top_link_1">15大职业</a>
+						 </li>
+						 <li>
+							 <a href="#" title="85金装之路">85金装之路</a>
+						 </li>
+						 <li>
+							 <a href="#" title="四大副本">四大副本</a>
+						 </li>
+						 <li>
+							 <a href="#" title="御姐の调教">御姐の调教</a>
+						 </li>
+					 </ul>
+			     </div>
+				 <!-- 盒子主体 -->
+				 <div class="box_body">
+					 <div class="box_body_l flowhide">
+						 <ul>
+							 <li class="new_pro pro_style">
+								 <a href="#" title="魔枪">魔枪</a>
+							 </li>
+							 <li>
+								 <a href="#" title="手里剑">手里剑</a>
+							 </li>
+							 <li>
+								 <a href="#" title="圣剑">圣剑</a>
+							 </li>
+							 <li>
+								 <a href="#" title="镰刀">镰刀</a>
+							 </li>
+							 <li>
+								 <a href="#" title="太刀">太刀</a>
+							 </li>
+							 <li>
+								 <a href="#" title="双刀">双刀</a>
+							 </li>
+							 <li>
+								 <a href="#" title="拳刃">拳刃</a>
+							 </li>
+							 <li>
+								 <a href="#" title="剑盾">剑盾</a>
+							 </li>
+							 <li>
+								 <a href="#" title="双手斧">双手斧</a>
+							 </li>
+							 <li>
+								 <a href="#" title="法书">法书</a>
+							 </li>
+							 <li>
+								 <a href="#" title="双枪">双枪</a>
+							 </li>
+							 <li>
+								 <a href="#" title="双手杖">双手杖</a>
+							 </li>
+							 <li>
+								 <a href="#" title="小竖琴">小竖琴</a>
+							 </li>
+							 <li>
+								 <a href="#" title="火炮">火炮</a>
+							 </li>
+							 <li>
+								 <a href="#" title="战弓">战弓</a>
+							 </li>
+						 </ul>
+					 </div>
+
+					 <a href="##" class="btn_top hidden"></a>
+					 <a href="##" class="btn_bot"></a>
+
+					 <div class="box_body_r">
+						 <div>
+							 <a href="#" title="魔枪"><img src="img/pic/mq.jpg"></a>
+						 </div>
+						 <div class="hidden">
+							 <a href="#" title="手里剑"><img src="img/pic/slj.jpg"></a>
+						 </div>
+						 <div class="hidden">
+							 <a href="#" title="圣剑"><img src="img/pic/sj.jpg"></a>
+						 </div>
+						 <div class="hidden">
+							 <a href="#" title="镰刀"><img src="img/pic/ld.jpg"></a>
+						 </div>
+						 <div class="hidden">
+							 <a href="#" title="太刀"><img src="img/pic/td.jpg"></a>
+						 </div>
+						 <div class="hidden">
+							 <a href="#" title="双刀"><img src="img/pic/sd.jpg"></a>
+						 </div>
+						 <div class="hidden">
+							 <a href="#" title="拳刃"><img src="img/pic/qr.jpg"></a>
+						 </div>
+						 <div class="hidden">
+							 <a href="#" title="盾剑"><img src="img/pic/jd.jpg"></a>
+						 </div>
+						 <div class="hidden">
+							 <a href="#" title="双手斧"><img src="img/pic/ssf.jpg"></a>
+						 </div>
+						 <div class="hidden">
+							 <a href="#" title="法书"><img src="img/pic/fs.jpg"></a>
+						 </div>
+						 <div class="hidden">
+							 <a href="#" title="双枪"><img src="img/pic/sq.jpg"></a>
+						 </div>
+						 <div class="hidden">
+							 <a href="#" title="双手杖"><img src="img/pic/ssz.jpg"></a>
+						 </div>
+						 <div class="hidden">
+							 <a href="#" title="小竖琴"><img src="img/pic/xsq.jpg"></a>
+						 </div>
+						 <div class="hidden">
+							 <a href="#" title="火炮"><img src="img/pic/hp.jpg"></a>
+						 </div>
+						 <div class="hidden">
+							 <a href="#" title="战弓"><img src="img/pic/zg.jpg"></a>
+						 </div>
+					 </div>
+				 </div>
+			 </div>
+			 <!--主体 底部-->
+			 <div class="box_bottom">
+				 <a href="#" title="逆转的命运开放 85级解禁武器专精开启">
+					 <img src="img/cover/cover1_13.jpg">
+				 </a>
+				 <a href="#" title="炼金大作战 好运连连奖励不断">
+					 <img src="img/cover/cover1_14.jpg">
+				 </a>
+				 <a href="#" title="寻找最强校园执行官">
+					 <img src="img/cover/cover1_15.jpg">
+				 </a>
+				 <a href="#" title="源神图鉴 认识你的伙伴">
+					 <img src="img/cover/cover1_20.jpg">
+				 </a>
+			 </div>
+
+			 <div class="">
+
+			 </div>
+		 </div>
+
+
+	<script src='common.js'></script>
+	<script>
+		var chPhone=false;
+		var chUpwd=false;
+		var chUser_name=false;
+		var chidCard=false;
+		var chverCode=false;
+
+   //---------验证手机号
+        function verPhone(){
+	 	  var xhr=createXhr();
+		  xhr.onreadystatechange=function(){
+		    if(xhr.readyState==4 && xhr.status==200){
+			   var res=xhr.responseText
+			   if(res=='0'){
+				  
+				 $('phone').style.borderColor='#ef3737';
+				 $('error').style.display='inline-block';
+			     $('error').innerHTML='该手机号码已经被注册';
+			   }else if(res=='1'){
+				 $('phone').style.borderColor='#ccc';
+				 $('error').style.display='none';
+			     chPhone=true;
+			   }else{
+				 $('phone').style.borderColor='#ef3737';
+				 $('error').style.display='inline-block';
+			     $('error').innerHTML=res;
+			   }
+			}
+		  }
+
+           xhr.open('post','/user/verPhone',true);
+		   xhr.setRequestHeader('content-type','application/x-www-form-urlencoded');
+		   var phone=$('phone').value;
+		   var formData='phone='+phone;
+		   xhr.send(formData);
+		}
+  
+		
+	</script>
+
+
+<!-- *********底部页脚 开始************ -->
+	<div class="cyou_footer">
+		<footer id="foot">
+			<div class="cyou_footer_l">
+				<a href="#"></a>
+			</div>
+			<div class="cyou_footer_r">
+				<div>
+					<a href="#"></a>
+				</div>		
+			</div>
+			<div class="cyou_footer_char">
+				<p>
+					<span>北京畅游时代数码技术有限公司版权所有</span>
+					<span> Copyright © 2011 ChangYou.com Limited. All rights reserved. </span>
+					<a href="#">法律声明</a>
+					<span>|</span>
+					<a href="#">联系我们</a>
+					<span>|</span>
+					<a href="#">家长监护</a>
+				</p>
+				<p>
+					<a href="#" class='highlight'>京网文[2017]10786-1261号</a>
+					<span> | 京ICP证：</span>
+					<span class='highlight'>070525</span>
+					<span> |  ISBN号：</span>
+					<span class='highlight'>978-7-89988-064-7</span>
+				</p>
+				<p>
+					<a href="#" class='highlight'>
+						<img src="img/icon/ba.png">
+						京公网安备 11010702000007号
+					</a>
+					<span> | 文网游进字：</span>
+					<span class='highlight'>[2014]027</span>
+					<span> | 新广出审：</span>
+					<span class='highlight'>[2014]956</span>
+					<span> | 全国文化市场举报电话：</span>
+					<span class='highlight'>12318</span>
+				</p>
+			</div>
+		</footer>
+	</div>
+	<!-- *********底部页脚 结束************ -->
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,607 @@
+
+  /*公用部分---版心*/
+   body {
+      font-family: 'Microsoft YaHei','微软雅黑';
+   }
+   
+  .width {
+      width:1000px;
+  }
+  
+  /*公用---浮动排版*/
+   .fr {
+       float: right;
+
+ }
+
+ .fl {
+      float: left;
+
+ }
+
+   ul,li{
+      margin: 0;
+	  list-style: none;
+
+  }
+
+   a {
+      text-decoration: none;
+   }
+
+   ul,li,p {
+      margin: 0;
+	  padding: 0;
+   }
+
+   b {
+     font-weight: normal;
+   }
+  /*公用头部---版心*/
+  #head {
+      width:980px;
+      height:50px;
+      margin:0 auto;
+  }
+
+  /* 头部 */
+   #cyou_top {
+     width: 100%;
+	 height: 55px;
+	 background: url(../img/sprites/nav_bg.png) no-repeat top center;
+   }
+
+
+  /*头部---logo部分*/
+  .top_logo {
+    width: auto;
+    height: 36px;
+    margin-top: 6px;
+    padding-right: 13px;
+    border-right: 1px solid #CECECE;
+
+  }
+
+  .top_logo a {
+  	display: block;
+  	width: 90px;
+  	height: 36px;
+    background-image: url(../img/logo/logo_white.png);
+	background: transparent
+    background-repeat: no-repeat;
+    background-position: 0px -5px;
+  }
+
+
+/* 头部天龙logo */
+  .cytop {
+     width: 240px;
+	 height: 50px;
+	 padding-left: 30px;
+  }
+
+/* 顶部导航栏 */
+ .h_nav > li {
+    float: left;
+	width: auto;
+ }
+
+ .h_nav_ser {
+    padding: 0 10px;
+    height: 50px;
+	line-height: 50px;
+	text-align: center;
+    
+ }
+
+ .h_nav_ser_reg_icon,.h_nav_ser_rech_icon,.h_nav_ser_jia_icon {
+    display: block;
+	float: left;
+	width: 25px;
+	height: 24px;
+	margin: 14px 4px 0 0;
+	background: url(../img/sprites/cyou_sprite.png) no-repeat;
+ }
+
+ .h_nav_ser_reg_icon {
+    background-position: -138px 0px;
+ }
+
+ .h_nav_ser_rech_icon {
+    background-position: -189px 0px;
+ }
+
+ .h_nav_ser_jia_icon {
+    background-position: 0px -104px;
+ }
+
+ .h_nav a {
+    color: #333;
+	font-size: 12px;
+	transition: all .3s;
+ }  
+
+ .h_nav a:hover {
+    color: #f10;
+ }
+
+/* 小图标旋转 */
+ .h_nav .h_nav_ser:hover span {
+   perspective: 10px;
+   transition: all 1s;
+   transform: rotate3D(1,1,0.1,360deg);
+ }
+
+/* 畅游 tips */
+ .h_nav > .h_nav_ser_tips {
+    width: 112px;
+	height: 50px;
+	position: relative;
+    border: 1px solid #e1e1e1;
+	border-top: none;
+	border-bottom: none;
+	margin-left: -1px;
+    color: #333;
+	font-size: 12px;
+ }
+
+
+
+ #h_nav_ser_gm {
+    width: 82px;
+
+ }
+
+ .h_nav_ser_tips b{ 
+    padding-top: 2px;
+    text-align: center;
+	display: block;
+	height: 48px;
+	line-height: 48px;
+	cursor: pointer;
+}
+
+ .h_nav_ser_tips b:hover {
+    color: #a0a;
+	background-color: #eee;
+ }
+
+ .h_nav_ser_tips > div span {
+    position: relative;
+	left: 90px;
+	bottom: 28px;
+    display: block;
+    width: 8px;
+	height: 5px;
+    background: url(../img/sprites/cyou_sprite.png) no-repeat;
+	background-position: -205px -147px;
+   
+ }
+   
+ #h_nav_ser_gm > div span {
+    left: 58px;
+	bottom: 28px;
+ }
+/*-----------------------------*/
+
+
+/* 主体部分 */
+  body {
+      background: url(../img/bgi/cover_bg.jpg) no-repeat center 55px;
+  }
+/* 头部中段 */
+  #header_middle {
+     position: relative;
+     margin: 0 auto;
+     width: 1000px;
+	 height: 541px;
+	 background: url(../img/bgi/cover_header.jpg) no-repeat center top;
+  }
+
+/* 活动区 */
+  #header_middle > .activtiy {
+     position: absolute;
+  }
+
+ /* game logo */
+  .game_logo {
+     position: absolute;
+	 top: 16px;
+	 left: 0px;
+     width: 200px;
+	 height: 110px;
+	 background: url(../img/logo/ffo_logo.png) no-repeat;
+  }
+
+  .game_logo a {
+     display: block;
+	 width: 200px;
+	 height: 110px;
+  }
+
+/*----------------------------*/
+
+  /* 主页链接 */
+  .main_link {
+     position: absolute;
+	 left: 195px;
+	 bottom: 182px;
+     width: 160px;
+	 height: 45px;
+     background: url(../img/sprites/cover_sprite.jpg) no-repeat -5px -10px;
+    
+  }
+
+  .main_link a {
+     display: block;
+	 width: 160px;
+	 height: 45px;
+  }
+
+  .main_link:hover {
+     background: url(../img/sprites/cover_sprite.jpg) no-repeat -5px -110px;
+  }
+/*---------------------------*/
+
+  /* 内容引导按钮 */
+  .index_btn01,.index_btn02,.index_btn03 {
+     position: absolute;
+     width: 183px;
+	 height: 88px;
+	 background: url(../img/sprites/cover_sprite.jpg) no-repeat; 
+  }
+
+  .index_btn01 {
+     background-position: 0px -200px;
+	 left: 73px;
+	 bottom: 59px;
+  }
+
+  .index_btn01 a {
+     display: block;
+	 width: 183px;
+	 height: 88px;
+  }
+
+  .index_btn02 {
+     background-position: 0px -300px;
+	 left: 268px;
+	 bottom: 80px;
+  }
+
+  .index_btn02 a {
+     display: block;
+	 width: 183px;
+	 height: 88px;
+  }
+
+  .index_btn03 {
+     background-position: 0px -400px;
+	 left: 463px;
+	 bottom: 100px;
+  }
+
+  .index_btn03 a {
+     display: block;
+	 width: 183px;
+	 height: 88px;
+  }
+
+  .index_btn01:hover {
+    background-position: 0px -500px;
+  }
+
+   .index_btn02:hover {
+    background-position: 0px -600px;
+  }
+
+   .index_btn03:hover {
+    background-position: 0px -700px;
+  }
+
+/* -------------------- */
+
+  /* 新服推荐 */
+  #new_ser {
+    position: absolute;
+	left: 55px;
+	bottom: 8px;
+    color: #f80;
+	font-size: 17px;
+  }
+
+  #new_ser strong {
+    color: #fff;
+  }
+
+/* 主题内容 */
+
+ /* top */
+ #main_body {
+   position: relative;
+   width: 1000px;
+   height: 1267px;
+   margin: 0 auto;
+   background: url(../img/bgi/cover_content.jpg) no-repeat;
+ }
+
+
+ .main_box {
+    position: absolute;
+	top: 20px;
+	left: 60px;
+	width: 633px;
+	height: 485px;
+ }
+
+ .box_top_part {
+    position: relative;
+	overflow: hidden;
+    border: 3px solid #fff;
+    width: 627px;
+	height: 378px;
+ }
+
+ .box_top_part li {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   float: left;
+   width: 633px;
+   height: 384px;
+ } 
+
+/* bottom */
+ .box_bott_part {
+   width: 636px;
+   height: 97px;
+   margin-top: 2px;
+ }
+
+ .box_bott_part li {
+   float: left;
+   width: 158px;
+   height: 97px;
+
+ }
+
+
+ .box_bott_part li > a {
+   background-image: url(../img/sprites/tab.png);
+   display: block;
+   width: 100%;
+   height: 100%;
+ } 
+
+ .box_bott_part .box_bott_1 > a {
+   background-position: 0px 0px;
+ }
+
+ .box_bott_part .box_bott_2 > a {
+   background-position: -159px 0px;
+ }
+
+ .box_bott_part .box_bott_3 > a {
+   background-position: -318px 0px;
+ }
+
+ .box_bott_part .box_bott_4 > a {
+   background-position: -477px 0px;
+ }
+
+.box_bott_part .box_bott_1 > a:hover {
+   background-position: 0px -100px;
+ }
+
+ .box_bott_part .box_bott_2 > a:hover {
+   background-position: -159px -100px;
+ }
+
+ .box_bott_part .box_bott_3 > a:hover {
+   background-position: -318px -100px;
+ }
+
+ .box_bott_part .box_bott_4 > a:hover {
+   background-position: -477px -100px;
+ }
+/*---------------------------*/
+ /*  下载链接  */
+ .down_butn {
+   display: block;
+   width: 256px;
+   height: 109px;
+   position: absolute;
+   top: 20px;
+   right: 48px;
+   background: url(../img/sprites/cover_sprite.jpg) no-repeat 0px -800px;
+ }
+
+ .down_butn:hover {
+   background-position: 0px -920px;
+ }
+ 
+
+/*  用户注册  */
+  #user_reg {
+   width: 220px;
+   height: 339px;
+   position: absolute;
+   top: 164px;
+   right: 66px;
+/*   background: rgba(0,0,0,.2);*/
+
+  }
+
+  .reg_header {
+   width: 220px;
+   height: 27px;
+  }
+
+  .reg_header > span {
+   float: left;
+   width: 73px;
+   height: 27px;
+   background: url(../img/sprites/qr_btn.gif) no-repeat;
+  }
+
+  .reg_header > span > a {
+   display: block;
+   width: 100%;
+   height: 100%;
+  } 
+
+  .reg_header > .phone_reg {
+    background-position: -124px 0px;
+  }
+
+  .reg_header > .email_reg {
+    background-position: -197px 0px;
+  }
+
+ .reg_header > .person_reg {
+    background-position: -270px 0px;
+  }
+
+  .phone_reg:hover {
+    background-position: -122px -30px;
+  }
+
+  .email_reg:hover {
+    background-position: -194px -30px;
+  }
+
+  .person_reg:hover {
+    background-position: -267px -30px;
+  }
+
+
+/*  .phone_reg:active {*/
+/*    background-position: -122px -30px;*/
+/*  }*/
+/**/
+/*  .email_reg:active {*/
+/*    background-position: -194px -30px;*/
+/*  }*/
+/**/
+/*  .person_reg:active {*/
+/*    background-position: -267px -30px;*/
+/*  }*/
+
+
+  .reg_body {
+    width: 220px;
+	height: 312px;
+  }
+
+  .reg_body > ul {
+    padding-top: 10px;
+	font-size: 12px;
+  }
+
+  .reg_body li {
+    width: 100%;
+	margin-bottom: 6px;
+	overflow: hidden;
+  } 
+	
+  /*  错误提示  */
+  .reg_body .err {
+     text-align: center;
+  }
+
+  .reg_body li > #error {
+	display: inline-block;
+	height: 20px;
+	line-height: 20px;
+	padding: 0 5px;
+	margin: 0 auto;
+/*	zoom: 1;*/
+	color: #ef3737;
+	background-color: #f9f9f9;
+    border: #f2d0d0 solid 1px;
+	
+	
+  }
+
+
+  .reg_body li > label {
+    float: left;
+    width: 77px;
+	height: 24px;
+	font-size: 100%;
+	text-align: right;
+	line-height: 24px;
+	margin-right: 7px;
+  }
+
+  .reg_body li > input {
+    width: 104px;
+	height: 20px;
+	outline: none;
+	border: 1px solid #ccc;
+	color: #b0b0b0;
+	background-color: #f9f9f9;
+	padding: 0px 3px;
+  }
+
+/*  验证码  */
+  .ver {
+    padding-left: 60px;
+
+  }
+
+  .ver > img {
+    float: left;
+    width: 113px;
+	height: 28px;
+	border: 1px solid #f10215;
+	margin-right: 5px;
+  }
+
+  .ver > a {
+    float: left;
+    height: 30px;
+	line-height: 30px;
+  }
+
+   .toHelp {
+    text-decoration: underline;
+    color: #ef3737;
+  }
+
+  .toHelp:hover{
+    text-decoration: none;
+  }
+
+  .agreement > p {
+    vertical-align: middle;
+  }
+
+  #phoneAgreement {
+    -webkit-appearance: checkbox;
+    box-sizing: border-box;
+	vertical-align: middle;
+	margin: 3px 3px 3px 18px;
+/*	padding: initial;*/
+/*    border: initial;*/
+  }
+
+/*  注册按钮  */
+ .submit {
+   display: block;
+   width: 119px;
+   height: 33px;
+   margin: 0 auto;
+   background: url(../img/sprites/qr_btn.gif) no-repeat 0px 0px;
+ }
+
+ .submit:hover {
+   background-position: 0px -36px;
+ }
+
+ .submit > input {
+   width: 119px;
+   height: 33px;
+   border: none;
+   background: none;
+ }

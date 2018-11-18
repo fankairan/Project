@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	  <link rel="shortcut icon" href="favicon.ico">
+     <!--  normalize 里面css 初始化  针对浏览器 -->
+     <link rel="stylesheet" href="css/normalize.css">
+     <!-- base 里面只写公共样式 头部和底部-->
+     <link rel="stylesheet" href="css/base.css">
+     <!-- 首页 css 只写首页 -->
+     <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+     <div>
+          <header id='head'>
+               <div class='top_logo fl'>
+                    <a href="#"></a>
+               </div>
+               <div class='cytop fl'>
+					<a href="">
+						<img src="img/logo/cytop_a1.jpg">
+						<img src="">
+					</a>
+			   </div>
+               <ul class='fl'>
+                    <li>
+                         <a href="#"></a>
+                    </li>
+                    <li>
+                         <a href="#"></a>
+                    </li>
+                    <li>
+                         <a href="#"></a>
+                    </li>
+                    <li>
+                         <div>
+                              <b></b>
+                         </div>
+                    </li>
+                    <li>
+                         <div>
+                              <b></b>
+                         </div>
+                    </li>
+                    <li>
+                         <div>
+                              <b></b>
+                         </div>
+                    </li>
+               </ul>
+          </header>
+
+     </div>
+          
+
+
+</body>
+</html>

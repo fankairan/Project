@@ -1,0 +1,47 @@
+
+  /*公用部分---版心*/
+  .width {
+      width:1000px;
+  }
+
+  /*公用---浮动排版*/
+   .fr {
+       float: right;
+
+ }
+
+ .fl {
+      float: left;
+
+ }
+
+   ul {
+      margin: 0;
+
+  }
+
+  /*公用头部---版心*/
+  #head {
+      width:980px;
+      height:50px;
+      margin:0 auto;
+  }
+
+  /*头部---logo部分*/
+  .top_logo {
+    width: auto;
+    height: 36px;
+    margin-top: 6px;
+    padding-right: 13px;
+    border-right: 1px solid #CECECE;
+
+  }
+
+  .top_logo a {
+  	display: block;
+  	width: 90px;
+  	height: 36px;
+    background-image: url(../img/logo/logo_white.png);
+    background-repeat: no-repeat;
+    background-position: 0px -5px;
+  }
