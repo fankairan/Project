@@ -1,0 +1,393 @@
+
+
+/*------------ 主体内容 开始 --------------*/
+
+ /* 活动区 */
+ #header_middle > .activtiy {
+    position: absolute;
+ }
+
+ /* game logo */
+ .game_logo {
+    position: absolute;
+    top: 16px;
+    left: 0px;
+    width: 200px;
+    height: 110px;
+    background: url(../img/logo/ffo_logo.png) no-repeat;
+ }
+
+ .game_logo a {
+    display: block;
+    width: 200px;
+    height: 110px;
+ }
+
+ /* --------------  主体顶部导航栏 开始  ---------------*/
+ #content {
+    width: 1000px;
+    height: 2100px;
+    margin: 0 auto;
+    background: url(../img/main/main_content.jpg) no-repeat 0px 0px;
+}
+
+ .top_nav {
+    position: absolute;
+    left: 242px;
+    top: 47px;
+    width: 708px;
+ }
+
+ .top_nav a {
+    float: left;
+    width: 118px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: #fff;
+    font: bold 15px/36px "Microsoft YaHei","微软雅黑";
+    background: url(../img/nav/nav_other.png) no-repeat;
+ }
+
+ .top_nav .active{
+    background: url(../img/nav/nav_index.png) no-repeat;
+ }
+
+ .nav_btn {
+     height: 36px;
+ }
+
+ /* --------------  主体顶部导航栏 结束  ---------------*/
+
+  /* --------------  主体内容 左侧 开始  ---------------*/
+  #content .left_bar {
+    float: left;
+    width: 240px;
+    margin-right: 20px;
+  } 
+
+  #content .left_bar .dLoad_btn {
+    height: 144px;
+    background-position: 0px 0px;
+    background: url(../img/sprites/left_bar_sprite.png);
+  }
+
+  #content .left_bar .dLoad_btn a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+ 
+
+  /* ---------------  左侧 按钮---------------- */
+  #content .left_btn{
+      height: 112px;
+      padding-left: 8px;
+      background: url(../img/sprites/left_bar_sprite.png) 
+      0px -144px no-repeat;
+  }
+
+
+  .left_btn a {
+    float: left;
+    width: 77px;
+    height: 43px;
+    padding-left: 34px;
+    color: rgb(149, 156, 211);
+    letter-spacing: -1px;
+    text-shadow: rgba(0, 0, 0, 0.75) 0px 1px 2px;
+    margin: 0px 2px 2px 0px;
+    font: bold 16px/41px "Microsoft YaHei", 微软雅黑;
+    background: url(../img/sprites/left_bar_sprite.png)  no-repeat;
+}
+
+/* ----左侧按钮样式 -----*/
+ #content .left_btn_1 {
+   background-position: 0px -1127px; 
+
+ }
+
+ #content .left_btn_2 {
+  background-position: -113px -1127px; 
+
+}
+
+#content .left_btn_3 {
+  background-position: 0px -1171px; 
+  font-size: 14px;
+
+}
+
+#content .left_btn_4 {
+  background-position: -113px -1171px; 
+  font-size: 14px;
+}
+
+/* -----鼠标悬停----- */
+#content .left_btn_1:hover {
+  background-position: 0px -1217px; 
+  color: #E84C3D;
+}
+
+#content .left_btn_2:hover {
+ background-position: -113px -1217px; 
+ color: #E84C3D;
+}
+
+#content .left_btn_3:hover {
+ background-position: 0px -1261px; 
+ color: #E84C3D;
+}
+
+#content .left_btn_4:hover {
+ background-position: -113px -1261px; 
+ color: #E84C3D;
+}
+
+/* ----------左侧 快速导航---------- */
+
+#content .f_nav{
+    height: 193px;
+    background: url(../img/sprites/left_bar_sprite.png) 
+    0px -270px no-repeat;
+
+}
+
+.f_nav h3,.left_gm h3{
+  height: 66px;
+  text-indent: -999px;
+}
+
+.f_nav ul,.left_gm ul {
+    padding-left: 18px;
+}
+
+.f_nav ul .s_line,.left_gm ul .s_line{
+  width: 78%;
+  height: 1px;
+  margin: 6px 15px;
+  overflow: hidden;
+  background: #1c1817;
+  line-height: 1px;
+  font-size: 0;
+}
+
+.f_nav ul li a,.left_gm ul li a{
+  float: left;
+  width: 84px;
+  height: 26px;
+  margin-left: 15px;
+  line-height: 26px;
+  color: #ffffff;
+  font-size: 12px;
+  padding-left: 12px;
+  background: url(../img/sprites/left_bar_sprite.png) 
+  -235px -1140px no-repeat;
+}
+
+.f_nav ul li a:hover,.left_gm ul li a:hover{
+  color: #E84C3D;
+  text-decoration: underline;
+  background: url(../img/sprites/left_bar_sprite.png) 
+  -235px -1166px no-repeat;
+}
+   /*    ^^
+         ||
+         ||  样式共用
+         ||    
+/* --------- 左侧客服栏 --------- */
+
+#content .left_gm{
+  height: 170px;
+  background: url(../img/sprites/left_bar_sprite.png) 
+  0px -463px no-repeat;
+}
+
+.left_gm p{
+  text-align: center;
+  color: #8697aa;
+  font: normal 12px/2 "Microsoft YaHei","微软雅黑";
+  margin: 0px;
+}
+
+/* --------- ~~~ --------- */
+
+#content .left_stimg a{
+  display: block;
+  height: 107px;
+  margin-top: 11px;
+}
+
+/*  ----------  左侧媒体模块 ----------  */
+
+#content .left_media {
+  margin: 20px 0 0 0;
+  background: #34393f;
+  border: 8px solid #000000;
+  border-bottom-width: 6px;
+}
+
+.left_media h3{
+  height: 52px;
+  text-indent: -999px;
+   background: url(../img/sprites/left_bar_sprite.png) 
+   -8px -658px no-repeat;
+
+}
+
+.left_media a img{
+  cursor: pointer;
+}
+
+
+/*--------------  左侧媒体模块  ---------------*/
+
+#content .partner{
+  margin-top: 20px;
+  position: relative;
+ 
+}
+
+.partner ul {
+  height: 40px;
+  text-align: center;
+  color: rgb(144, 162, 183);
+  cursor: pointer;
+  font: 14px/40px "Microsoft YaHei", 微软雅黑;
+  background: url(../img/sprites/left_bar_sprite.png) 
+  0px -1040px no-repeat;
+ 
+}
+
+.partner ul .par_link{
+    display: none; 
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    width: 236px;
+    background: #333333;
+    border: 1px solid #001f1e;
+    padding: 2px 1px;
+}
+
+.partner ul li:last-child{
+    top: 80px;
+}
+
+.partner ul .par_link a{
+    color: #fff;
+}
+
+
+/* ------------  健康提示  ------------- */
+
+.left_health{
+  height: 231px;
+  margin-top: 20px;
+  color: #8c8c8c;
+  font-size: 12px;
+  background: url(../img/main/health.png) no-repeat;
+}
+
+.left_health h3 {
+  height: 40px;
+  text-indent: -999px;
+}
+
+.left_health .health_hint{
+  padding-top: 10px;
+}
+
+.left_health .health_hint li{
+    line-height: 20px;
+    text-align: center;
+}
+
+.left_health div {
+  height: 1px;
+  background: #e3e7e8;
+  width: 80%;
+  margin: 9px auto;
+  line-height: 1px;
+  padding: 0;
+}
+
+.left_health p{
+  line-height: 20px;
+  margin: 0px;
+  padding: 0px 16px;
+}
+
+/* ------------  主体中部 ------------- */
+.show {
+  z-index: 10;
+  opacity: 1;
+}
+
+.hide{
+  z-index: 5;
+  opacity: 0; 
+  
+}
+
+#middle{
+  width: 480px;
+  float: left;
+  margin: 0 20px 0 0;
+}
+
+#middle .main_carousel{
+  position: relative;
+  height: 228px;
+}
+
+#middle .main_carousel>ul{
+  position: absolute;
+  width: 480px;
+  height: 275px;
+  left: 0px;
+  top: -47px;
+  overflow: hidden;
+}
+
+#middle .main_carousel>ul li{
+  position: absolute;
+  transition: all 1.2s linear;
+
+}
+
+
+/* ----------  轮播图按钮  ---------- */
+#middle .act_style{
+  width: 30px;
+  background: #d25400;
+}
+
+#middle .main_carousel .carousel_btn{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  z-index: 20;
+}
+
+.carousel_btn a{
+  float: left;
+  width: 12px;
+  height: 12px;
+  overflow: hidden;
+  background: #fff;
+  text-indent: -999999px;
+  border-radius: 8px;
+  margin: 0 6px 0 0;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
