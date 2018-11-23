@@ -1,191 +1,218 @@
 
   /*公用部分---版心*/
-   body {
-      font-family: 'Microsoft YaHei','微软雅黑';
-   }
-   
-  .width {
-      width:1000px;
-  }
-
-  /*公用---浮动排版*/
-   .fr {
-       float: right;
-
+  body {
+    font-family: 'Microsoft YaHei','微软雅黑';
  }
-
- .fl {
-      float: left;
-
- }
-
-   ul,li{
-      margin: 0;
-	  list-style: none;
-
-  }
-
-   a {
-      text-decoration: none;
-   }
-
-   ul,li {
-    margin: 0;
-	  padding: 0;
-   }
-
-  h1,h2,h3,h4,h5,h6 {
-    margin: 0;
-    padding: 0;
-  }
-
-   b {
-     font-weight: normal;
-   }
-  /*公用头部---版心*/
-  #head {
-    width:980px;
-    height:50px;
-    margin:0 auto;
+ 
+.width {
+    width:1000px;
 }
 
-/* -----------顶部导航栏 开始------------- */
- #cyou_top {
-   width: 100%;
-   height: 55px;
-   background: url(../img/sprites/nav_bg.png) no-repeat top center;
+/*公用---浮动排版*/
+ .fr {
+     float: right;
+
+}
+
+.fl {
+    float: left;
+
+}
+
+.clear {
+  display: block;
+  overflow: hidden;
+}
+
+ ul,li{
+  margin: 0;
+  list-style: none;
+
+}
+
+ a {
+    text-decoration: none;
  }
+
+ ul,li {
+  margin: 0;
+  padding: 0;
+ }
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ b {
+   font-weight: normal;
+ }
+
+ i {
+   font-style: normal;
+ }
+/*公用头部---版心*/
+#head {
+  width:980px;
+  height:50px;
+  margin:0 auto;
+}
+
+/* -------- 公共样式 -------- */
+.block{
+display: block;
+}
+
+.none{
+display: none;
+}
+
+.show {
+z-index: 6;
+opacity: 1;
+}
+
+.hide{
+opacity: 0; 
+
+}
+/* -----------顶部导航栏 开始------------- */
+#cyou_top {
+ width: 100%;
+ height: 55px;
+ background: url(../img/sprites/nav_bg.png) no-repeat top center;
+}
 
 
 /*头部---logo部分*/
 .top_logo {
-  width: auto;
-  height: 36px;
-  margin-top: 6px;
-  padding-right: 13px;
-  border-right: 1px solid #CECECE;
+width: auto;
+height: 36px;
+margin-top: 6px;
+padding-right: 13px;
+border-right: 1px solid #CECECE;
 
 }
 
 .top_logo a {
-    display: block;
-    width: 90px;
-    height: 36px;
-  background-image: url(../img/logo/logo_white.png);
-  background: transparent
-  background-repeat: no-repeat;
-  background-position: 0px -5px;
+display: block;
+width: 90px;
+height: 36px;
+background-image: url(../img/logo/logo_white.png);
+/* background: transparent; */
+background-repeat: no-repeat;
+background-position: 0px -5px;
 }
 
 
 /* 头部天龙logo */
 .cytop {
-   width: 240px;
-   height: 50px;
-   padding-left: 30px;
+ width: 240px;
+ height: 50px;
+ padding-left: 30px;
 }
 
 /* 顶部导航栏 */
 .h_nav > li {
-  float: left;
-  width: auto;
+float: left;
+width: auto;
 }
 
 .h_nav_ser {
-  padding: 0 10px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  
+padding: 0 10px;
+height: 50px;
+line-height: 50px;
+text-align: center;
+
 }
 
 .h_nav_ser_reg_icon,.h_nav_ser_rech_icon,.h_nav_ser_jia_icon {
-  display: block;
-  float: left;
-  width: 25px;
-  height: 24px;
-  margin: 14px 4px 0 0;
-  background: url(../img/sprites/cyou_sprite.png) no-repeat;
+display: block;
+float: left;
+width: 25px;
+height: 24px;
+margin: 14px 4px 0 0;
+background: url(../img/sprites/cyou_sprite.png) no-repeat;
 }
 
 .h_nav_ser_reg_icon {
-  background-position: -138px 0px;
+background-position: -138px 0px;
 }
 
 .h_nav_ser_rech_icon {
-  background-position: -189px 0px;
+background-position: -189px 0px;
 }
 
 .h_nav_ser_jia_icon {
-  background-position: 0px -104px;
+background-position: 0px -104px;
 }
 
 .h_nav a {
-  color: #333;
-  font-size: 12px;
-  transition: all .3s;
+color: #333;
+font-size: 12px;
+transition: all .3s;
 }  
 
 .h_nav a:hover {
-  color: #f10;
+color: #f10;
 }
 
 /* 小图标旋转 */
 .h_nav .h_nav_ser:hover span {
- perspective: 10px;
- transition: all 1s;
- transform: rotate3D(1,1,1,360deg);
+perspective: 10px;
+transition: all 1s;
+transform: rotate3D(1,1,1,360deg);
 }
 
 /* 畅游 tips */
 .h_nav > .h_nav_ser_tips {
-  width: 112px;
-    height: 50px;
-    position: relative;
-  border: 1px solid #e1e1e1;
-    border-top: none;
-    border-bottom: none;
-    margin-left: -1px;
-  color: #333;
-    font-size: 12px;
+width: 112px;
+  height: 50px;
+  position: relative;
+border: 1px solid #e1e1e1;
+  border-top: none;
+  border-bottom: none;
+  margin-left: -1px;
+color: #333;
+  font-size: 12px;
 }
 
 
 
 #h_nav_ser_gm {
-  width: 82px;
+width: 82px;
 
 }
 
 .h_nav_ser_tips b{ 
-  padding-top: 2px;
-  text-align: center;
-  display: block;
-  height: 48px;
-  line-height: 48px;
-  cursor: pointer;
+padding-top: 2px;
+text-align: center;
+display: block;
+height: 48px;
+line-height: 48px;
+cursor: pointer;
 }
 
 .h_nav_ser_tips b:hover {
-  color: #a0a;
-  background-color: #eee;
+color: #a0a;
+background-color: #eee;
 }
 
 .h_nav_ser_tips > div span {
-  position: relative;
-  left: 90px;
-  bottom: 28px;
-  display: block;
-  width: 8px;
-  height: 5px;
-  background: url(../img/sprites/cyou_sprite.png) no-repeat;
-  background-position: -205px -147px;
- 
+position: relative;
+left: 90px;
+bottom: 28px;
+display: block;
+width: 8px;
+height: 5px;
+background: url(../img/sprites/cyou_sprite.png) no-repeat;
+background-position: -205px -147px;
+
 }
- 
+
 #h_nav_ser_gm > div span {
-  left: 58px;
-  bottom: 28px;
+left: 58px;
+bottom: 28px;
 }
 
 /* -----------头部结束----------- */
@@ -193,16 +220,16 @@
 /*-----------主题背景图----------*/
 
 body {
-  width: 100%;
-  background: url(../img/main/main_bg.jpg) no-repeat center 55px;
+width: 100%;
+background: url(../img/main/main_bg.jpg) no-repeat center 55px;
 }
 
 #header_top {
-  background: url(../img/main/header.jpg) no-repeat center top;
-  width: 1000px;
-  height: 335px;
-  margin: 0 auto;
-  position: relative;
+background: url(../img/main/header.jpg) no-repeat center top;
+width: 1000px;
+height: 335px;
+margin: 0 auto;
+position: relative;
 }
 
 
@@ -211,67 +238,67 @@ body {
 
 /* ---------------底部页脚 开始--------------*/
 
-  .cyou_footer{
-      width: 100%;
-      height: 80px;
-      background: url("../img/sprites/nav_bg.png") no-repeat 0px -55px;
-      color: #535353;
-      background-color: #f0f0f0;
-      padding: 30px 0 0;
-  }
+.cyou_footer{
+    width: 100%;
+    height: 80px;
+    background: url("../img/sprites/nav_bg.png") no-repeat 0px -55px;
+    color: #535353;
+    background-color: #f0f0f0;
+    padding: 30px 0 0;
+}
 
- #foot {
-     width: 980px;
-     height: 80px;
-     margin: 0 auto;
- }
+#foot {
+   width: 980px;
+   height: 80px;
+   margin: 0 auto;
+}
 
-  #foot > div {
-      float: left;
-  }
+#foot > div {
+    float: left;
+}
 
-  #foot > .cyou_footer_l{
-      background: url("../img/sprites/logo_white.png") no-repeat 0px -60px;
-  }
+#foot > .cyou_footer_l{
+    background: url("../img/sprites/logo_white.png") no-repeat 0px -60px;
+}
 
-  #foot > .cyou_footer_l a{
-      display: block;
-      width: 115px;
-      height: 52px;
-  }
+#foot > .cyou_footer_l a{
+    display: block;
+    width: 115px;
+    height: 52px;
+}
 
-  #foot > .cyou_footer_r {
-      padding: 6px 12px;
-  }
+#foot > .cyou_footer_r {
+    padding: 6px 12px;
+}
 
-  #foot > .cyou_footer_r > div{
-      background: url("../img/sprites/cyou_copyright_sprite.png") no-repeat -1px -4px;
-  }
+#foot > .cyou_footer_r > div{
+    background: url("../img/sprites/cyou_copyright_sprite.png") no-repeat -1px -4px;
+}
 
-  #foot > .cyou_footer_r a{
-      display: block;
-      width: 32px;
-      height: 48px;
-  }
+#foot > .cyou_footer_r a{
+    display: block;
+    width: 32px;
+    height: 48px;
+}
 
- .cyou_footer_char p {
-     margin: 0 0 8px;
-     padding: 0;
-     font-size: 0.6rem;
- }
+.cyou_footer_char p {
+   margin: 0 0 8px;
+   padding: 0;
+   font-size: 0.6rem;
+}
 
-  .cyou_footer_char p a {
-      display: inline-block;
-      color:#535353;
-      vertical-align: center;
-  }
+.cyou_footer_char p a {
+    display: inline-block;
+    color:#535353;
+    vertical-align: center;
+}
 
-  .cyou_footer_char>p:last-child img{
-      margin-bottom: -4px;
-      margin-top: -10px;
-  }
+.cyou_footer_char>p:last-child img{
+    margin-bottom: -4px;
+    margin-top: -10px;
+}
 
- #foot .highlight {
-    color: #767676;
-  }
+#foot .highlight {
+  color: #767676;
+}
 /* ---------------底部页脚 结束--------------*/
