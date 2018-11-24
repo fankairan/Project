@@ -492,7 +492,15 @@
   border-bottom: 5px solid #000000;
 }
 
+/* 激活职业选项 */
 #middle .the_job .job_act{
   background-position: -490px -160px;
   color: #e84c3d;
+}
+
+#middle .the_job .job_intr {
+  width: 397px;
+  height: 563px;
+  float: left;
+  position: relative;
 }
