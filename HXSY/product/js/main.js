@@ -32,3 +32,13 @@ $(function(){
         var i=parseInt($as.index($a))+1;
             $(`#middle>.main_news>.news_box>div:nth-child(${i})`).removeClass('none').siblings().addClass('none');
     })
+
+
+/*  ----------  职业选项卡 切换 ----------  */
+  $('#middle>.the_job>.job_tabs li').on('mouseover',function(){
+        var $li=$(this);
+        var i=parseInt($li.index()+1);
+        $li.children().addClass('job_act').parent().siblings().children().removeClass('job_act')
+        //切换职业大图 
+        $(`#middle>.the_job>.job_intr:nth-child(${i})`).removeClass('none').siblings().addClass('none');
+  })
