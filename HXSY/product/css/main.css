@@ -454,3 +454,45 @@
 .news_box>div li span{
   float: right;
 }
+
+/* ------------  职业选项卡  ------------- */
+
+#middle .the_job{
+  width: 478px;
+  height: 563px;
+  border: 1px solid #e1e1e1;
+  margin-top: 20px;
+}
+
+.the_job .job_tabs{
+  width: 80px;
+  height: 563px;
+  background: #34393f;
+  float: left;
+  
+}
+
+.the_job .job_tabs li{
+  height: 37px;
+}
+
+.the_job .job_tabs li a{
+  display: block;
+  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+  background: url(../img/main/main_sprite.png) no-repeat -490px -203px;
+  text-align: center;
+  color: #b5c6db;
+  border-bottom: 1px solid #000000;
+  text-align: center;
+}
+
+.the_job .job_tabs li:last-child>a{
+  border-bottom: 5px solid #000000;
+}
+
+#middle .the_job .job_act{
+  background-position: -490px -160px;
+  color: #e84c3d;
+}
