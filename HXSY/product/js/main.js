@@ -20,4 +20,15 @@ $(function(){
             .carousel_btn>a:nth-child(${i==8? 1:i})`).addClass('act_style').siblings().removeClass('act_style');
      }
     setInterval(task,5000);
+
 })
+
+
+/*  ----------  中央新闻栏 切换 ----------  */
+    $('#middle>.main_news>ul:first-child').on('mouseover','a',function(){
+        var $a=$(this);
+        $a.addClass('title_act').parent().siblings().children().removeClass('title_act');
+        var $as=$('#middle>.main_news>ul:first-child a');
+        var i=parseInt($as.index($a))+1;
+            $(`#middle>.main_news>.news_box>div:nth-child(${i})`).removeClass('none').siblings().addClass('none');
+    })
