@@ -504,3 +504,39 @@
   float: left;
   position: relative;
 }
+
+/* -------  故事pic展示  ------- */
+.story_show {
+  float: left;
+  width: 740px;
+  height: 401px;
+  margin-top: 20px;
+  background: url(../img/main/main_sprite.png) no-repeat 0px -780px;
+}
+
+.story_show .story_header {
+  height: 47px;
+  padding-left: 24px;
+}
+
+.story_show .story_header a{
+  float: left;
+  font-size: 15px;
+  height: 38px;
+  padding-top: 9px;
+  margin-right: 5px;
+  line-height: 38px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  background: url(../img/main/main_sprite.png) no-repeat -185px -1190px;
+  letter-spacing: -1px;
+  width: 163px;
+}
+
+#middle .story_act {
+  background-position: -522px -1240px;
+  color: #e81602; 
+  width: 177px;
+}
