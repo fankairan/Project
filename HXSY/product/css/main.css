@@ -540,3 +540,22 @@
   color: #e81602; 
   width: 177px;
 }
+
+.story_show .story_body {
+  height: 355px;
+  position: relative;
+}
+
+.story_show .story_body p {
+  margin: 0px 0px 1px;
+  position: absolute;
+  bottom: 8px;
+  left: 9px;
+  height: 18px;
+  width: 700px;
+  padding: 5px 10px 0px 10px;
+  overflow: hidden;
+  font: normal 12px/1.5 simsun;
+  color: #afafaf;
+  background-color: rgba(0,0,0,0.8);
+}
