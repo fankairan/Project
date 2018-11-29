@@ -42,3 +42,16 @@ $(function(){
         //切换职业大图 
         $(`#middle>.the_job>.job_intr:nth-child(${i})`).removeClass('none').siblings().addClass('none');
   })
+
+/*------------  story轮播  -------------*/ 
+$('#middle>.story_show>.story_header a').on('mouseover',function(){
+    var $a=$(this);
+    var i=parseInt($a.index()+1);
+    $a.addClass('story_act').siblings().removeClass('story_act');
+    $(`#middle>.story_show>.story_body>div:nth-child(${i})`).removeClass('none').siblings('div').addClass('none');
+ 
+    var $ps=$('story_show>.story_body p');
+    console.log($ps[0]);
+
+    
+})
