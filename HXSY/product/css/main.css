@@ -549,6 +549,7 @@
 .story_show .story_body p {
   margin: 0px 0px 1px;
   position: absolute;
+  z-index: 10;
   bottom: 8px;
   left: 9px;
   height: 18px;
@@ -558,4 +559,38 @@
   font: normal 12px/1.5 simsun;
   color: #afafaf;
   background-color: rgba(0,0,0,0.8);
+}
+
+/* 切换按钮 */
+.story_body a{
+  position: absolute;
+  top: 147px;
+  width: 29px;
+  height: 45px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.story_body li {
+  position: absolute;
+  z-index: 5;
+  height: 354px;
+}
+
+.story_body .st_prev{
+  left: 22px;
+  background: url(../img/main/left_arrow_normal.png);
+}
+
+.story_body .st_next{
+  right: 22px;
+  background: url(../img/main/right_arrow_normal.png);
+}
+
+.story_body .st_prev:hover{
+  background: url(../img/main/left_arrow_current.png);
+}
+
+.story_body .st_next:hover{
+  background: url(../img/main/right_arrow_current.png);
 }
