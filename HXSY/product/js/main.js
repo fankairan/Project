@@ -18,9 +18,42 @@ $(function(){
             var i=parseInt($li.index())+2;
             $(`#middle>.main_carousel>
             .carousel_btn>a:nth-child(${i==8? 1:i})`).addClass('act_style').siblings().removeClass('act_style');
-     }
-    setInterval(task,5000);
+       
+    }
+      setInterval(task,5000);
 
+         /*------------  story轮播  -------------*/ 
+      function story(){
+         var $li=$('#middle>.story_show>.story_body li.show');
+         if($li.next().html()){
+            $li.next().removeClass('hide').addClass('show')
+            .siblings().removeClass('show').addClass('hide');
+         }else{
+            $li.parent().children(':first-child').removeClass('hide').addClass('show').siblings().removeClass('show').addClass('hide');
+         }    
+      }
+       setInterval(story,5000);
+       /*------------  story页眉切换  -------------*/ 
+       $('#middle>.story_show>.story_header a').on('mouseover',function(){
+        var $a=$(this);
+        var i=parseInt($a.index()+1);
+        $a.addClass('story_act').siblings().removeClass('story_act');
+        $(`#middle>.story_show>.story_body>div:nth-child(${i})`).removeClass('none').siblings('div').addClass('none');
+    
+        var $ps=$('.story_show>.story_body p');
+            $($ps[i-1]).removeClass('none').siblings('p').addClass('none');
+     })
+           /*------------  story按钮切换  -------------*/ 
+      $('#middle>.story_show>.story_body>a').click(function(){
+            var $a=$(this);
+            var $lis=$('.story_show>.story_body li');
+            var $li=$('.story_show>.story_body li.show');
+            var i=parseInt($li.index()+1);
+            if($a.hasClass('st_prev')){
+                
+                $li.before(`${i==1? $lis.length:i}`).removeClass('hide').addClass('show').siblings().removeClass('show').addClass('hide');
+            }
+     })
 })
 
 
@@ -43,15 +76,4 @@ $(function(){
         $(`#middle>.the_job>.job_intr:nth-child(${i})`).removeClass('none').siblings().addClass('none');
   })
 
-/*------------  story轮播  -------------*/ 
-$('#middle>.story_show>.story_header a').on('mouseover',function(){
-    var $a=$(this);
-    var i=parseInt($a.index()+1);
-    $a.addClass('story_act').siblings().removeClass('story_act');
-    $(`#middle>.story_show>.story_body>div:nth-child(${i})`).removeClass('none').siblings('div').addClass('none');
- 
-    var $ps=$('story_show>.story_body p');
-    console.log($ps[0]);
 
-    
-})
