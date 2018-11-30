@@ -32,7 +32,7 @@ $(function(){
             $li.parent().children(':first-child').removeClass('hide').addClass('show').siblings().removeClass('show').addClass('hide');
          }    
       }
-       setInterval(story,5000);
+       var clStory=setInterval(story,5000);
        /*------------  story页眉切换  -------------*/ 
        $('#middle>.story_show>.story_header a').on('mouseover',function(){
         var $a=$(this);
@@ -43,17 +43,31 @@ $(function(){
         var $ps=$('.story_show>.story_body p');
             $($ps[i-1]).removeClass('none').siblings('p').addClass('none');
      })
-           /*------------  story按钮切换  -------------*/ 
+           /*----------  story按钮切换  ----------*/ 
       $('#middle>.story_show>.story_body>a').click(function(){
             var $a=$(this);
             var $lis=$('.story_show>.story_body li');
             var $li=$('.story_show>.story_body li.show');
             var i=parseInt($li.index()+1);
             if($a.hasClass('st_prev')){
-                
-                $li.before(`${i==1? $lis.length:i}`).removeClass('hide').addClass('show').siblings().removeClass('show').addClass('hide');
+                $(`.story_show>.story_body ul>li:nth-child(${i==1? $li.length:i-1})`).removeClass('hide').addClass('show').siblings().removeClass('show').addClass('hide');   
+            }else{
+                $(`.story_show>.story_body ul>li:nth-child(${i==$li.length? 1:i+1})`).removeClass('hide').addClass('show').siblings().removeClass('show').addClass('hide');   
             }
      })
+    
+     /*----------  story 鼠标经过停止轮播  ----------*/ 
+
+     $('.story_show>.story_body').on('mouseleave',function(){
+        var clStory=setInterval(story,5000);
+    });
+    
+     $('.story_show>.story_body').on('mouseenter',function(event){
+        clearInterval(clStory);  
+        console.log(111);
+     });
+     
+    
 })
 
 

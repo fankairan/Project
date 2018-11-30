@@ -573,7 +573,7 @@
 
 .story_body li {
   position: absolute;
-  transition: all 1.2s linear;
+  transition: all 0.5s linear;
   z-index: 5;
   height: 354px;
 }
