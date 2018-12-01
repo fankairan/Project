@@ -1,12 +1,13 @@
 
-/*  ----------  左侧媒体模块 ----------  */
-$('#content .left_media a img').click(function(){
-    alert('系统维护中，敬请谅解');
-})
-
-
-/*  ----------  中央轮播图 ----------  */
 $(function(){
+
+    /*  ----------  左侧媒体模块 ----------  */
+    $('#content .left_media a img').click(function(){
+        alert('系统维护中，敬请谅解');
+    })
+
+
+    /*  ----------  中央轮播图 ----------  */
     function task(){
         var $li=$('#middle>.main_carousel li.show');
         if($li.next().html()){
@@ -20,7 +21,20 @@ $(function(){
             .carousel_btn>a:nth-child(${i==8? 1:i})`).addClass('act_style').siblings().removeClass('act_style');
        
     }
-      setInterval(task,5000);
+      var mTask=setInterval(task,5000);
+ 
+       /*-------  中央轮播 鼠标经过停止轮播  -------*/ 
+
+     $('#middle>.main_carousel').on('mouseleave',function(){
+        mTask=setInterval(task,5000);
+    });
+    
+     $('#middle>.main_carousel').on('mouseenter',function(){
+        clearInterval(mTask);
+        mTask=null;  
+     });
+
+
 
          /*------------  story轮播  -------------*/ 
       function story(){
@@ -59,19 +73,28 @@ $(function(){
      /*----------  story 鼠标经过停止轮播  ----------*/ 
 
      $('.story_show>.story_body').on('mouseleave',function(){
-        var clStory=setInterval(story,5000);
+        clStory=setInterval(story,5000);
     });
     
-     $('.story_show>.story_body').on('mouseenter',function(event){
-        clearInterval(clStory);  
-        console.log(111);
+     $('.story_show>.story_body').on('mouseenter',function(){
+        clearInterval(clStory);
+        clStory=null;  
      });
+
+      /*----------  story P元素文字上浮  ----------*/ 
+      $('.story_show>.story_body p').on('mouseenter',function(){
+            var $p=$(this);
+            $p.css({"height":'auto'});
+        $('.story_show>.story_body p').on('mouseleave',function(){
+                var $p=$(this);
+                $p.css({"height":"18" })
+        })
+
+      })
      
-    
-})
 
 
-/*  ----------  中央新闻栏 切换 ----------  */
+     /*  ----------  中央新闻栏 切换 ----------  */
     $('#middle>.main_news>ul:first-child').on('mouseover','a',function(){
         var $a=$(this);
         $a.addClass('title_act').parent().siblings().children().removeClass('title_act');
@@ -89,5 +112,19 @@ $(function(){
         //切换职业大图 
         $(`#middle>.the_job>.job_intr:nth-child(${i})`).removeClass('none').siblings().addClass('none');
   })
+     
+})
+
+
+/*  ----------  底部 攻略资料 内容切换 ----------  */
+    $('#middle>.bottom_com>.com_header>a').on('mouseenter',function(){
+        var $a=$(this);
+        var i=parseInt($a.index());
+        $a.addClass('sel').siblings().removeClass('sel');
+        $(`#middle>.bottom_com>div.com_main:eq(${i})`).removeClass('none').siblings('div.com_main').addClass('none');
+        
+
+    })
+
 
 
