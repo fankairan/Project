@@ -748,11 +748,15 @@
  }
 
   /* 新手资料 */
- #right_bar .right_newper,#right_bar .right_base{
+ #right_bar .right_newper,.right_base{
     height: 218px;
     border: 1px solid #e1e1e1;
     margin: 20px 0 0 0;
     background: #fff url(../img/main/img_bg.jpg) no-repeat top center;
+ }
+
+ .newper_main,.base_main{
+  height: 168px;
  }
 
  .right_newper>h3,.right_base>h3{
@@ -770,11 +774,11 @@
     height: 100%;
  }
 
- .right_newper .newper_main>div{
+ .newper_main>div,.base_main>.base_ser{
    overflow: hidden;
  }
 
- .newper_main>div>a,.base_main>div>a{
+ .newper_main>div>a,.base_main>div.base_ser>a{
     float: left;
     width: 53px;
     height: 30px;
@@ -785,29 +789,57 @@
     background: url(../img/icon/i.png) no-repeat 10px center;
  }
 
- .newper_main>div>a:hover,.base_main>div>a:hover{
+ .newper_main>div>a:hover,.base_main>div.base_ser>a:hover{
   color: #E84C3D;
   text-decoration: underline;
   background: url(../img/icon/i_h.png) no-repeat 10px center;
  }
 
- .newper_main>a{
+ .newper_main>a,.main_news>a{
    margin: 0 auto;
    width: auto;
    height: auto;
  }
 
- .newper_main>a>img{
+ .newper_main>a>img,.base_main>.main_news>a>img{
    display: block;
    margin: 0 auto;
  }
 
  /* 资料库 */
  #right_bar .right_base{
-   height: 283px; 
+   height: 276px; 
  }
 
  .right_base>h3{
   background: url(../img/main/main_sprite.png) no-repeat -700px -174px;
  }
 
+ .base_main .main_news{
+  width: 220px;
+  height: 145px;
+  padding-top: 10px;
+  margin: 5px auto;
+  border-top: 1px dashed #aaa;
+}
+
+.main_news>p{
+  margin: 0;
+  padding: 0;
+}
+
+.main_news>p>a{
+  color: #333;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.main_news>p>a:hover{
+  color: #E84C3D;
+  text-decoration: underline;
+}
+
+.base_main>.main_news>a{
+  display: block;
+  margin-top: 10px;
+}
