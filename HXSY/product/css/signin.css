@@ -1,0 +1,230 @@
+
+body {
+  font-family: tahoma,'宋体';
+  font-size: 12px;
+  height: 100%;
+  width: 100%;
+  background: #f4e8e5 url(../img/signin/bg.jpg) center 55px no-repeat;
+}
+
+/* --------  主题内容头部  ------- */
+#header {
+  position: relative;
+  width: 1000px;
+  height: 627px;
+  margin: 0 auto;
+  background: url(../img/signin/header.jpg) center top no-repeat;
+}
+
+/* --------  充值活动链接  ------- */
+#header .topup_link{
+    position: absolute;
+    left: 672px;
+    top: 1px;
+    line-height: 36px;
+    color: #edbda5;
+}
+
+#header .topup_link a{
+    color: #d4d6ff;
+    padding: 0 5px;
+}
+
+#header .topup_link a:hover{
+    color: #ffe135;;
+    text-decoration: underline;
+}
+
+/* --------  logo  ------- */
+#header .game_logo {
+    width: 200px;
+    height: 110px;
+    position: absolute;
+    top: 9px;
+    left: 28px;
+    z-index: 5;
+    background: url(../img/logo/ffo_logo.png) no-repeat;
+}
+
+#header .game_logo a{
+    display: block; 
+    width: 200px;
+    height: 110px;
+}
+
+/* ----  页面主体  ---- */
+#content {
+    position: relative;
+    width: 1000px;
+    min-height: 1201px;
+    margin: 0 auto;
+    background: url(../img/signin/content.jpg) center top no-repeat;
+}
+
+/* ----  签到 ---- */
+
+#content .sign{
+    width: 1000px;
+    height: 308px;
+    position: relative;
+}
+
+.sign .btn_sign{
+    display: block;
+    width: 174px;
+    height: 264px;
+    position: absolute;
+    top: 0;
+    left: 277px;
+}
+
+.sign .to_sign {
+    width: 244px;
+    height: 80px;
+    position: absolute;
+    top: 138px;
+    left: 475px;
+}
+
+.to_sign .si_left {
+    float: left;
+    width: 74px;
+    height: 80px;
+}
+
+.to_sign .si_left p{
+    font-family: '微软雅黑','宋体';
+    font-size: 24px;
+    line-height: 32px;
+    color: #000;
+    padding-top: 24px;
+}
+
+.to_sign .si_left p.signin{
+    color: #b50000;
+    padding: 0;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.to_sign .si_left p.signin a{
+    font-family: '微软雅黑','宋体';
+    font-size: 14px;
+    line-height: 24px;
+    color: #b50000;
+    text-decoration: underline;
+}
+
+.to_sign .si_right {
+    float: left;
+    width: 170px;
+    height: 56px;
+    padding-bottom: 24px;
+    text-align: center;
+}
+
+.to_sign .si_right {
+    font-family: '微软雅黑','宋体';
+    font-size: 56px;
+    font-weight: 700;
+    color: #b50000;
+    line-height: 56px;
+}
+
+/* ------  签到日历  ------ */
+#content .calendar{
+    width: 1000px;
+    height: 610px;
+    position: relative;
+}
+
+.calendar .awardbox{
+    margin: 0 auto;
+    width: 800px;
+}
+
+.calendar .awardbox li{
+    width: 108px;
+    height: 106px;
+    margin: 0 6px 16px 0;
+    float: left;
+    background: url(../img/signin/sign.jpg) no-repeat;
+    position: relative;
+}
+
+.calendar .awardbox li img{
+    display: block;
+    width: 54px;
+    height: 54px;
+    margin: 4px auto 0;
+    border: 3px solid #d03f55;
+    z-index: 5;
+}
+
+.calendar .awardbox li p {
+    height: 20px;
+    margin: 0;
+    font-family: '微软雅黑','宋体';
+    font-size: 12px;
+    line-height: 20px;
+    color: #000;
+    text-align: center;
+    z-index: 5;
+    padding: 0 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  
+}
+
+/* ------  碎片置换 ------ */
+#content .piece{
+    width: 948px;
+    height: 100px;
+    padding: 186px 0 0 52px;
+    position: relative;
+}
+
+#content .piece ul
+
+#content .piece p{
+    font-family: '微软雅黑','宋体';
+    font-size: 18px;
+    line-height: 24px;
+    color: #000;
+    padding-bottom: 3px;
+}
+
+#content .piece p span{
+    color: #b50000;
+}
+
+#content .piece_list {
+    width: 970px;
+    height: 230px;
+    padding-left: 30px;
+    position: relative;
+}
+
+#content .piece_list li{
+    height: 224px;
+    margin: 0 0 6px 0;
+    float: left;
+    position: relative;
+}
+
+#content .piece_list li.row1{
+    width: 318px;
+    background: url(../img/signin/bg_piece1.png) no-repeat;
+}
+
+#content .piece_list li.row1{
+    width: 308px;
+    background: url(../img/signin/bg_piece2.png) no-repeat;
+}
+
+#content .piece_list li.row1{
+    width: 313px;
+    background: url(../img/signin/bg_piece3.png) no-repeat;
+}
+
