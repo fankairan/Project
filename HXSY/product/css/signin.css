@@ -201,9 +201,15 @@ body {
 
 #content .piece_list {
     width: 970px;
-    height: 230px;
+
     padding-left: 30px;
     position: relative;
+    overflow: hidden;
+}
+
+#content .piece_list ul{
+    display: block;
+    height: 230px;
 }
 
 #content .piece_list li{
@@ -228,3 +234,98 @@ body {
     background: url(../img/signin/bg_piece3.png) no-repeat;
 }
 
+#content .piece_list li p{
+    display: block;
+    width: 284px;
+    height: 129px;
+    background: url(../img/signin/png_piece.png);
+    z-index: 10;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+
+#content .piece_list li p .piece_count{
+    display: block;
+    width: 38px;
+    height: 28px;
+    padding-top: 0px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: right;
+    font-family: '微软雅黑','宋体';
+    font-size: 22px;
+    line-height: 28px;
+    color: #fee13b;
+    font-weight: 700;   
+}
+
+#content .piece_list li img{
+    display: block;
+    width: 284px;
+    height: 170px;
+    z-index: 5;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+
+#content .piece_list li a{
+    display: block;
+    width: 284px;
+    height: 42px;
+    z-index: 10;
+    position: absolute;
+    left: 12px;
+    bottom: 41px;
+    text-indent: -999em;
+    background: url(../img/signin/sprite.gif) no-repeat 0px 0px;
+    cursor: pointer;
+}
+
+#content .piece_list li a:hover{
+    background: url(../img/signin/sprite.gif) no-repeat 0px -43px;
+}
+
+#content .piece_list li span{
+    display: block;
+    width: 318px;
+    height: 24px;
+    font-family: '微软雅黑','宋体';
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    font-weight: 700;
+    background: none;
+    z-index: 10;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 6px;
+    text-align: center;
+}
+
+/* ------  活动规则 ------ */
+#content .rule{
+    width: 955px;
+    padding-left: 45px;
+    position: relative;
+    padding-bottom: 80px;
+}
+
+#content .rule h2{
+    font-family: '微软雅黑','宋体';
+    font-size: 32px;
+    line-height: 50px;
+    color: #000;
+    padding-bottom: 8px;
+    font-weight: 700;
+}
+
+#content .rule p{
+    font-family: '微软雅黑','宋体';
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+}
