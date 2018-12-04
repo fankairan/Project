@@ -1,0 +1,59 @@
+/* --------  新闻中心  -------- */
+.news_center {
+    width: 740px;
+    position: relative;
+    margin-left: 260px;
+}
+
+/* -----  新闻中心  头部----- */
+.news_center .news_header{
+    width: 740px;
+    height: 117px;
+    position: relative;
+    background: url(../img/temp/tit_news.jpg) no-repeat;
+}
+
+.news_center .news_header .loc{
+    position: absolute;
+    top: 89px;
+    left: 50px;
+    color: rgb(183, 183, 183);
+    font: 12px/18px 宋体;
+}
+
+.news_center .news_header .loc a{
+    color: #b7b7b7;
+}
+
+.news_center .news_header .loc a:hover{
+    text-decoration: underline;
+}
+
+.news_center .news_header .loc span{
+    color: #fff;
+    font-weight: bold;
+}
+
+/* -----  新闻中心  主体内容----- */
+.news_center div.news{
+    border: 1px solid #000;
+    background: #fff;
+    overflow: hidden;
+}
+
+.news_center div.area{
+    width: 636px;
+    min-height: 978px;
+    padding-top: 33px;
+    font-size: 12px;
+    margin: 0 auto;
+  
+}
+
+.news_center div.news h1.title{
+    padding: 20px 0px 10px 0px;
+    color: #1d203c;
+    font: bold 26px/1.5 "Microsoft YaHei";
+    border-bottom: 1px dotted #919096;
+    text-align: center;
+}
