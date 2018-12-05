@@ -147,14 +147,3 @@ div.news div.area .share_2 a.s_kxin{
     background-position: 0px -208px;
 }
 
-/* ----------  新闻内容  ---------- */
-
-.news_center .details{
-    font-size: 14px;
-    line-height: 2;
-}
-
-.news_center .details p{
-    text-indent: 2em;
-    padding-bottom: 10px;
-}
