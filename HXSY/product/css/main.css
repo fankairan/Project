@@ -63,9 +63,11 @@
 
   /* --------------  主体内容 左侧 开始  ---------------*/
   #content .left_bar {
+    position: relative;
     float: left;
     width: 240px;
     margin-right: 20px;
+    overflow: hidden;
   } 
 
   #content .left_bar .dLoad_btn {
