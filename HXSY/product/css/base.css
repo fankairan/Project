@@ -80,6 +80,53 @@ opacity: 1;
 opacity: 0; 
 
 }
+/* ------ 视频框样式 ------ */
+#video_player{
+ width: 611px;
+ height: 380px;
+ background-color: #000;
+ position: relative;
+ font: 12px/22px Tahoma, Geneva, sans-serif;
+ color: #2E5B74;
+ z-index: 100;
+ display: none;
+}
+
+#video_player>h2{
+ margin: 0 0 0 15px;
+ padding: 0;
+ height: 30px;
+ line-height: 30px;
+ font-size: 16px;
+ font-weight: bold;
+ color: #fff;
+}
+
+#video_player>.close{
+ display: block;
+ width: 28px;
+ height: 28px;
+ line-height: 28px;
+ position: absolute;
+ right: 5px;
+ top: 1px;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 28px;
+ cursor: pointer;
+ color: #fff;
+ overflow: hidden;
+}
+
+div.act_play{
+ position: fixed;
+ top: 297px;
+ left: 600px;
+ z-index: 9999;
+ display: block;
+}
+
+
+
 /* -----------顶部导航栏 开始------------- */
 #cyou_top {
  width: 100%;

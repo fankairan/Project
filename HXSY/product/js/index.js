@@ -33,3 +33,21 @@ $('#main_box_2>div:nth-child(2)>a').on('click',function(){
         $a.addClass('hidden');
     }
 })
+
+
+
+//----------  触发视频播放  -----------
+$('#main_box_2>div:nth-child(2)>div:last-child>div>a').on('click',function(e){
+    e.preventDefault();
+    var $a=$(this);
+    var $as=$('#main_box_2>div:nth-child(2)>div:last-child a');
+    //--  获取对应视频ID  --
+    var i=parseInt($as.index($a)+1);
+    //---------------------------------
+     
+
+
+
+})
+
+//--------动态获取 index视频路径----------
