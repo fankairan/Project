@@ -174,4 +174,11 @@
     padding: 0.5em 0;
 }
 
+.bottom_card{
+    overflow: hidden;
+} 
 
+.bottom_card li{
+    float: left;
+    margin: 30px 3px 10px 4px;
+}
