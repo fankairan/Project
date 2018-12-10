@@ -36,6 +36,7 @@
  }
 
  a {
+    /* cursor: pointer; */
     text-decoration: none;
  }
 
@@ -81,7 +82,7 @@ opacity: 0;
 
 }
 /* ------ 视频框样式 ------ */
-#video_player{
+.v_style{
  width: 611px;
  height: 380px;
  background-color: #000;
@@ -89,10 +90,12 @@ opacity: 0;
  font: 12px/22px Tahoma, Geneva, sans-serif;
  color: #2E5B74;
  z-index: 100;
- display: none;
+ display: none;  
+ transition: all 0.5s linear;
+ opacity: 0;
 }
 
-#video_player>h2{
+.v_style>.v_box>h2{
  margin: 0 0 0 15px;
  padding: 0;
  height: 30px;
@@ -102,7 +105,7 @@ opacity: 0;
  color: #fff;
 }
 
-#video_player>.close{
+.v_style>.close{
  display: block;
  width: 28px;
  height: 28px;
@@ -115,16 +118,32 @@ opacity: 0;
  cursor: pointer;
  color: #fff;
  overflow: hidden;
+ transition: all 0.3s linear;
+}
+
+.v_style>.close:hover{
+    color: #f10215;
 }
 
 div.act_play{
+ display: block;
  position: fixed;
  top: 297px;
  left: 600px;
- z-index: 9999;
- display: block;
+ z-index: 100;
+ opacity: 1;
 }
 
+#cover_up{
+    position: fixed;
+    z-index: 99;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.8;
+}
 
 
 /* -----------顶部导航栏 开始------------- */

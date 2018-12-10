@@ -379,6 +379,7 @@ body {
  display: block;
  width: 100%;
  height: 100%;
+ cursor: pointer;
 } 
 
 .box_bott_part .box_bott_1 > a {
@@ -395,6 +396,10 @@ body {
 
 .box_bott_part .box_bott_4 > a {
  background-position: -477px 0px;
+}
+
+.box_bott_part .box_bott_1 > a.act{
+  background-position: 0px -100px;
 }
 
 .box_bott_part .box_bott_1 > a:hover {
@@ -651,7 +656,12 @@ body {
     
 }
 
-#top_link_1{
+.box_top_2 li a.act{
+    color: #fff;
+    background-color: #4c5381;
+}
+
+.box_top_2 li a:hover{
     color: #fff;
     background-color: #4c5381;
 }
@@ -666,6 +676,18 @@ body {
     overflow: hidden;
 }
 
+.img_box {
+    position: relative;
+    width: 896px;
+    height: 373px;
+    margin-top: 2px;
+    overflow: hidden;
+}
+
+.img_box img {
+    width: 100%;
+}
+
 .box_body .box_body_l {
     position: relative;
     top: 0px;
@@ -676,6 +698,13 @@ body {
     border-top: 1px solid #202429;
     transition: all .3s linear;
 }
+
+.box_body .box_body_l>img{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
 
 .box_body .box_body_l li{
     float: left;
