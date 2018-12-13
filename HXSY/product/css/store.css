@@ -4,11 +4,16 @@ body {
     font-size: 12px;
     height: 100%;
     width: 100%;
-    background: #f4e8e5 url(../img/store/bg.jpg) center 55px no-repeat;
+    background: #f4e8e5 url(../img/store/bg.jpg) center 542px no-repeat;
   }
   
   /* --------  主题内容头部  ------- */
-  #header {
+  #top_box {
+    position: relative;
+    background: url(../img/store/top_box.jpg) no-repeat center top
+  }
+
+  #top_box .header {
     position: relative;
     width: 1200px;
     height: 488px;
@@ -17,7 +22,7 @@ body {
   }
   
   /* --------  充值活动链接  ------- */
-  #header .topup_link{
+  .header .topup_link{
     position: absolute;
     left: 847px;
     top: 4px;
@@ -25,7 +30,7 @@ body {
     height: 24px;
   }
   
-  #header .topup_link a{
+  .header .topup_link a{
     display: block;
     width: 70px;
     height: 24px;
@@ -39,13 +44,13 @@ body {
     
   }
   
-  #header .topup_link a:hover{
+  .header .topup_link a:hover{
       color: #ffe135;;
       text-decoration: underline;
   }
   
   /* --------  logo  ------- */
-  #header .game_logo {
+  .header .game_logo {
       width: 200px;
       height: 110px;
       position: absolute;
@@ -55,7 +60,7 @@ body {
       background: url(../img/logo/ffo_logo.png) no-repeat;
   }
   
-  #header .game_logo a{
+  .header .game_logo a{
       display: block; 
       width: 200px;
       height: 110px;
@@ -64,8 +69,178 @@ body {
   /* ----  页面主体  ---- */
   #content {
       position: relative;
-      width: 1000px;
-      min-height: 1201px;
+      width: 1200px;
+      height: 2847px;
       margin: 0 auto;
-      /* background: url(../img/signin/content.jpg) center top no-repeat; */
+      background: url(../img/store/content.jpg) no-repeat center top; 
+    
   }
+
+  /*------ floor---1 ------*/
+  #content > .floor_1{
+    width: 1200px;
+    height: 600px;
+    position: absolute;
+    top: 0px;
+  }
+
+  #content > .floor_1 .new_clothes{
+    float: left;
+    width: 740px;
+    height: 416px;
+    padding: 107px 0 0 18px;
+    position: relative;
+}
+/* --------- 时装展示盒子 -------- */
+ .img_box{
+    position: relative;
+    width: 740px;
+    height: 416px;
+    top: 0px;
+    left: 0px;
+    border: 1px solid #acacac;
+}
+
+.floor_1 .new_clothes .img_tabs{
+    width: 70px;
+    height: 318px;
+    position: absolute;
+    top: 203px;
+    right: 7px;
+    z-index: 5;
+}
+
+.img_tabs .img_btn{
+    display: block;
+    width: 70px;
+    height: 84px;
+    float: left;
+    text-indent: -9999em;
+    position: relative;
+}
+
+ .img_btn img{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 6;
+    width: 70px;
+    height: 53px;
+    float: left;
+    text-indent: -9999em;
+    opacity: 1;
+}
+
+.img_btn img.hide{
+    z-index: 0;
+    opacity: 0;
+}
+
+.img_box img{
+    opacity: 0;
+}
+
+.img_box img.act{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: block;
+    z-index: 4;
+    opacity: 1;
+    width: 740px;
+    height: 418px;
+}
+
+#content .floor_1 .list_box{
+    width: 380px;
+    height: 460px;
+    position: absolute;
+    top: 100px;
+    left: 816px;
+}
+
+.floor_1 .list_box li{
+    width: 380px;
+    height: 84px;
+    position: relative;
+}
+
+.floor_1 .list_box li img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.floor_1 .list_box h3{
+    width: 290px;
+    height: 24px;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 70px;
+    line-height: 24px;
+    color: #ffffff;
+    font-family: '微软雅黑';
+    font-size: 16px;
+    text-align: left;
+    border-bottom: 1px solid #ffafaf;
+}
+
+.floor_1 .list_box p{
+    width: 290px;
+    line-height: 16px;
+    color: #ffffff;
+    position: absolute;
+    top: 26px;
+    left: 70px;
+}
+
+
+  /*------ floor---2 ------*/
+  #content .floor_2{
+    width: 1200px;
+    height: 1200px;
+    position: absolute;
+    top: 602px;
+}
+
+ .floor_2 .player_fav{
+    padding: 0 14px;
+    position: absolute;
+    top: 150px;
+}
+
+ .player_fav li,.orange li{
+    width: 194px;
+    height: 234px;
+    position: relative;
+    float: left;
+    text-align: center;
+}
+
+ .player_fav li p,.orange li p{
+    margin-top: 8px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.floor_2 .orange{
+    padding: 0 14px;
+    position: absolute;
+    top: 460px;
+}
+
+ /*------ floor---2 ------*/
+ #content .floor_3{
+    width: 1000px;
+    height: 485px;
+    position: relative;
+    top: 1980px;
+    left: 48px;
+ }
+
+ 
+
+
