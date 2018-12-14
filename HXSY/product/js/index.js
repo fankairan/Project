@@ -1,4 +1,5 @@
 
+$(function(){
 //-----box1 底部按钮切换大图-----
 $('#main_body>.main_box_1>.box_bott_part li a').on('click',function(e){
         e.preventDefault();
@@ -94,9 +95,9 @@ $('#main_box_2>div:nth-child(2)>div:last-child>div>a').on('click',function(e){
             $('#video_player').append(html);     
         }
      })
+  })
+
 })
-
-
 
 
 

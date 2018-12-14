@@ -24,8 +24,8 @@ body {
   /* --------  充值活动链接  ------- */
   .header .topup_link{
     position: absolute;
-    left: 847px;
-    top: 4px;
+    left: 850px;
+    top: 3px;
     width: 259px;
     height: 24px;
   }
@@ -93,11 +93,11 @@ body {
 }
 /* --------- 时装展示盒子 -------- */
  .img_box{
-    position: relative;
+    position: absolute;
     width: 740px;
     height: 416px;
-    top: 0px;
-    left: 0px;
+    top: 105px;
+    left: 17px;
     border: 1px solid #acacac;
 }
 
@@ -107,7 +107,7 @@ body {
     position: absolute;
     top: 203px;
     right: 7px;
-    z-index: 5;
+    z-index: 8;
 }
 
 .img_tabs .img_btn{
@@ -124,7 +124,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 6;
+    z-index: 5;
     width: 70px;
     height: 53px;
     float: left;
@@ -135,21 +135,26 @@ body {
 .img_btn img.hide{
     z-index: 0;
     opacity: 0;
-}
+} 
 
 .img_box img{
-    opacity: 0;
-}
-
-.img_box img.act{
     position: absolute;
+    opacity: 0;
     top: 0px;
     left: 0px;
-    display: block;
-    z-index: 4;
-    opacity: 1;
     width: 740px;
     height: 418px;
+    transition: all .5s linear;
+}
+
+.img_box img.hide{
+    z-index: 0;
+    opacity: 0;
+} 
+
+.img_box img.show{  
+    opacity: 1;  
+    z-index: 6;
 }
 
 #content .floor_1 .list_box{
@@ -239,8 +244,14 @@ body {
     position: relative;
     top: 1980px;
     left: 48px;
+    padding-top: 1px;
+
  }
 
- 
+ .floor_3 .recommend{
+    position: absolute;
+    top: 25px;
+    left: 14px;
+ }
 
 

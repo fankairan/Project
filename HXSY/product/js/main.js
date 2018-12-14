@@ -70,7 +70,7 @@ $(function(){
             }
      })
     
-     /*----------  story 鼠标经过停止轮播  ----------*/ 
+     /*----------  story 鼠标悬停停止轮播  ----------*/ 
 
      $('.story_show>.story_body').on('mouseleave',function(){
         clStory=setInterval(story,5000);
