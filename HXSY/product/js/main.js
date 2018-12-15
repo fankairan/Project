@@ -16,11 +16,12 @@ $(function(){
         }else{
             $li.parent().children(':first-child').removeClass('hide').addClass('show').siblings().removeClass('show').addClass('hide');
         }
-            var i=parseInt($li.index())+2;
+            var i=parseInt($li.index()+2);
             $(`#middle>.main_carousel>
             .carousel_btn>a:nth-child(${i==8? 1:i})`).addClass('act_style').siblings().removeClass('act_style');
        
     }
+
       var mTask=setInterval(task,5000);
  
        /*-------  中央轮播 鼠标经过停止轮播  -------*/ 
@@ -32,7 +33,23 @@ $(function(){
      $('#middle>.main_carousel').on('mouseenter',function(){
         clearInterval(mTask);
         mTask=null;  
-     });
+     }); 
+
+     /*-------  中央轮播 小按钮 切换图片 -------*/ 
+     $('#middle>.main_carousel>.carousel_btn>a').on('click',function(){
+         var $a=$(this);
+         var $as=$('#middle>.main_carousel>.carousel_btn>a');
+         var i=parseInt($as.index($a)+1);
+         var $li=$(`#middle>.main_carousel>ul>li:nth-child(${i})`);
+        //  图片切换
+         $li.removeClass('hide').addClass('show').siblings().removeClass('show').addClass('hide');
+        //  选中小按钮切换
+        $(`#middle>.main_carousel>.carousel_btn>a:nth-child(${i})`).addClass('act_style').siblings().removeClass('act_style');
+
+
+     })
+
+     
 
 
 

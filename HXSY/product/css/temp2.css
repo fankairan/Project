@@ -1,0 +1,115 @@
+
+body{
+    background: url(../img/temp2/bjgs_bg_02_20140619.jpg) no-repeat 1000px 55px;
+}
+
+#main {
+     width: 1000px;
+    background: url(../img/temp2/leftbar_bg.jpg) repeat-y;
+    overflow: hidden;
+}   
+   /* ------  左侧导航栏  ------ */
+
+#main .sub_bar{
+    position: relative;
+    width: 260px;
+    padding-bottom: 40px;
+}
+
+#main .sub_bar .game_logo{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 260px;
+    height: 137px;
+    background: url(../img/temp2/logo_light.jpg)no-repeat;
+    z-index: 5;
+}
+
+.sub_bar .game_logo .logo_bg{
+    position: absolute;
+    top: 14px;
+    left: 18px;
+    z-index: 6;
+    width: 200px;
+    height: 110px;
+    background: url(../img/temp2/ffo_logo.png) no-repeat;
+}
+
+.sub_bar .game_logo .logo_bg a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.sub_bar .sub_nav{
+    padding: 137px 0px 1px 0px;
+    background: #131316;
+    border-bottom: 1px solid #42424d;
+}
+
+.sub_nav div a{
+    display: block;
+    height: 68px;
+    background: url(../img/temp2/nav_sprite_20140619.png) no-repeat;
+    transition: all 0.4s linear;
+}
+
+.sub_nav>.nav_btn1>a{
+    background-position: 0px 0px;
+}
+
+.sub_nav>.nav_btn2>a{
+    background-position: 0px -68px;
+}
+
+.sub_nav>.nav_btn3>a{
+    background-position: 0px -136px;
+}
+
+.sub_nav>.nav_btn4>a{
+    background-position: 0px -204px;
+}
+
+.sub_nav>.nav_btn5>a{
+    background-position: 0px -272px;
+}
+
+.sub_nav>.nav_btn6>a{
+    background-position: 0px -340px;
+}
+
+.sub_nav>.nav_btn7>a{
+    background-position: 0px -408px;
+}
+
+/* --------  鼠标悬停 按钮样式  -------- */
+.sub_nav>.nav_btn1>a:hover{
+    background-position: -260px 0px;
+}
+
+.sub_nav>.nav_btn2>a:hover{
+    background-position: -260px -68px;
+}
+
+.sub_nav>.nav_btn3>a:hover{
+    background-position: -260px -136px;
+}
+
+.sub_nav>.nav_btn4>a:hover{
+    background-position: -260px -204px;
+}
+
+.sub_nav>.nav_btn5>a:hover{
+    background-position: -260px -272px;
+}
+
+.sub_nav>.nav_btn6>a:hover{
+    background-position: -260px -340px;
+}
+
+.sub_nav>.nav_btn7>a:hover{
+    background-position: -260px -408px;
+}
+
+

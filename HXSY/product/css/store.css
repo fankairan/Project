@@ -76,7 +76,7 @@ body {
     
   }
 
-  /*------ floor---1 ------*/
+  /*------ 一楼 ------*/
   #content > .floor_1{
     width: 1200px;
     height: 600px;
@@ -202,7 +202,7 @@ body {
 }
 
 
-  /*------ floor---2 ------*/
+  /*------ 二楼 ------*/
   #content .floor_2{
     width: 1200px;
     height: 1200px;
@@ -237,21 +237,121 @@ body {
     top: 460px;
 }
 
- /*------ floor---2 ------*/
+ /*------ 三楼 ------*/
  #content .floor_3{
-    width: 1000px;
-    height: 485px;
+    width: 1100px;
+    height: 500px;
     position: relative;
-    top: 1980px;
+    top: 1965px;
     left: 48px;
-    padding-top: 1px;
-
  }
 
  .floor_3 .recommend{
     position: absolute;
-    top: 25px;
-    left: 14px;
+    width: 1100px;
+    height: 425px;
+    top: 29px;
+    left: 2px;
+
+ }
+
+ .floor_3 .recommend .hair{
+    position: absolute;
+    width: 821px;
+    height: 425px;
+  
+ }
+
+ /* --- 左侧相框 --- */
+ .recommend .rec_left{
+    position: absolute;
+    width: 411px;
+    height: 425px;
+    top: 0px;
+    left: 0px;
+ }
+
+ .recommend .rec_left img{
+    position: absolute;
+    width: 411px;
+    height: 431px;
+ 
+ }
+ /* --- 左侧 照片切换按钮 --- */
+ .recommend .hair .btn_left{
+    position: absolute;
+    left: 380px;
+    bottom: 8px;
+    z-index: 10;
+ }
+
+ .btn_left a,.btn_right a{
+    display: block;
+    width: 12px;
+    height: 12px;
+    overflow: hidden;
+    background: #c44ea4;
+    text-indent: -9999px;
+    border-radius: 4px;
+    margin: 4px 0;
+    cursor: pointer;
+ }
+
+ .hair .btn_left a.act,.hair .btn_right a.act{
+    width: 12px;
+    background: #1b1a1c;
+ }
+
+/* --- 右侧 照片切换按钮 --- */
+.recommend .hair .btn_right{
+    position: absolute;
+    right: 375px;
+    bottom: 8px;
+    z-index: 10;
+ }
+ /* --- 右侧相框 --- */
+ .recommend .rec_right {
+    position: absolute;
+    width: 408px;
+    height: 420px;
+    top: 0px;
+    right: 0px;
+ }
+ .recommend .rec_right img{
+     position: absolute;
+     width: 408px;
+     height: 431px;
+  
+ }
+
+ 
+ .floor_3 .recommend .sub_box{
+    width: 230px;
+    height: 500px;
+    position: absolute;
+    top: -25px;
+    left: 880px;
+ }
+
+ .recommend .sub_box li{
+     width: 230px;
+     height: 120px;
  }
 
 
+ /*------ 4楼 ------*/
+ #content .floor_4{
+    width: 1200px;
+    height: 182px;
+    position: absolute;
+    left: 0px;
+    top: 2622px;
+ }
+
+ #content .floor_4 ul li{
+    width: 600px;
+    height: 182px;
+    position: relative;
+    float: left;
+    text-align: center;
+ }
