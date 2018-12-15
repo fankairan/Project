@@ -112,4 +112,24 @@ body{
     background-position: -260px -408px;
 }
 
+/* -----  侧边栏 底部按钮  ----- */
 
+#main .sub_bar .bott_btn{
+    padding-top: 31px;
+    text-align: center;
+}
+ 
+.sub_bar .bott_btn a{
+    display: inline-block;
+    padding: 0px 7px;
+    height: 26px;
+    font: normal 14px/26px '微软雅黑','Microsoft YaHei';
+    color: #7e7e98;
+    border: 1px solid #49495c;
+    border-bottom: 2px solid #000000;
+    margin: 0px 3px;
+}
+
+.sub_bar .bott_btn a:hover{
+    color: #ffde00;
+}
