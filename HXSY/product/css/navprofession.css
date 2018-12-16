@@ -1,0 +1,30 @@
+body{
+    background: url(../img/temp2/zyxz_bg_02_20140619.jpg) no-repeat 1050px 55px;
+}
+
+.bg{
+    position: absolute;
+    width: 100%;
+    height: 1300px;
+    z-index: -1;
+    background: url(../img/temp2/sj_20141212.jpg) no-repeat 260px 342px;
+}
+
+.bg .bg_top{
+    position: absolute;
+    width: 100%;
+    height: 1300px;
+    z-index: -2;
+    background: url(../img/temp2/zyxz_bg_01_20140619.jpg) no-repeat 0px 0px;
+}
+
+#main .sub_nav>.nav_btn5>a.act{
+    background-position: -260px -272px;
+}
+
+#main .middle_content{
+    height: 2314px;
+    position: relative;
+    width: 740px;
+    overflow: hidden;
+}

@@ -1,0 +1,60 @@
+
+body{
+    background: url(../img/temp2/czzn_bg_02_20140619.jpg) no-repeat 1000px 55px;
+}
+
+#main .sub_nav>.nav_btn4>a.act{
+    background-position: -260px -204px;
+}
+
+#main .middle_content{
+    height: 1225px;
+    width: 740px;
+    position: relative; 
+    overflow: hidden;
+    background: url(../img/temp2/czzn_bg_01_20140619.jpg) no-repeat;
+}
+
+#main .middle_content .oper_map{
+    margin-top: 301px;
+}
+
+.middle_content .oper_map .map_title{
+    height: 50px;
+    margin-left: 20px;
+    text-indent: -9999px;
+    background: url(../img/temp2/yxjm_title_20140619.png) no-repeat;
+}
+
+.middle_content .oper_map .map_body{
+    position: relative;
+    margin-top: 38px;
+}
+
+.middle_content .oper_map ul{
+    width: 110%;
+    padding: 80px 0px 0px 13px;
+}
+
+.middle_content .oper_map ul li{
+    float: left;
+    width: 150px;
+    height: 23px;
+    line-height: 23px;
+    padding-bottom: 10px;
+    color: #676767;
+    font-size: 18px;
+}
+
+.middle_content .oper_map ul li strong{
+    float: left;
+    width: 23px;
+    height: 23px;
+    text-align: center;
+    padding-right: 14px;
+    font-size: 15px;
+    color: #161621;
+    background: url(../img/temp2/skin_sprite.png) no-repeat -61px -60px;
+}
+
+

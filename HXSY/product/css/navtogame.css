@@ -1,0 +1,103 @@
+body{
+    background: url(../img/temp2/jryx_bg_02_20140718.jpg) no-repeat 1000px 55px;
+}
+ 
+#main .sub_nav>.nav_btn3>a.act{
+    background-position: -260px -68px;
+}
+
+#main .middle_content{
+    height: 2142px;
+    width: 740px;
+    position: relative;  
+    overflow: hidden;
+    display: inline;
+    background: url(../img/temp2/jryx_bg_01_20140718.jpg) no-repeat;
+}
+
+/* --------  游戏下载  -------- */
+.middle_content .game_down{
+    position: absolute;
+    left: 513px;
+    top: 696px;
+    width: 226px;
+    height: 223px
+}
+
+.middle_content .game_down:hover{
+    background: url(../img/temp2/jryx_sprite_20140619.png) no-repeat 20px -326px;
+}
+
+.middle_content .game_down span{
+    position: absolute;
+    left: 66px;
+    top: 163px;
+    width: 102px;
+    height: 22px;
+    text-align: center;
+    line-height: 22px;
+    cursor: pointer;
+    z-index: 10;
+    font-weight: bold;
+    font-family: Arial;
+    color: #fff;
+    font-size: 16px;
+}
+
+
+/* ---------   游戏安装步骤   --------- */
+.middle_content .install_step{
+    position: absolute;
+    right: 0;
+    top: 1053px;
+    width: 552px;
+    height: 346px;
+    background: url(../img/temp2/install_bg.jpg) no-repeat;
+    overflow: hidden;
+}
+
+.install_step .step_num{
+    width: 34px;
+    height: 180px;
+    position: absolute;
+    overflow: hidden;
+    left: 37px;
+    top: 80px; 
+}
+
+.install_step .step_num li{
+    margin-top: 10px;
+    width: 34px;
+    height: 34px;
+}
+
+.install_step .step_num li a{
+    cursor: pointer;
+    display: block;
+    width: 34px;
+    height: 34px;
+    color: #ffae57;
+    text-align: center;
+    line-height: 34px;
+    font-size: 22px;
+}
+
+.install_step .step_num li a.act{
+    border-radius: 50%;
+    background-color: #ffae57;
+    color: #505050;
+}
+
+.install_step .step_img{
+    width: 469px;
+    height: 336px;
+    position: absolute;
+    overflow: hidden;
+    left: 83px;
+    top: 5px;
+}
+
+.install_step .step_img .step_item{
+    width: 469px;
+    height: 336px;
+}

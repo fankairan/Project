@@ -1,0 +1,38 @@
+
+body{
+    background: url(../img/temp2/bjgs_bg_02_20140619.jpg) no-repeat 1000px 55px;
+}
+
+#main .sub_nav>.nav_btn1>a.act{
+    background-position: -260px 0px;
+}
+
+#main .middle_content{
+    height: 1235px;
+    position: relative;
+    width: 740px;
+    overflow: hidden;
+    display: inline;
+}
+
+.middle_content .text_content{
+    padding: 253px 0px 15px 0px;
+    font: normal 16px/2 '微软雅黑','Microsoft YaHei';
+    background: url(../img/temp2/bjgs_bg_01_20140619.jpg) no-repeat;
+}
+
+.text_content p{
+    padding: 0px 0px 30px 50px; 
+    text-indent: 2em;
+}
+
+.text_content p.indent{
+    text-indent: 0em;
+}
+
+.text_content p span{
+    font-size: 42px;
+    color: #82070e;
+    font-weight: bold;
+    line-height: 32px;
+}
