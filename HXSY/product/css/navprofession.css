@@ -57,6 +57,7 @@ body{
 #main .middle_content .jobs{
     position: relative;
     padding: 287px 0px 0px 85px;
+    height: 100%;
   
 }
 
@@ -95,3 +96,79 @@ body{
     line-height: 21px;
 }
 
+/* *********   视频演示 部分   ********* */
+.jobs .intro .jobs_video{
+    width: 378px;
+    height: 100px;
+    position: absolute;
+    z-index: 3;
+    top: 550px;
+    lefT: 85px;
+}
+
+.jobs h4{
+    font: bold 20px/1.5 '微软雅黑','Microsoft YaHei';
+    color: #c1392b;
+}
+
+.jobs .intro .jobs_video a{
+    margin: 8px 0px 20px;
+    display: block;
+    cursor: pointer;
+
+}
+
+.jobs .intro .jobs_skill{
+    width: 650px;
+    height: 795px;
+    position: absolute;
+    z-index: 3;
+    top: 720px;
+    lefT: 85px;
+}
+
+.jobs .intro .jobs_skill table{
+    margin-top: 10px;
+    width: 650px;
+    height: 760px;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.intro .jobs_skill table img{
+    width: 52px;
+    height: 52px;
+    padding: 5px;
+    background: url(../img/temp2/pic_bg.png) no-repeat left top;
+}
+
+.intro .jobs_skill table tr{
+    height: 80px;
+    color: #737373;
+    border-bottom: 1px solid #acacac;
+}
+
+.intro .jobs_skill table tr td.col1{
+    width: 82px;
+    vertical-align: middle;
+    padding-bottom: 0px;
+} 
+
+.intro .jobs_skill table tr h5{
+    font: bold 14px/1.5 '微软雅黑','Microsoft YaHei';
+    color: #c1392b;
+    padding-bottom: 3px;
+}
+
+.intro .jobs_skill table tr td.col2{
+    width: 125px;
+    padding: 11px 0px 9px 0px;
+    border-bottom: 1px solid #acacac;
+    vertical-align: top;
+}
+
+.intro .jobs_skill table tr td.col3{
+    width: 440px;
+    padding: 10px 0px 24px 0px;
+    vertical-align: bottom
+}
