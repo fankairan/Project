@@ -1,30 +1,97 @@
 body{
-    background: url(../img/temp2/zyxz_bg_02_20140619.jpg) no-repeat 1050px 55px;
+    font: normal 12px/1.5 '微软雅黑',tahoma;
+    color: #000000;
+    background: url(../img/temp2/zyxz_bg_02_20140619.jpg) no-repeat 260px 885px;
 }
 
-.bg{
-    position: absolute;
+#main{
     width: 100%;
-    height: 1300px;
-    z-index: -1;
-    background: url(../img/temp2/sj_20141212.jpg) no-repeat 260px 342px;
+    background: url(../img/temp2/zyxz_bg_01_20140619.jpg) no-repeat 260px 0px;
 }
 
-.bg .bg_top{
-    position: absolute;
-    width: 100%;
-    height: 1300px;
-    z-index: -2;
-    background: url(../img/temp2/zyxz_bg_01_20140619.jpg) no-repeat 0px 0px;
+#main .sub_bar{
+    height: 2274px;
+    background: url(../img/temp2/leftbar_bg.jpg) repeat-y 0px 0px;
 }
 
 #main .sub_nav>.nav_btn5>a.act{
     background-position: -260px -272px;
 }
 
+#main .sub_nav .jobs_sel{
+    height: 481px;
+}
+
+.sub_nav .jobs_sel li{
+    width: 260px;
+    height: 37px;
+}
+
+.sub_nav .jobs_sel li a{
+    display: block;
+    height: 36px;
+    padding: 0px 108px 0px 80px;
+    font: italic 14px/34px '微软雅黑','Microsoft YaHei';
+    color: #7d7d96;
+    border-bottom: 1px solid #33333d;
+    background: url(../img/temp2/skin_sprite.png) no-repeat 152px 11px;
+}
+
+.sub_nav .jobs_sel li a:hover{
+    color: #ffde00;
+    background-position: 152px -19px;
+}
+
+.sub_nav .jobs_sel li a.act{
+    color: #ffde00;
+    background-position: 152px -19px;
+}
+
+
 #main .middle_content{
     height: 2314px;
     position: relative;
     width: 740px;
-    overflow: hidden;
 }
+
+#main .middle_content .jobs{
+    position: relative;
+    padding: 287px 0px 0px 85px;
+  
+}
+
+.middle_content .jobs h3{
+    height: 55px;
+    padding: 34px 0px 0px 203px;
+}
+
+.middle_content .jobs h3 img{
+    position: absolute;
+    z-index: 2;
+}
+
+.middle_content .jobs .intro{
+    position: absolute;
+    z-index: 1;
+    top: 250px;
+    lefT: 0px;
+}                                                                    
+.jobs .intro .intro_text{
+    position: absolute;
+    z-index: 3;
+    top: 120px;
+    lefT: 85px;
+    width: 378px;
+    height: 435px;
+}
+
+.jobs .intro .intro_text h5{
+    padding: 7px 0px 4px 0px;
+    font: bold 14px/1.5 '微软雅黑','Microsoft YaHei';
+    color: #dd3f0f;
+}
+
+.jobs .intro .intro_text p{
+    line-height: 21px;
+}
+

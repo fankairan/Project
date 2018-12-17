@@ -48,7 +48,7 @@ body{
     border-bottom: 1px solid #42424d;
 }
 
-.sub_nav div a{
+.sub_nav div>a{
     display: block;
     height: 68px;
     background: url(../img/temp2/nav_sprite_20140619.png) no-repeat;
