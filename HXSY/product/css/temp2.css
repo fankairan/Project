@@ -128,6 +128,7 @@ body{
     border: 1px solid #49495c;
     border-bottom: 2px solid #000000;
     margin: 0px 3px;
+    cursor: pointer;
 }
 
 .sub_bar .bott_btn a:hover{

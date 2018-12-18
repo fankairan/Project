@@ -35,8 +35,9 @@ body{
     color: #7d7d96;
     border-bottom: 1px solid #33333d;
     background: url(../img/temp2/skin_sprite.png) no-repeat 152px 11px;
+    cursor: pointer;
 }
-
+ 
 .sub_nav .jobs_sel li a:hover{
     color: #ffde00;
     background-position: 152px -19px;
@@ -62,6 +63,7 @@ body{
 }
 
 .middle_content .jobs h3{
+    position: relative;
     height: 55px;
     padding: 34px 0px 0px 203px;
 }
@@ -69,6 +71,50 @@ body{
 .middle_content .jobs h3 img{
     position: absolute;
     z-index: 2;
+}
+
+.middle_content>div.jobs:nth-child(3) h3 img{
+    top: 18px;
+}
+
+.middle_content>div.jobs:nth-child(4) h3 img{
+    top: 18px;
+}
+
+.middle_content>div.jobs:nth-child(5) h3 img{
+    top: 18px;
+}
+
+.middle_content>div.jobs:nth-child(6) h3 img{
+    top: 18px;
+}
+
+.middle_content>div.jobs:nth-child(7) h3 img{
+    top: 18px;
+}
+
+.middle_content>div.jobs:nth-child(8) h3 img{
+    top: 18px;
+}
+
+.middle_content>div.jobs:nth-child(9) h3 img{
+    top: 18px;
+}
+
+.middle_content>div.jobs:nth-child(10) h3 img{
+    top: 18px;
+}
+
+.middle_content>div.jobs:nth-child(11) h3 img{
+    top: 18px;
+}
+
+.middle_content>div.jobs:nth-child(12) h3 img{
+    top: 18px;
+}
+
+.middle_content>div.jobs:nth-child(13) h3 img{
+    top: 18px;
 }
 
 .middle_content .jobs .intro{

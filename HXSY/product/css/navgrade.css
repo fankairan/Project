@@ -1,0 +1,117 @@
+
+body{
+    background: url(../img/temp2/sjzn_bg_02_20140619.jpg) no-repeat 1000px 55px;
+}
+
+
+#main .sub_nav>.nav_btn6>a.act{
+    background-position: -260px -340px;
+}
+
+#main .middle_content{
+    height: 1315px;
+    position: relative;
+    width: 740px;
+    overflow: hidden;
+    background: url(../img/temp2/sjzn_bg_01_20140619.jpg) no-repeat;
+}
+
+
+#main .middle_content .content{
+    margin-top: 301px;
+}
+
+/* --------  棋盘  -------- */
+.middle_content .content .checkerboard{
+    position: relative;
+    width: 740px;
+    height: 590px;
+}
+
+.content .checkerboard h3{
+    margin-left: 20px;
+    text-indent: -9999px;
+    height: 50px;
+}
+
+/* --------  棋盘 小块 -------- */
+.content .checkerboard a{
+    display: block;
+    position: absolute;
+    z-index: 3;
+    text-indent: -9999px;
+}
+
+.content .checkerboard .patch1{
+    left: 214px;
+    top: 318px;
+    width: 65px;
+    height: 48px;
+    background: url(../img/temp2/begin.gif) no-repeat;
+}
+
+.content .checkerboard .patch1{
+
+}
+
+.content .checkerboard .patch1{
+    
+}
+
+.content .checkerboard .patch1{
+    
+}
+
+.content .checkerboard .patch1{
+    
+}
+
+.content .checkerboard .patch1{
+    
+}
+
+.content .checkerboard .patch1{
+    
+}
+
+.content .checkerboard .patch1{
+    
+}
+
+.content .checkerboard .patch1{
+    
+}
+
+.content .checkerboard .patch1{
+    
+}
+.content .checkerboard .patch1{
+    
+}
+.content .checkerboard .patch1{
+    
+}
+
+.content .checkerboard .patch1{
+    
+}
+
+.content .checkerboard .patch1{
+    
+}
+
+.content .checkerboard .patch1{
+    
+}
+
+.content .checkerboard .patch1{
+    
+}
+
+.content .checkerboard .patch1{
+    
+}
+
+.content .checkerboard .patch1{
+    
+}
