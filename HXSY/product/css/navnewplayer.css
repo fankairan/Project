@@ -1,0 +1,8 @@
+
+body{
+    background: url(../img/temp2/bjgs_bg_02_20140619.jpg) no-repeat 1000px 55px;
+}
+
+#main .sub_nav>.nav_btn7>a.act{
+    background-position: -260px -408px;
+}

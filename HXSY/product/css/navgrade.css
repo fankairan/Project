@@ -50,68 +50,305 @@ body{
     background: url(../img/temp2/begin.gif) no-repeat;
 }
 
-.content .checkerboard .patch1{
-
+.content .checkerboard .patch2{
+    left: 267px;
+    top: 347px;
+    width: 63px;
+    height: 40px;
 }
 
-.content .checkerboard .patch1{
-    
+.content .checkerboard .patch3{
+    left: 330px;
+    top: 366px;
+    width: 55px;
+    height: 42px;
 }
 
-.content .checkerboard .patch1{
-    
+.content .checkerboard .patch4{
+    left: 385px;
+    top: 349px;
+    width: 50px;
+    height: 40px;
 }
 
-.content .checkerboard .patch1{
-    
+.content .checkerboard .patch5{
+    left: 433px;
+    top: 327px;
+    width: 50px;
+    height: 37px;
 }
 
-.content .checkerboard .patch1{
-    
+.content .checkerboard .patch6{
+    left: 480px;
+    top: 303px;
+    width: 40px;
+    height: 37px;
 }
 
-.content .checkerboard .patch1{
-    
+.content .checkerboard .patch7{
+    left: 520px;
+    top: 280px;
+    width: 46px;
+    height: 39px;
 }
 
-.content .checkerboard .patch1{
-    
+.content .checkerboard .patch8{
+    left: 569px;
+    top: 260px;
+    width: 55px;
+    height: 37px;
 }
 
-.content .checkerboard .patch1{
-    
+.content .checkerboard .patch9{
+    left: 560px;
+    top: 223px;
+    width: 43px;
+    height: 36px;
 }
 
-.content .checkerboard .patch1{
-    
-}
-.content .checkerboard .patch1{
-    
-}
-.content .checkerboard .patch1{
-    
+.content .checkerboard .patch10{
+    left: 515px;
+    top: 195px;
+    width: 45px;
+    height: 37px;
 }
 
-.content .checkerboard .patch1{
-    
+.content .checkerboard .patch11{
+    left: 472px;
+    top: 173px;
+    width: 43px;
+    height: 35px;
 }
 
-.content .checkerboard .patch1{
-    
+.content .checkerboard .patch12{
+    left: 417px;
+    top: 159px;
+    width: 43px;
+    height: 35px;
 }
 
-.content .checkerboard .patch1{
-    
+.content .checkerboard .patch13{    
+    left: 420px;
+    top: 200px;
+    width: 50px;
+    height: 38px;  
 }
 
-.content .checkerboard .patch1{
-    
+.content .checkerboard .patch14{
+    left: 394px;
+    top: 241px;
+    width: 50px;
+    height: 35px;
 }
 
-.content .checkerboard .patch1{
-    
+.content .checkerboard .patch15{
+    left: 352px;
+    top: 272px;
+    width: 54px;
+    height: 35px;
 }
 
-.content .checkerboard .patch1{
-    
+.content .checkerboard .patch16{
+    left: 298px;
+    top: 249px;
+    width: 53px;
+    height: 35px;
+}
+
+.content .checkerboard .patch17{
+    left: 253px;
+    top: 225px;
+    width: 43px;
+    height: 35px;
+}
+
+.content .checkerboard .patch18{
+    left: 185px;
+    top: 212px;
+    width: 55px;
+    height: 35px;
+}
+
+/* --------  棋盘 插旗 -------- */
+.content .checkerboard .f_item{
+    z-index: 1;
+    position: absolute;
+    width: 500px;
+    height: 206px;
+}
+
+.content .checkerboard .f_item .flag_img1{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 84px;
+    height: 206px;
+    background: url(../img/temp2/sjzn_flat.png) no-repeat;
+}
+
+.content .checkerboard .f_item .flag_img2{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 84px;
+    height: 206px;
+    background: url(../img/temp2/sjzn_flat.png) no-repeat;
+}
+
+.checkerboard .f_item .text_wrap{   
+    position: absolute;
+    left: 63px;
+    top: 71px;
+}
+
+.checkerboard .f_item .text_wrap .text_img{
+    float: left;
+    background: url(../img/temp2/sjzn_left_cor.png) no-repeat;
+    padding-left: 22px;
+}
+
+.f_item .text_wrap .text_img .text_color{
+    float: left;
+    font-family: "微软雅黑";
+    display: block;
+    line-height: 14px;
+    padding: 7px 20px 7px 0;
+    font-size: 14px;
+    background: url(../img/temp2/sjzn_cor3.png) no-repeat right top;
+    color: #fff;
+}
+
+.text_img .text_color em{
+    color: #dd3f0f;
+}
+/* ***********棋盘 插旗定位 ************* */
+.content .checkerboard .flag1{
+    left: 206px;
+    top: 160px;
+}
+
+.content .checkerboard .flag2{
+    left: 262px;
+    top: 189px;
+}
+
+.content .checkerboard .flag3{
+    left: 319px;
+    top: 206px;
+}
+
+.content .checkerboard .flag4{
+    left: 368px;
+    top: 191px;
+}
+
+.content .checkerboard .flag5{
+    left: 416px;
+    top: 165px;
+}
+
+.content .checkerboard .flag6{
+    right: 198px;
+    top: 143px;
+}
+
+.content .checkerboard .flag7{
+    right: 149px;
+    top: 120px;
+}
+
+.content .checkerboard .flag8{
+    right: 100px;
+    top: 100px;
+}
+
+.content .checkerboard .flag9{
+    right: 117px;
+    top: 63px;
+}
+
+.content .checkerboard .flag10{
+    right: 154px;
+    top: 35px;
+}
+
+.content .checkerboard .flag11{
+    left: 457px;
+    top: 11px;
+}
+
+.content .checkerboard .flag12{
+    left: 399px;
+    top: -3px;
+}
+
+.content .checkerboard .flag13{
+    left: 403px;
+    top: 40px;
+}
+
+.content .checkerboard .flag14{
+    left: 377px;
+    top: 81px;
+}
+
+.content .checkerboard .flag15{
+    left: 340px;
+    top: 110px;
+}
+
+.content .checkerboard .flag16{
+    left: 284px;
+    top: 88px
+}
+
+.content .checkerboard .flag17{
+    left: 233px;
+    top: 64px;
+}
+
+.content .checkerboard .flag18{
+    left: 171px;
+    top: 48px;
+}
+
+/* -------------  升级详解  ------------ */
+#main .middle_content .content .update h3{
+    margin-left: 20px;
+    text-indent: -9999px;
+    height: 50px;
+}
+
+.middle_content .content .update .up_text{
+    padding: 24px 0px 0px 38px;
+    overflow: hidden;
+    font-family: "微软雅黑";
+}
+
+.content .update .up_text p{
+    padding-bottom: 16px;
+    width: 680px;
+    font-size: 14px;
+    color: #737373;
+    line-height: 22px;
+    overflow: hidden;
+}
+
+
+.content .update .up_text p span{
+    display: block;
+    background: url(../img/temp2/sjzn_li.jpg) no-repeat 1px 1px;
+    margin:0px 8px 20px 0px;
+    float: left;
+    width: 29px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.content .update .up_text p strong{
+    color: #dd3f0f;
+    font-weight: bold;
 }
