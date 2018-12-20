@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#FCF0A5",
+    "navigationBarTitleText": "想享",
+    "navigationBarTextStyle":"black"
+  }
+}
