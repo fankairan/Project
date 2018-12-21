@@ -1,12 +1,36 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/message/message",
+    "pages/personal/personal"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#FCF0A5",
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#E0C629",
     "navigationBarTitleText": "想享",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "#aaa"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "用户首页",
+        "iconPath": "/pages/img/tabs/home.png",
+        "selectedIconPath": "/pages/img/tabs/home-active.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息中心",
+        "iconPath": "/pages/img/tabs/message.png",
+        "selectedIconPath": "/pages/img/tabs/message-active.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "用户首页",
+        "iconPath": "/pages/img/tabs/personal.png",
+        "selectedIconPath": "/pages/img/tabs/personal-active.png"
+      }
+    ]
   }
 }

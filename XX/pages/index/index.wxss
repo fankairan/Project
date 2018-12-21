@@ -1,7 +1,7 @@
 /**index.wxss**/
 /*  功能1：轮播图  */
 .slider,.slider swiper,.slider image{
-  height: 390rpx;
+  height: 600rpx;
   width: 100%;
 }
 

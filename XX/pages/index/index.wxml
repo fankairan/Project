@@ -2,8 +2,8 @@
 <view>
   <!-- 轮播图 -->
   <view class="slider">
-    <swiper autplay>
-      <swiper-item wx:for="{{list}}" wx:key="index">
+    <swiper class="swiper_list" autoplay>
+      <swiper-item wx:for="{{lb_url}}" wx:key="index">
         <image src="{{item.img_url}}" lazy-load mode="sapectFill"></image>
       </swiper-item> 
     </swiper>
