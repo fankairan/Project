@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<view>
+<view class="body">
   <!-- 轮播图 -->
   <view class="slider">
     <swiper class="swiper_list" autoplay>
@@ -8,13 +8,22 @@
       </swiper-item> 
     </swiper>
   </view>
+  <!-- 分隔条 -->
+  <view class="divider"></view>
   <!-- 九宫格 -->
-  <view class="index-nav">
-    <view class="nav-item" wx:for="{{navlist}}" wx:key="index">
-      <image class="{{item.img_url}}" lazy-load mode="aspectFill" bindtap='handleJump' data-id="{{item.id}}"></image>
+  <view class="box">
+    <view class="grid" wx:for="{{ic_box}}" wx:key="index">
+      <image src="{{item.img_url}}" lazy-load mode="aspectFill" bindtap='handleJump' data-id="{{item.id}}"></image>
       <text>{{item.title}}</text>
     </view>
   </view>
   <!-- 分隔条 -->
   <view class="divider"></view>
+   <!-- 横向滑动列表 -->
+  <scroll-view scroll-x class="scroll-x">
+    <view wx:for="{{list}}" wx:key="{{index}}" class="view-parent">
+      <view class="view-item">{{item.txt}}</view>
+    </view>
+  </scroll-view>
+
 </view>

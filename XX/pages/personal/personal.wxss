@@ -1,1 +1,16 @@
 /* pages/personal/personal.wxss */
+.avatar{
+  background-color: #EDE3B2;
+  height: 400rpx;
+  display: flex;  /* 弹性布局 */
+  justify-content: center; /* 子元素居中 */
+  align-items: center;
+  
+}
+
+.avatar image{
+  width: 190rpx;
+  height: 190rpx;
+  border-radius: 50%;
+  border: 3px solid rgba(0,0,0,0.5)
+}

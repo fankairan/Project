@@ -3,12 +3,13 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/message/message",
-    "pages/personal/personal"
+    "pages/personal/personal",
+    "pages/shopcart/shopcart"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#E0C629",
-    "navigationBarTitleText": "想享",
+    "navigationBarBackgroundColor": "62B731",   
+    "navigationBarTitleText": "想享生鲜",
     "navigationBarTextStyle": "#aaa"
   },
   "tabBar": {
@@ -24,6 +25,12 @@
         "text": "消息中心",
         "iconPath": "/pages/img/tabs/message.png",
         "selectedIconPath": "/pages/img/tabs/message-active.png"
+      },
+      {
+        "pagePath": "pages/shopcart/shopcart",
+        "text": "购物车",
+        "iconPath": "/pages/img/tabs/shopcart.png",
+        "selectedIconPath": "/pages/img/tabs/shopcart-active.png"
       },
       {
         "pagePath": "pages/personal/personal",

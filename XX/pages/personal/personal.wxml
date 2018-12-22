@@ -1,2 +1,30 @@
 <!--pages/personal/personal.wxml-->
-<text>pages/personal/personal.wxml</text>
+<view>
+  <!-- 1:头像 -->
+  <view class="avatar">
+    <image src="{{isPlaying? 'http://127.0.0.1:3000/img/music-stop.png':'http://127.0.0.1:3000/img/music-start.png'}}" lazy-load mode='aspectFill' bindtap='onMusicTap'></image>
+  </view>
+
+<!-- 2:个人列表 -->
+  <view class="divider"></view>
+  <view class="cell">
+    <view class="cell-item arrow">个人资料</view>
+    <view class="cell-item arrow">我的优惠劵</view>
+  </view>
+  <!-- 3:服务条款 -->
+  <view class="divider"></view>
+  <view class="cell">
+    <view class="cell-item arrow">常见问题</view>
+    <view class="cell-item arrow">使用条款</view>
+    <view class="cell-item arrow">常见问题</view>
+    <view class="cell-item arrow">使用条款</view>
+  </view>
+  
+  <!-- 4:设置 -->
+  <view class="divider"></view>
+  <view class="cell">
+    <view class="cell-item arrow">设置</view>
+  </view>
+
+</view>
+
