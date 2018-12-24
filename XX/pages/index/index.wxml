@@ -4,7 +4,7 @@
   <view class="slider">
     <swiper class="swiper_list" autoplay>
       <swiper-item wx:for="{{lb_url}}" wx:key="index" data-pid="{{item.pid}}">
-        <image src="{{item.img_url}}" lazy-load mode="sapectFill"></image>
+        <image src="{{item.img_url}}" lazy-load mode="aspectFill"></image>
       </swiper-item> 
     </swiper>
   </view>
@@ -21,9 +21,17 @@
   <view class="divider"></view>
    <!-- 横向滑动列表 -->
   <scroll-view scroll-x class="scroll-x">
-    <view wx:for="{{list}}" wx:key="{{index}}" class="view-parent">
-      <view class="view-item">{{item.txt}}</view>
+    <view wx:for="{{sel}}" wx:key="index" class="view-parent">
+      <view class="view-item" data-id="{{item.id}}>">
+       <image src="{{item.simg_url}}" lazy-load mode="aspectFill"></image>
+       <text class="sel-tit ell">{{item.title}}</text>
+       <text class="appraise">好评{{item.star}}%</text>
+      </view> 
     </view>
   </scroll-view>
+  <!-- 分隔条 -->
+  <view class="divider"></view>
+  
+  
 
 </view>

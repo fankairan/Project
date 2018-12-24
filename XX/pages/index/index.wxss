@@ -69,10 +69,12 @@
 }
 
 /* 功能4：按钮 */
-/* 功能4 左右滑动 */
+
+/* 功能4 甄选模块 */
 
 .scroll-x{
-    height:80px;
+    height:420rpx;
+    width: 100%;
     white-space:nowrap;
     display:flex;
 }
@@ -80,19 +82,51 @@
 ::-webkit-scrollbar{
     width: 0;
     height: 0;
-    color: transparent;
+    /* color: transparent; */
 }
+
 .view-parent{
     display:inline-block;
 }
+
 .view-item{
-    width:50px;
-    height:50px;
+    position: relative;
+    width:280rpx;
+    height:280rpx;
+    border-radius: 50%;
+    border: 12rpx solid #FCBCBC;
     display:flex;
+    flex-direction: column;
     align-items:center;
-    justify-content:center;
-    font-size:12px;
-    background:#80CBC4;
-    margin:10px;
+    justify-content:center;   
+    /* background:#80CBC4; */
+    margin:18px;
+}
+
+.view-item image{
+    width: 280rpx;
+    height: 280rpx;
+    border-radius: 40%;
+    
+}
+
+.view-item .sel-tit{
+  position: absolute;
+  z-index: 5;
+  left: 50%;
+  margin-left:-125rpx;
+  bottom: -24px;
+  width: 250rpx;
+  color: #765F55;
+  font-size:12px;
+}
+
+.view-item .appraise{
+  position: absolute;
+  z-index: 5;
+  font-size:11px;
+  color: #f10215;
+  font-style: italic;
+  bottom: -75rpx;
 }
 

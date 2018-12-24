@@ -3,6 +3,7 @@
 const app = getApp()
 
 Page({
+  // 获取首页轮播
 	getLunbo:function(){
     wx.request({
       url: 'http://127.0.0.1:3000/lunbo',
@@ -15,11 +16,26 @@ Page({
       }
     })
   },
+
+  //获取首页甄选
+  getSelect:function(){
+    wx.request({
+      url: 'http://127.0.0.1:3000/select',
+      success:(res)=>{
+          var data=res.data;
+          this.setData({
+            sel:data
+          }) 
+        }
+
+      })
+  },
   /**
    * 页面的初始数据
    */
   data: {
     lb_url:[],
+    sel:[],
     ic_box:[{id:1,title:"鳄梨是梨",img_url:'http://127.0.0.1:3000/icons/1.png'},
         {id:2,title:"优选苹果",img_url:'http://127.0.0.1:3000/icons/2.png'},
         {id:3,title:"新鲜葡萄",img_url:'http://127.0.0.1:3000/icons/3.png'},
@@ -37,6 +53,7 @@ Page({
    */
   onLoad: function (options) {
      this.getLunbo();
+     this.getSelect();
   },
 
   /**
