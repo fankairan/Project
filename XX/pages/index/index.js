@@ -3,13 +3,24 @@
 const app = getApp()
 
 Page({
+	getLunbo:function(){
+    wx.request({
+      url: 'http://127.0.0.1:3000/lunbo',
+      success: (res) => {
+        var url = res.data.msg;
+        this.setData({
+          lb_url: url
+        })
 
+      }
+    })
+  },
   /**
    * 页面的初始数据
    */
   data: {
     lb_url:[],
-    ic_box:[{id:1,title:"附近美食",img_url:'http://127.0.0.1:3000/icons/1.png'},
+    ic_box:[{id:1,title:"鳄梨是梨",img_url:'http://127.0.0.1:3000/icons/1.png'},
         {id:2,title:"优选苹果",img_url:'http://127.0.0.1:3000/icons/2.png'},
         {id:3,title:"新鲜葡萄",img_url:'http://127.0.0.1:3000/icons/3.png'},
         {id:4,title:"精选蔬菜",img_url:'http://127.0.0.1:3000/icons/4.png'},
@@ -25,16 +36,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-      wx.request({
-        url: 'http://127.0.0.1:3000/lunbo',
-        success:(res)=>{
-            var url=res.data.msg;
-            this.setData({
-              lb_url:url
-            })
-    
-        }
-      })
+     this.getLunbo();
   },
 
   /**

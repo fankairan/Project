@@ -3,7 +3,7 @@
   <!-- 轮播图 -->
   <view class="slider">
     <swiper class="swiper_list" autoplay>
-      <swiper-item wx:for="{{lb_url}}" wx:key="index">
+      <swiper-item wx:for="{{lb_url}}" wx:key="index" data-pid="{{item.pid}}">
         <image src="{{item.img_url}}" lazy-load mode="sapectFill"></image>
       </swiper-item> 
     </swiper>
