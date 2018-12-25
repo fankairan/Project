@@ -31,7 +31,20 @@
   </scroll-view>
   <!-- 分隔条 -->
   <view class="divider"></view>
-  
+  <view class="shop" wx:for="{{list}}" wx:key="index">
+  <image src="{{item.img_url}}" class="shop-img"></image>
+  <view class="shop-info">
+    <text class="shop-title ell">店铺名称:{{item.shop_name}}</text>
+    <text class="shop-tel">电话:{{item.tel}}</text>
+    <text class="shop-address ell">地址:{{item.addr}}</text>
+    <text class="shop-time">营业时间:{{item.mtime}}</text>
+  </view>
+  <view class="shop-star">
+       <view class="start-after">★★★★★</view>
+       <view class="start-before" 
+       style="width:{{item.star}}%">★★★★★</view>
+  </view>
+</view>
   
 
 </view>
