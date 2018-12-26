@@ -1,14 +1,15 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/message/message",  
+    "pages/message/message",
     "pages/logs/logs",
     "pages/personal/personal",
-    "pages/shopcart/shopcart"
+    "pages/shopcart/shopcart",
+    "pages/shoplist/shoplist"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "62B731",   
+    "navigationBarBackgroundColor": "62B731",
     "navigationBarTitleText": "想享生鲜",
     "navigationBarTextStyle": "#aaa"
   },

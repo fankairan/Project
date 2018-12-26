@@ -3,8 +3,8 @@
   <!-- 轮播图 -->
   <view class="slider">
     <swiper class="swiper_list" autoplay>
-      <swiper-item wx:for="{{lb_url}}" wx:key="index" data-pid="{{item.pid}}">
-        <image src="{{item.img_url}}" lazy-load mode="aspectFill"></image>
+      <swiper-item wx:for="{{lb_url}}" wx:key="index">
+        <image src="{{item.img_url}}" bindtap='handleJump' lazy-load mode="aspectFill"  data-pid="{{item.pid}}"></image>
       </swiper-item> 
     </swiper>
   </view>
@@ -13,7 +13,7 @@
   <!-- 九宫格 -->
   <view class="box">
     <view class="grid" wx:for="{{ic_box}}" wx:key="index">
-      <image src="{{item.img_url}}" lazy-load mode="aspectFill" bindtap='handleJump' data-id="{{item.id}}"></image>
+      <image src="{{item.img_url}}" lazy-load mode="aspectFill" bindtap='handleJump' data-pid="{{item.pid}}"></image>
       <text>{{item.title}}</text>
     </view>
   </view>

@@ -3,6 +3,15 @@
 const app = getApp()
 
 Page({
+  //跳转商品列表页
+  handleJump:function(e){
+    var pid=e.target.dataset.pid;
+    console.log(pid);
+    wx.navigateTo({
+      url: '/pages/shoplist/shoplist?pid='+pid,
+    })
+
+  },
   // 获取首页轮播
 	getLunbo:function(){
     wx.request({
@@ -69,15 +78,15 @@ Page({
   data: {
     lb_url:[],
     sel:[],
-    ic_box:[{id:1,title:"鳄梨是梨",img_url:'http://127.0.0.1:3000/icons/1.png'},
-        {id:2,title:"优选苹果",img_url:'http://127.0.0.1:3000/icons/2.png'},
-        {id:3,title:"新鲜葡萄",img_url:'http://127.0.0.1:3000/icons/3.png'},
-        {id:4,title:"精选蔬菜",img_url:'http://127.0.0.1:3000/icons/4.png'},
-        {id:5,title:"海鲜水产",img_url:'http://127.0.0.1:3000/icons/5.png'},
-        {id:6,title:"有机蜂蜜",img_url:'http://127.0.0.1:3000/icons/6.png'},
-        {id:7,title:"酒水饮料",img_url:'http://127.0.0.1:3000/icons/7.png'},
-        {id:8,title:"品质牛奶",img_url:'http://127.0.0.1:3000/icons/8.png'},
-        {id:9,title:"乳制品",img_url:'http://127.0.0.1:3000/icons/9.png'}
+    ic_box:[{pid:1,title:"鳄梨是梨",img_url:'http://127.0.0.1:3000/icons/1.png'},
+        {pid:2,title:"优选苹果",img_url:'http://127.0.0.1:3000/icons/2.png'},
+        {pid:3,title:"新鲜葡萄",img_url:'http://127.0.0.1:3000/icons/3.png'},
+        {pid:4,title:"精选蔬菜",img_url:'http://127.0.0.1:3000/icons/4.png'},
+        {pid:5,title:"海鲜水产",img_url:'http://127.0.0.1:3000/icons/5.png'},
+        {pid:6,title:"有机蜂蜜",img_url:'http://127.0.0.1:3000/icons/6.png'},
+        {pid:7,title:"酒水饮料",img_url:'http://127.0.0.1:3000/icons/7.png'},
+        {pid:8,title:"品质牛奶",img_url:'http://127.0.0.1:3000/icons/8.png'},
+        {pid:9,title:"乳制品",img_url:'http://127.0.0.1:3000/icons/9.png'}
       ],
     list: [],     //当前页内容
     pageIndex: 0, //页码
