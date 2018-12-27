@@ -1,2 +1,16 @@
 <!--pages/shoplist/shoplist.wxml-->
-<text>pages/shoplist/shoplist.wxml</text>
+<view>
+  <view class="list-row">
+    <view class="list-col" wx:for="{{list}}" wx:key="index">
+      <image class="col-img" src="{{item.simg_url}}"></image>
+      <view class="col-text">
+        <text class="ell">{{item.title}}</text>
+        <view>
+          <text>{{item.new_price}}</text>
+          <text>{{item.or_price}}</text>
+        </view>
+        <text>{{item.star}}%</text>
+      </view>
+    </view>
+  </view>
+</view>

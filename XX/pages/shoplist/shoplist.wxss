@@ -1,1 +1,37 @@
 /* pages/shoplist/shoplist.wxss */
+body{
+  background-color: #F7FFFA;
+}
+
+.list-row{
+  width: 94%;
+  margin: 25rpx auto;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 20rpx;
+  box-shadow: 0px 0px 3px 2px #ddd;
+
+}
+
+.list-row .list-col{
+  width: 50%;
+  height: 500rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: left;
+}
+
+.list-row .list-col .col-img{
+  width: 300rpx;
+  height: 300rpx;
+  margin: 0 auto;
+  border-radius: 30%;
+}
+
+.list-row .list-col .col-text{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
