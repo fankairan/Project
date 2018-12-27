@@ -4,12 +4,12 @@
     <view class="list-col" wx:for="{{list}}" wx:key="index">
       <image class="col-img" src="{{item.simg_url}}"></image>
       <view class="col-text">
-        <text class="ell">{{item.title}}</text>
+        <text class="col-tit ell">{{item.title}}</text>
         <view>
-          <text>{{item.new_price}}</text>
-          <text>{{item.or_price}}</text>
+          <text class="new_price">￥{{item.new_price}}</text>
+          <text class="old_price">￥{{item.or_price}}</text>
         </view>
-        <text>{{item.star}}%</text>
+        <text class="evaluate">{{item.star}}%好评</text>
       </view>
     </view>
   </view>
