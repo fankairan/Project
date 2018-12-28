@@ -10,6 +10,14 @@
           <text class="old_price">￥{{item.or_price}}</text>
         </view>
         <text class="evaluate">{{item.star}}%好评</text>
+        <view class="shop-box">
+            <view class="shop-count">
+              <button>-</button>
+              <input placeholder='0'></input>
+              <button>+</button>
+            </view>
+            <view class="add-cart"></view>
+        </view>
       </view>
     </view>
   </view>
