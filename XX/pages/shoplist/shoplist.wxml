@@ -2,7 +2,7 @@
 <view>
   <view class="list-row">
     <view class="list-col" wx:for="{{list}}" wx:key="index">
-      <image class="col-img" src="{{item.simg_url}}"></image>
+      <image class="col-img" src="{{item.simg_url}}" bindtap="handleJump" data-id="{{item.id}}"></image>
       <view class="col-text">
         <text class="col-tit ell">{{item.title}}</text>
         <view>
@@ -13,10 +13,10 @@
         <view class="shop-box">
             <view class="shop-count">
               <button>-</button>
-              <input placeholder='0'></input>
+              <input placeholder='1'></input>
               <button>+</button>
             </view>
-            <view class="add-cart"></view>
+            <view class="add-cart">加入购物车</view>
         </view>
       </view>
     </view>

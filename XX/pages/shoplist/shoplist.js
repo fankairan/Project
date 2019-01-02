@@ -1,10 +1,20 @@
 // pages/shoplist/shoplist.js
 Page({
+  
+  //跳转商品详情页
+  handleJump: function (e) {
+    var id = e.target.dataset.id;
+    console.log(id);
+    wx.navigateTo({
+      url: '/pages/details/details?id=' + id,
+    })
+
+  },
 
   //获取商品列表
-  getList:function(pid){
-      var id=this.data.pid;
-      console.log(id);
+  getList:function(){
+      var pid=this.data.pid;
+      console.log(pid);
       //加载下一页数据
       //1:获取二个数值 pno pageSize
       var pno = this.data.pageIndex + 1;
@@ -12,7 +22,7 @@ Page({
       //2:发送ajax请求
       wx.request({
         url: 'http://127.0.0.1:3000/getList?',
-        data: {pid:id, pno:pno,pageSize:ps},
+        data: {pid:pid, pno:pno,pageSize:ps},
         success: (result) => {
           //console.log(result.data.data);
           //2.1:保存返回数据 拼接
