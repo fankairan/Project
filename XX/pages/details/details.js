@@ -7,7 +7,13 @@ Page({
     console.log(id);
     wx.request({
       url: 'http://127.0.0.1:3000/getDetails',
-      data:{id:id}
+      data:{id:id},
+      success:(result)=>{
+        this.setData({
+          list:result.data
+        })
+        console.log(this.data.list);
+      }
     })
   },
 
@@ -15,7 +21,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    id:null
+    id:null,
+    list:[]
   },
 
   /**
@@ -26,7 +33,7 @@ Page({
       id:options.id
     })
 
-    getDetails();
+    this.getDetails();
   },
 
   /**
