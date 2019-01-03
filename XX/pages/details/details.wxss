@@ -39,7 +39,6 @@ page{
 /* 商品标题 */
 .title{
    margin: 25rpx;
-   margin-bottom: 0rpx;
    line-height:16px;
 }
 
@@ -123,5 +122,6 @@ page{
 }
 
 .img-detail>image{
-  height: auto;
+  border-radius: 20rpx;
+  width:100%;
 }

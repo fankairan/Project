@@ -25,7 +25,7 @@
   </view>
 <!-- 详情大图 -->
   <view class="img-detail">
-    <image src="{{list[0].bimg_url}}"></image>
+    <image src="{{list[0].bimg_url}}" mode="widthFix"></image>
   </view> 
 
 </view>
