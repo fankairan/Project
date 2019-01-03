@@ -1,2 +1,32 @@
-<!--pages/details/details.wxml-->
-<text>pages/details/details.wxml</text>
+<view class="wrap">
+<!-- 详情图片 -->
+  <view class="img-box">
+    <image src="{{list[0].simg_url}}"></image>
+  </view>
+  <!-- 价格 -->
+  <view class="price">
+    <text class="new_price">￥{{list[0].new_price}}</text>
+    <text class="old_price">￥{{list[0].or_price}}</text>
+  </view>
+  <!-- 商品标题 -->
+  <view class="title">
+    <text>{{list[0].title}}</text>
+  </view>
+<!-- 添加购物车样式 -->
+  <view class="shop-mod">
+    <view class="shop-box">
+      <view class="shop-count">
+        <button>-</button>
+        <input placeholder='1'></input>
+        <button>+</button>
+      </view>
+      <view class="add-cart">加入购物车</view>
+    </view>
+  </view>
+<!-- 详情大图 -->
+  <view class="img-detail">
+    <image src="{{list[0].bimg_url}}"></image>
+  </view> 
+
+</view>
+

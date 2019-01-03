@@ -10,7 +10,7 @@ Page({
       data:{id:id},
       success:(result)=>{
         this.setData({
-          list:result.data
+          list:result.data.msg
         })
         console.log(this.data.list);
       }

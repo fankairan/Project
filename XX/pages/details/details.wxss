@@ -1,1 +1,127 @@
 /* pages/details/details.wxss */
+page{
+  background-color: #F5FCF0;
+}
+
+.wrap{
+  margin: 20rpx;
+}
+/* 详情图片样式 */
+.img-box{
+  width: 480rpx;
+  height: 480rpx;
+  margin:0rpx auto;
+  overflow: hidden;
+}
+
+.img-box>image{
+ width: 100%;
+}
+
+/* 价格 */
+.price{
+  margin: 25rpx;
+}
+
+.price>.new_price{
+  font-size: 18px;
+  font-weight: 600;
+  color: #f10215;
+} 
+
+.price>.old_price{
+  font-size: 12px;
+  margin-left: 10rpx;
+  color: #aaa;
+  text-decoration: line-through;
+}
+
+/* 商品标题 */
+.title{
+   margin: 25rpx;
+   margin-bottom: 0rpx;
+   line-height:16px;
+}
+
+.title>text{
+  font-size: 14px;
+  
+  font-weight: 600;
+  color: #333;
+}
+
+/* 添加购物车样式 */
+.shop-mod{
+  padding-right: 50rpx;
+  height: 120rpx;
+}  
+
+.shop-box{
+  float: right;
+  width: 300rpx;
+  height: 80rpx;
+  /* background-color: #ccc; */
+  display: flex;
+  flex-direction:row;
+}
+
+/* 添加数量按钮 */
+.shop-box .shop-count{
+
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-wrap: nowrap;
+  /* background-color: #aaa; */
+  overflow: hidden;
+}
+
+.shop-box .shop-count button{
+  margin: 0rpx;
+  padding: 0rpx; 
+  width: 33%;
+  height: 100%;
+  font-size: 15px;
+  text-align: center;
+  line-height: 35rpx;
+  background-color: #eee;
+  border-radius: 0;
+}
+
+ button::after{
+  border-radius: 10rpx;
+}
+
+.shop-box .shop-count input{
+  margin: 0rpx;
+  padding: 0rpx; 
+  font-size: 13px;
+  width: 40rpx;
+  height: 40rpx;
+  min-height: 1rem;
+  text-align: center;
+  line-height: 40rpx;
+  outline: none;
+  background-color: #ddd;
+}
+
+/* 购物车按钮样式 */
+.shop-box .add-cart{
+  width: 100%;
+  height: 50%;
+  border-radius: 10rpx;
+  font-size: 11px;
+  text-align: center;
+  line-height: 40rpx;
+  background-color: #f10215;
+  color: #fff;
+}
+
+/* 详情大图 */
+.img-detail{
+  height: auto;
+}
+
+.img-detail>image{
+  height: auto;
+}
