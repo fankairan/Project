@@ -1,0 +1,11 @@
+<!--pages/reg/reg.wxml-->
+<view class="reg-box">
+  <view class="reg-title">
+    <text>欢迎登陆</text>
+  </view>
+  <view class="reg-put">
+    <input type='text' placeholder='用户名:'></input>
+    <input type="password" placeholder='密码:'></input>
+  </view>
+ 
+</view>

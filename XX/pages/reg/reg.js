@@ -1,12 +1,6 @@
-// pages/personal/personal.js
+// pages/reg/reg.js
 Page({
 
-  //跳转登录页面
-  handleJump:function(){
-    wx.navigateTo({
-      url: '/pages/reg/reg',
-    })
-  },
   /**
    * 页面的初始数据
    */

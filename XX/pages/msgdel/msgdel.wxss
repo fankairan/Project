@@ -1,0 +1,58 @@
+/* pages/msgdel/msgdel.wxss */
+/* 1:组件背景 */
+page{
+  background-color:#F5FCF0;
+  
+}
+
+/* 2:内容边框 */
+.content{
+  background-color:#fff;
+  width: 92%;
+  margin: 30rpx auto;
+  padding:0rpx 15rpx;
+  border-radius: 20rpx;
+  box-shadow: 0px 0px 3px 2px #ddd;
+  overflow: hidden;
+}
+
+/* 3:内容头部 */
+.content .content-header{
+  width: 95%;
+  margin: 15rpx auto;
+  border-bottom: 1px solid #ddd;
+}
+
+/* 4:内容标题 */
+.content-header .content-title{
+  font-size: 18px;
+  font-weight:600;
+  display: block;
+}
+
+/* 5:日期时间 */
+.content-header .time{
+  text-align:right;
+  font-size:14px;
+  color:#aaa;
+  display: block;
+}
+
+/* 6:内容主体 */
+.content .content-main{
+  width: 95%;
+  margin: 15rpx auto;
+}
+
+/* 7:内容主体 图片 */
+.content-main .main-img{
+  display: block;
+  margin:0 auto;
+}
+
+/* 8:内容主体 文字 */
+.content-main .main-text{
+  font-size: 12px;
+  color:#777;
+}
+

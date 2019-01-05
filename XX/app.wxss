@@ -19,7 +19,7 @@
 /* 通用功能二：灰色分隔块 */
 .divider{
   height: 30rpx;
-  background-color: #f1f1f1;
+  background-color: #E3FFD1;
 }
 
 /* 通用功能三：项目条 */

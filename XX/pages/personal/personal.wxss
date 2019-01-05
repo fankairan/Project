@@ -1,6 +1,6 @@
 /* pages/personal/personal.wxss */
 .avatar{
-  background-color: #EDE3B2;
+  background-color: #F2CE93;
   height: 400rpx;
   display: flex;  /* 弹性布局 */
   justify-content: center; /* 子元素居中 */
@@ -8,9 +8,17 @@
   
 }
 
+.avatar .avatar-box{
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
 .avatar image{
+  display:block;
   width: 190rpx;
   height: 190rpx;
   border-radius: 50%;
-  border: 3px solid rgba(0,0,0,0.5)
+   border: 3px solid #ED9090;/*#E8BFBF */
 }
+

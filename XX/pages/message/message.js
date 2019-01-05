@@ -1,5 +1,13 @@
 // pages/message/message.js
 Page({
+  //跳转信息详情页事件
+  handleJump:function(e){
+      var id=e.target.dataset.id;
+      console.log(id);
+      wx.navigateTo({
+        url: '/pages/msgdel/msgdel?id='+id,
+      })
+  },
 
   /** 
    * 页面的初始数据
@@ -23,9 +31,13 @@ Page({
       data:{pno:pno,pageSize:ps},
       success:(res)=>{
         console.log(res);
+        var msg=res.data.data;
+        for(var i=0;i<ps;i++){
+          msg[i].ctime=msg[i].ctime.split('T')[0];
+        }
         //4:接收返回数据
         //5:拼接数组
-        var rows=this.data.list.concat(res.data.data);
+        var rows=this.data.list.concat(msg);
         //6:获取总页数判断是否有下一页
         var pageCount=res.data.pageCount;
         var flag=pno<pageCount;
@@ -53,7 +65,8 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    this.loadMore();
+
   },
 
   /**

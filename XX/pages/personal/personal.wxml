@@ -2,7 +2,11 @@
 <view>
   <!-- 1:头像 -->
   <view class="avatar">
-    <image src="{{isPlaying? 'http://127.0.0.1:3000/img/music-stop.png':'http://127.0.0.1:3000/img/music-start.png'}}" lazy-load mode='aspectFill' bindtap='onMusicTap'></image>
+    <view class="avatar-box" bindtap='handleJump'>
+      <image src=""></image>
+      <text>点击登录</text>
+    </view>
+    
   </view>
 
 <!-- 2:个人列表 -->

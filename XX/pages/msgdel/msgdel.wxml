@@ -1,0 +1,11 @@
+<!--pages/msgdel/msgdel.wxml-->
+<view class='content'>
+  <view class="content-header">
+    <text class="header-title">{{msg.title}}</text>
+    <text class="time">{{msg.ctime}}</text>
+  </view>
+  <view class="content-main">
+    <image wx-if="{{msg.bimg_url}}" src="{{msg.bimg_url}}" class="main-img"></image>
+    <text class="main-text">{{msg.content}}</text>
+  </view>
+</view>

@@ -6,7 +6,9 @@
     "pages/personal/personal",
     "pages/shopcart/shopcart",
     "pages/shoplist/shoplist",
-    "pages/details/details"
+    "pages/details/details",
+    "pages/msgdel/msgdel",
+    "pages/reg/reg"
   ],
   "window": {
     "backgroundTextStyle": "light",

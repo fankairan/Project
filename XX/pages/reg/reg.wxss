@@ -1,0 +1,36 @@
+/* pages/reg/reg.wxss */
+/* 1:组件背景 */
+page{
+  background-color:#F5FCF0;
+  
+}
+
+/* 2:登录框 */
+.reg-box{
+  background-color: #fff;
+  width: 85%;
+  margin: 50rpx auto;
+  border-radius: 30rpx;
+  box-shadow: 0px 0px 3px 2px #ccc;
+  overflow: hidden;
+}
+
+/* 3:登录框 头部*/
+.reg-box .reg-title{
+  margin: 20rpx 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #502C1F;
+}
+
+/* 3:登录框 主体*/
+.reg-box .reg-put{
+  width: 65%;
+  margin: 0 auto;
+}
+
+/* 4:登录框 输入框*/
+.reg-put .reg-put{
+  border-bottom: 1px solid #628155;
+}

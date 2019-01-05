@@ -1,24 +1,38 @@
-// pages/personal/personal.js
+// pages/msgdel/msgdel.js
 Page({
-
-  //跳转登录页面
-  handleJump:function(){
-    wx.navigateTo({
-      url: '/pages/reg/reg',
-    })
+  //获取信息详情数据
+  getMsg:function(){
+    var id=this.data.id;
+      wx.request({
+        url: 'http://127.0.0.1:3000/getMsgDel?',
+        data:{id},
+        success:(result)=>{
+          result.data.msg[0].ctime = result.data.msg[0].ctime.split('T')[0];
+          var data=result.data.msg[0];
+             this.setData({
+               msg:data
+             })
+             console.log(this.data.msg);
+        }
+      })
   },
   /**
    * 页面的初始数据
    */
   data: {
-  
+    id:0,
+    msg:null
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+      this.setData({
+        id:options.id
+      })
+      this.getMsg();
+
   },
 
   /**
