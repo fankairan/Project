@@ -475,15 +475,15 @@ body {
   background-position: -270px 0px;
 }
 
-.phone_reg:hover {
+.reg_header > .phone_reg.act {
   background-position: -122px -30px;
 }
 
-.email_reg:hover {
+.reg_header > .email_reg.act {
   background-position: -194px -30px;
 }
 
-.person_reg:hover {
+.reg_header > .person_reg.act {
   background-position: -267px -30px;
 }
 
@@ -563,10 +563,8 @@ body {
 
 }
 
-.ver > img {
+.ver > #c3{
   float: left;
-  width: 113px;
-  height: 28px;
   border: 1px solid #f10215;
   margin-right: 5px;
 }

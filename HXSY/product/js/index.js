@@ -1,5 +1,70 @@
 
-$(function(){
+$(function(){ 
+
+//   canvas绘图 获取随机验证码
+  function checkNumber(){
+        var c3=document.getElementById('c3');
+        var ctx=c3.getContext('2d');
+
+        ctx.fillStyle=rc(150,230);
+        ctx.fillRect=(0,0,113,28);
+
+        var pool='ABCDEFGHIGKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuwwxyz0123456789';
+        for(var i=1;i<5;i++){
+            var c=pool[rn(0,pool.length)];
+            var fs=rn(20,25);
+            
+            ctx.font=fs+'px SimHei';
+            ctx.textBaseline='top';
+            ctx.fillStyle=rc(30,180);
+            ctx.fillText(c,i*20,0);
+        }
+        
+        for(var i=0;i<5;i++){
+            ctx.beginPath();
+            ctx.strokeStyle=rc(0,230);
+            ctx.moveTo(rn(0,120),rn(0,30));
+            ctx.lineTo(rn(0,120),rn(0,30));
+            ctx.stroke();
+        }
+        
+        for(var i=0;i<66;i++){
+            ctx.fillStyle=rc(0,255);
+            ctx.beginPath();
+            ctx.arc(rn(0,120),rn(0,30),0.8,0,2*Math.PI);
+            ctx.fill();
+        }           
+        function rn(min,max){
+            var n=Math.random()*(max-min)+min;
+            return Math.floor(n);
+        }
+
+        function rc(min,max){
+            var r=rn(min,max);
+            var g=rn(min,max);
+            var b=rn(min,max);
+            return `rgb(${r},${g},${b})`;
+        }
+
+    }
+
+        checkNumber() 
+
+    // 清楚画布方法
+    function clearNumber(){
+        var c3=document.getElementById('c3');
+        var ctx=c3.getContext('2d');
+        ctx.clearRect(0,0,c3.width,c3.height);
+
+    }
+
+    // 换一张 切换随机验证码
+    $('#user_reg>.reg_body>ul>.ver>.toHelp').on('click',function(){
+        clearNumber()
+        checkNumber() 
+    })
+
+
 //-----box1 底部按钮切换大图-----
 $('#main_body>.main_box_1>.box_bott_part li a').on('click',function(e){
         e.preventDefault();
@@ -96,6 +161,9 @@ $('#main_box_2>div:nth-child(2)>div:last-child>div>a').on('click',function(e){
         }
      })
   })
+
+
+
 
 })
 
