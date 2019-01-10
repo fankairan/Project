@@ -139,149 +139,151 @@
 				<div id='user_reg'>
 					<div class='reg_header'>
 						<span class='phone_reg act'>
-							<a href=""></a>
+							<a href="javascript:void(0)"></a>
 						</span>
 						<span class='email_reg'>
-							<a href=""></a>
+							<a href="javascript:void(0)"></a>
 						</span>
 						<span class='person_reg'>
-							<a href=""></a>
+							<a href="javascript:void(0)"></a>
 						</span>
 					</div>
 			  <!--  注册主体   -->
 						<!-- 手机号注册 -->
-					<div class='reg_body' id="phone_reg">
-						<ul class='fl'>
-							<li class='err'>
-								<p id='error' style='display:none;'></p>
-							</li>
-							<li>
-								<label for="phone">手机号码：</label>
-								<input type="tel" name='phone' id='phone' autocomplete='off' placeholder='真实有效手机号码'  onblur='verPhone()'>
-							</li>
-							<li>
-								<label for="email">设置密码：</label>
-								<input type="email" name='email' id='email' placeholder='4-16位与账号不同' onblur='verUpwd'>
-							</li>
-							<li>
-								<label for="user_name">真实姓名：</label>
-								<input type="text" name='user_name' id='user_name' placeholder='通行证归属凭证'>
-							</li>
-							<li>
-								<label for="id_card">身份证号：</label>
-								<input type="text" name='id_card' id='id_card' placeholder='通行证归属凭证'>
-							</li>
-							<li>
-								<label for="ver_code">验证码：</label>
-								<input type="text" id='ver_code'>
-							</li>
-							<li class='ver'>
-								 <canvas id='c3' width='113' height='28'></canvas>
-								<a href="javascript:void(0);" class='toHelp'>换一张</a>
-							</li>
-							<li class='agreement'>
-								<p>
-									<input type="checkbox" id='phoneAgreement' checked>
-									我已阅读并同意&nbsp
-									<a href=""  class='toHelp'>畅游用户协议</a>
-								</p>
-							</li>
-							<li>
-								<a href="#" class='submit'>
-									<input type="button">
-								</a>
-							</li>
-						</ul>
+					<div class="reg_box">
+						<div class='reg_body' id="phone_reg">
+							<ul class='fl'>
+								<li class='err'>
+									<p id='error' style='display:none;'></p>
+								</li>
+								<li>
+									<label for="phone">手机号码：</label>
+									<input type="tel" name='phone' id='phone' autocomplete='off' placeholder='真实有效手机号码'  onblur='verPhone()'>
+								</li>
+								<li>
+									<label for="email">设置密码：</label>
+									<input type="email" name='email' id='email' placeholder='4-16位与账号不同' onblur='verUpwd'>
+								</li>
+								<li>
+									<label for="user_name">真实姓名：</label>
+									<input type="text" name='user_name' id='user_name' placeholder='通行证归属凭证'>
+								</li>
+								<li>
+									<label for="id_card">身份证号：</label>
+									<input type="text" name='id_card' id='id_card' placeholder='通行证归属凭证'>
+								</li>
+								<li>
+									<label for="ver_code">验证码：</label>
+									<input type="text" id='ver_code'>
+								</li>
+								<li class='ver'>
+									 <canvas id='c3' width='113' height='28'></canvas>
+									<a href="javascript:void(0);" class='toHelp'>换一张</a>
+								</li>
+								<li class='agreement'>
+									<p>
+										<input type="checkbox" id='phoneAgreement' checked>
+										我已阅读并同意&nbsp
+										<a href=""  class='toHelp'>畅游用户协议</a>
+									</p>
+								</li>
+								<li>
+									<a href="#" class='submit'>
+										<input type="button">
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- 邮箱注册 -->
+						<div class='reg_body none' id="email_reg">
+							<ul class='fl'>
+								<li class='err'>
+									<p id='error' style='display:none;'></p>
+								</li>
+								<li>
+									<label for="phone">邮箱：</label>
+									<input type="tel" name='phone' id='phone' autocomplete='off' placeholder='真实有效手机号码'  onblur='verPhone()'>
+								</li>
+								<li>
+									<label for="email">设置密码：</label>
+									<input type="email" name='email' id='email' placeholder='4-16位与账号不同' onblur='verUpwd'>
+								</li>
+								<li>
+									<label for="user_name">真实姓名：</label>
+									<input type="text" name='user_name' id='user_name' placeholder='通行证归属凭证'>
+								</li>
+								<li>
+									<label for="id_card">身份证号：</label>
+									<input type="text" name='id_card' id='id_card' placeholder='通行证归属凭证'>
+								</li>
+								<li>
+									<label for="ver_code">验证码：</label>
+									<input type="text" id='ver_code'>
+								</li>
+								<li class='ver'>
+									 <canvas id='c3' width='113' height='28'></canvas>
+									<a href="javascript:void(0);" class='toHelp'>换一张</a>
+								</li>
+								<li class='agreement'>
+									<p>
+										<input type="checkbox" id='phoneAgreement' checked>
+										我已阅读并同意&nbsp
+										<a href=""  class='toHelp'>畅游用户协议</a>
+									</p>
+								</li>
+								<li>
+									<a href="#" class='submit'>
+										<input type="button">
+									</a>
+								</li>
+							</ul>
+						</div>
+							<!-- 个性注册 -->
+						<div class='reg_body none' id="person_reg">
+							<ul class='fl'>
+								<li class='err'>
+									<p id='error' style='display:none;'></p>
+								</li>
+								<li>
+									<label for="phone">用户名：</label>
+									<input type="tel" name='phone' id='phone' autocomplete='off' placeholder='真实有效手机号码'  onblur='verPhone()'>
+								</li>
+								<li>
+									<label for="email">设置密码：</label>
+									<input type="email" name='email' id='email' placeholder='4-16位与账号不同' onblur='verUpwd'>
+								</li>
+								<li>
+									<label for="user_name">真实姓名：</label>
+									<input type="text" name='user_name' id='user_name' placeholder='通行证归属凭证'>
+								</li>
+								<li>
+									<label for="id_card">身份证号：</label>
+									<input type="text" name='id_card' id='id_card' placeholder='通行证归属凭证'>
+								</li>
+								<li>
+									<label for="ver_code">验证码：</label>
+									<input type="text" id='ver_code'>
+								</li>
+								<li class='ver'>
+									 <canvas id='c3' width='113' height='28'></canvas>
+									<a href="javascript:void(0);" class='toHelp'>换一张</a>
+								</li>
+								<li class='agreement'>
+									<p>
+										<input type="checkbox" id='phoneAgreement' checked>
+										我已阅读并同意&nbsp
+										<a href=""  class='toHelp'>畅游用户协议</a>
+									</p>
+								</li>
+								<li>
+									<a href="#" class='submit'>
+										<input type="button">
+									</a>
+								</li>
+							</ul>
+						</div>
+	
 					</div>
-					<!-- 邮箱注册 -->
-					<div class='reg_body none' id="email_reg">
-						<ul class='fl'>
-							<li class='err'>
-								<p id='error' style='display:none;'></p>
-							</li>
-							<li>
-								<label for="phone">手机号码：</label>
-								<input type="tel" name='phone' id='phone' autocomplete='off' placeholder='真实有效手机号码'  onblur='verPhone()'>
-							</li>
-							<li>
-								<label for="email">设置密码：</label>
-								<input type="email" name='email' id='email' placeholder='4-16位与账号不同' onblur='verUpwd'>
-							</li>
-							<li>
-								<label for="user_name">真实姓名：</label>
-								<input type="text" name='user_name' id='user_name' placeholder='通行证归属凭证'>
-							</li>
-							<li>
-								<label for="id_card">身份证号：</label>
-								<input type="text" name='id_card' id='id_card' placeholder='通行证归属凭证'>
-							</li>
-							<li>
-								<label for="ver_code">验证码：</label>
-								<input type="text" id='ver_code'>
-							</li>
-							<li class='ver'>
-								 <canvas id='c3' width='113' height='28'></canvas>
-								<a href="javascript:void(0);" class='toHelp'>换一张</a>
-							</li>
-							<li class='agreement'>
-								<p>
-									<input type="checkbox" id='phoneAgreement' checked>
-									我已阅读并同意&nbsp
-									<a href=""  class='toHelp'>畅游用户协议</a>
-								</p>
-							</li>
-							<li>
-								<a href="#" class='submit'>
-									<input type="button">
-								</a>
-							</li>
-						</ul>
-					</div>
-						<!-- 个性注册 -->
-					<div class='reg_body none' id="person_reg">
-						<ul class='fl'>
-							<li class='err'>
-								<p id='error' style='display:none;'></p>
-							</li>
-							<li>
-								<label for="phone">手机号码：</label>
-								<input type="tel" name='phone' id='phone' autocomplete='off' placeholder='真实有效手机号码'  onblur='verPhone()'>
-							</li>
-							<li>
-								<label for="email">设置密码：</label>
-								<input type="email" name='email' id='email' placeholder='4-16位与账号不同' onblur='verUpwd'>
-							</li>
-							<li>
-								<label for="user_name">真实姓名：</label>
-								<input type="text" name='user_name' id='user_name' placeholder='通行证归属凭证'>
-							</li>
-							<li>
-								<label for="id_card">身份证号：</label>
-								<input type="text" name='id_card' id='id_card' placeholder='通行证归属凭证'>
-							</li>
-							<li>
-								<label for="ver_code">验证码：</label>
-								<input type="text" id='ver_code'>
-							</li>
-							<li class='ver'>
-								 <canvas id='c3' width='113' height='28'></canvas>
-								<a href="javascript:void(0);" class='toHelp'>换一张</a>
-							</li>
-							<li class='agreement'>
-								<p>
-									<input type="checkbox" id='phoneAgreement' checked>
-									我已阅读并同意&nbsp
-									<a href=""  class='toHelp'>畅游用户协议</a>
-								</p>
-							</li>
-							<li>
-								<a href="#" class='submit'>
-									<input type="button">
-								</a>
-							</li>
-						</ul>
-					</div>
-
 				</div>
 				
 			 <!--  主体盒子 2  -->

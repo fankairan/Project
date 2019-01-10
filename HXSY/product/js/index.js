@@ -59,10 +59,26 @@ $(function(){
     }
 
     // 换一张 切换随机验证码
-    $('#user_reg>.reg_body>ul>.ver>.toHelp').on('click',function(){
+    $('#user_reg>.reg_box>.reg_body>ul>.ver>.toHelp').on('click',function(){
         clearNumber()
         checkNumber() 
     })
+
+
+
+//切换注册方式
+    $('#user_reg>.reg_header a').on('click',function(e){
+        e.preventDefault();
+        var $a=$(this);
+        var $as=$('#user_reg>.reg_header a');
+        var i=parseInt($as.index($a)+1);
+        $(`#user_reg>.reg_header>span:nth-child(${i})`).addClass('act').siblings().removeClass('act');
+
+        //切换注册方式
+        $(`#user_reg>.reg_box>div:nth-child(${i})`).removeClass('none').siblings().addClass('none');
+
+    })
+
 
 
 //-----box1 底部按钮切换大图-----
