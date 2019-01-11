@@ -5,32 +5,52 @@ page{
   
 }
 
+/* 背景图 */
+.bgi{
+  width:100%;
+  position: absolute;
+  z-index: -1;
+}
+
 /* 2:登录框 */
 .reg-box{
-  background-color: #fff;
-  width: 85%;
-  margin: 50rpx auto;
-  border-radius: 30rpx;
-  box-shadow: 0px 0px 3px 2px #ccc;
+  width: 60%;
+  margin: 0 auto;
   overflow: hidden;
 }
 
 /* 3:登录框 头部*/
 .reg-box .reg-title{
-  margin: 20rpx 0;
+  margin: 50rpx 0;
   text-align: center;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 600;
   color: #502C1F;
 }
 
 /* 3:登录框 主体*/
 .reg-box .reg-put{
-  width: 65%;
-  margin: 0 auto;
+  width: 100%;
 }
 
 /* 4:登录框 输入框*/
-.reg-put .reg-put{
-  border-bottom: 1px solid #628155;
+.text,.password{
+  margin-bottom: 25rpx;
+  border-radius: 30rpx;
+  background-color: rgba(255,255,255, 0.8); 
+  font-size: 12px;
+  color:#666;
+  padding: 5rpx 20rpx;
+}
+
+/* 5:登录按钮*/
+.submit{
+  font-size: 20px;
+  font-weight: 700;
+  width: 40%;
+  height: 60rpx;
+  /* background-color: #f10215; */
+  color: #fff;
+  border-radius:10rpx 60rpx 10rpx 60rpx;
+  line-height: 60rpx;
 }
