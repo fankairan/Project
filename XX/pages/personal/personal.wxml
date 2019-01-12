@@ -2,9 +2,10 @@
 <view>
   <!-- 1:头像 -->
   <view class="avatar">
-    <view class="avatar-box" bindtap='handleJump'>
-      <image src=""></image>
-      <text>点击登录</text>
+    <view class="avatar-box">
+      <image wx:if="{{data.isLogin}}" src="{{data.img_url}}" mode="aspectFill"></image>
+      <text wx:if="{{!data.isLogin}}" bindtap='handleJump'>请登录</text>
+      <text wx:if="{{data.isLogin}}">退出</text>
     </view>
     
   </view>

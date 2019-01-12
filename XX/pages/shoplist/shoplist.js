@@ -1,6 +1,43 @@
 // pages/shoplist/shoplist.js
 Page({
-  
+
+
+  //获取商品数量
+  getCount:function(e){
+      var count=e.detail.value;
+      this.setData({
+            count:count
+      })
+     
+  },
+
+  //添加购物车功能
+  handleAdd:function(e){
+    var lid=e.target.dataset.id;
+    var count=this.data.count;
+    console.log(count)
+    //发送添加购物车请求
+      wx.request({
+        url: 'http://127.0.0.1:3000/add?',
+        data:{lid:lid,count:count},
+        success:(result)=>{
+          console.log(result);
+         
+            if(result.data.code!=200){
+              this.showErrorToastUtils(result.data.msg);
+            }else{
+              wx.showToast({
+                title: result.data.msg, //这里成功
+                icon: 'success',
+                duration: 1500
+              });
+            }
+
+        }
+
+      })
+  },
+
   //跳转商品详情页
   handleJump: function (e) {
     var id = e.target.dataset.id;
@@ -47,6 +84,22 @@ Page({
       })
     //4:上拉触顶加载下一页 
   },
+
+  showErrorToastUtils: function (msg) {
+    wx.showModal({
+      title: '提示！',
+      confirmText: '朕知道了',
+      showCancel: false,
+      content: msg,
+      success: function (res) {
+        if (res.confirm) {
+              wx.navigateTo({
+                url: '/pages/reg/reg',
+              })
+        }
+      }
+    })
+  },
   /**
    * 页面的初始数据
    */
@@ -54,7 +107,8 @@ Page({
     pid:0,
     list: [],     //当前页内容
     pageIndex: 0, //页码
-    pageSize: 6   //页大小
+    pageSize: 6,   //页大小
+    count:  1   //商品数量
   },
 
   /**
@@ -78,7 +132,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+      console.log(this.data);
   },
 
   /**

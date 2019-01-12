@@ -13,10 +13,10 @@
         <view class="shop-box">
             <view class="shop-count">
               <button>-</button>
-              <input placeholder='1'></input>
+              <input type="number" placeholder='1' bindinput='getCount'></input>
               <button>+</button>
             </view>
-            <view class="add-cart">加入购物车</view>
+            <view class="add-cart" bindtap='handleAdd' data-id="{{item.id}}">加入购物车</view>
         </view>
       </view>
     </view>
