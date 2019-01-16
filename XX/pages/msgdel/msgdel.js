@@ -4,7 +4,7 @@ Page({
   getMsg:function(){
     var id=this.data.id;
       wx.request({
-        url: 'http://127.0.0.1:3000/getMsgDel?',
+        url: 'http://127.0.0.1:3000/product/getMsgDel?',
         data:{id},
         success:(result)=>{
           result.data.msg[0].ctime = result.data.msg[0].ctime.split('T')[0];

@@ -74,7 +74,7 @@ Page({
       var isrightful = that.checkInput();
       if (isrightful) {
         wx.request({
-          url: 'http://127.0.0.1:3000/login',
+          url: 'http://127.0.0.1:3000/user/login',
           header: {
             "Content-Type": "application/x-www-form-urlencoded"
           },

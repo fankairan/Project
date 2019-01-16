@@ -6,7 +6,7 @@ Page({
     var id=this.data.id;
     console.log(id);
     wx.request({
-      url: 'http://127.0.0.1:3000/getDetails',
+      url: 'http://127.0.0.1:3000/product/getDetails',
       data:{id:id},
       success:(result)=>{
         this.setData({

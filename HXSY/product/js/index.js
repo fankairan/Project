@@ -3,7 +3,8 @@ $(function(){
 
 //   canvas绘图 获取随机验证码
   function checkNumber(){
-        var c3=document.getElementById('c3');
+      console.log(111);
+        var c3=document.getElementsByClassName('c3')[0];
         var ctx=c3.getContext('2d');
 
         ctx.fillStyle=rc(150,230);
@@ -52,7 +53,7 @@ $(function(){
 
     // 清楚画布方法
     function clearNumber(){
-        var c3=document.getElementById('c3');
+        var c3=document.getElementsByClassName('c3')[0];
         var ctx=c3.getContext('2d');
         ctx.clearRect(0,0,c3.width,c3.height);
 
@@ -61,13 +62,15 @@ $(function(){
     // 换一张 切换随机验证码
     $('#user_reg>.reg_box>.reg_body>ul>.ver>.toHelp').on('click',function(){
         clearNumber()
-        checkNumber() 
+        checkNumber()
     })
 
 
 
 //切换注册方式
     $('#user_reg>.reg_header a').on('click',function(e){
+        clearNumber()
+        checkNumber() 
         e.preventDefault();
         var $a=$(this);
         var $as=$('#user_reg>.reg_header a');
@@ -117,7 +120,7 @@ $jBtns.on('mouseover',function(e){
         $a.parent().addClass('pro_style')
           .siblings().removeClass('pro_style');
            //--------------切换职业大图--------------
-        $(`#main_box_2>div:nth-child(2)      >div:last-child>div:nth-child(${i})`)
+        $(`#main_box_2>div:nth-child(2)>div:last-child>div:nth-child(${i})`)
         .removeClass('hidden').siblings().addClass('hidden');
     }
 

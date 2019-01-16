@@ -27,7 +27,7 @@ Page({
     var ps=this.data.pageSize;
     //3:创建ajax请求
     wx.request({
-      url: 'http://127.0.0.1:3000/getMessage',
+      url: 'http://127.0.0.1:3000/product/getMessage',
       data:{pno:pno,pageSize:ps},
       success:(res)=>{
         console.log(res);

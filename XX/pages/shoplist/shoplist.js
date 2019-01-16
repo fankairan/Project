@@ -18,7 +18,7 @@ Page({
     console.log(count)
     //发送添加购物车请求
       wx.request({
-        url: 'http://127.0.0.1:3000/add?',
+        url: 'http://127.0.0.1:3000/cart/add?',
         data:{lid:lid,count:count},
         success:(result)=>{
           console.log(result);
@@ -58,7 +58,7 @@ Page({
       var ps = this.data.pageSize;
       //2:发送ajax请求
       wx.request({
-        url: 'http://127.0.0.1:3000/getList?',
+        url: 'http://127.0.0.1:3000/product/getList?',
         data: {pid:pid, pno:pno,pageSize:ps},
         success: (result) => {
           //console.log(result.data.data);
