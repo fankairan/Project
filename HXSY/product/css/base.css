@@ -66,11 +66,16 @@ h1,h2,h3,h4,h5,h6 {
   width:980px;
   height:50px;
   margin:0 auto;
+  position: relative;
 }
 
 /* -------- 公共样式 -------- */
 .block{
     display: block;
+}
+
+.inline{
+    display: inline-block;
 }
 
 .none{
@@ -85,6 +90,27 @@ h1,h2,h3,h4,h5,h6 {
 .hide{
     opacity: 0; 
 
+}
+
+/* 顶部logo动画样式 */
+#ldj{
+    position: absolute;
+    transition: 1s all;
+}
+
+.fin{
+    top: -20px;
+    left: 30px;
+    opacity: 0;
+    z-index: -5;
+
+}
+
+.sta{
+    top: 0px;
+    left: 30px;
+    opacity: 1;
+    z-index: 5;
 }
 /* ------ 视频框样式 ------ */
 .v_style{
@@ -157,7 +183,6 @@ div.act_play{
  height: 55px;
  background: url(../img/sprites/nav_bg.png) no-repeat top center;
 }
-
 
 /*头部---logo部分*/
 .top_logo {

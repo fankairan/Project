@@ -1,6 +1,22 @@
 
 $(function(){ 
 
+//顶部logo动画
+ $("#head>.cytop>a>#ld_logo").on('mouseenter',function(){
+     var $img=$(this);
+     $img.addClass('none');
+     console.log(111);
+     $("#head>#ldj").removeClass('fin').addClass('sta');
+
+ })
+
+ $("#head>#ldj").on('mouseleave',function(){
+    $("#head>.cytop>a>#ld_logo").removeClass('none');
+
+    $("#head>#ldj").removeClass('sta').addClass('fin');
+    
+})
+
 //   canvas绘图 获取随机验证码
   function checkNumber(){
       console.log(111);
@@ -60,7 +76,7 @@ $(function(){
     }
 
     // 换一张 切换随机验证码
-    $('#user_reg>.reg_box>.reg_body>ul>.ver>.toHelp').on('click',function(){
+    $('#user_reg>.reg_box>.reg_body ul>.ver>.toHelp').on('click',function(){
         clearNumber()
         checkNumber()
     })
@@ -182,6 +198,113 @@ $('#main_box_2>div:nth-child(2)>div:last-child>div>a').on('click',function(e){
   })
 
 
+   //注册表单验证模块
+
+
+   //为表单的必填文本框添加提示信息（选择form中的所有后代input元素）
+  
+    //为表单元素添加失去焦点事件
+    $("#phone_reg :input").blur(function(){
+        var $parent = $(this).parent();
+        //验证手机注册
+        if($(this).is("#phone")){
+            console.log(111);
+            var phoneVal = $.trim(this.value); //原生js去空格方式：this.replace(/(^\s*)|(\s*$)/g, "")
+            // var regName = /[~#^$@%&!*()<>:;'"{}【】  ]/;
+            var regPhone=/^1[34578]\d{9}$/;
+            if(phoneVal==""){
+                $('#phone_reg .err>.error').removeClass('none').addClass('inline').text('请填写手机号');
+                $('#phone_reg #phone').addClass('error');
+            }else if(!regPhone.test(phoneVal)){
+                $('#phone_reg .err>.error').removeClass('none').addClass('inline').text('手机号格式不正确');
+                $('#phone_reg #phone').addClass('error');
+                //class='msg onError' 中间的空格是层叠样式的格式
+            }else{
+                $.ajax({
+                    type:'get',
+                    url:'http://127.0.0.1:3000/user/verPhone',
+                    data:{phoneVal:phoneVal},
+                    success:function(res){
+                        if(res.code==0){
+                            $('#phone_reg .err>.error').removeClass('none').addClass('inline').text(res.msg);
+
+                        }else{
+                            $('#phone_reg .err>.error').removeClass('inline').addClass('none').text("");
+                            $('#phone_reg #phone').removeClass('error');
+                        }
+                    }
+                })
+            }
+        }
+        //验证密码
+        if($(this).is("#upwd")){
+            var upwdVal = $.trim(this.value);
+            var regUpwd = /^[a-zA-Z0-9]{4,16}$/;
+            if(upwdVal==""){
+                $('.reg_body .err>.error').removeClass('none').addClass('inline').text('请设置密码');
+                $('.reg_body #upwd').addClass('error');
+            }else if(!regUpwd.test(upwdVal)){
+                $('.reg_body .err>.error').removeClass('none').addClass('inline').text('密码格式不正确');
+                $('.reg_body #upwd').addClass('error');
+            }else if(upwdVal==phoneVal){
+                $('.reg_body .err>.error').removeClass('none').addClass('inline').text('密码不能与账号相同');
+                $('.reg_body #upwd').addClass('error');
+            }
+            else{
+                $('.reg_body .err>.error').removeClass('inline').addClass('none').text('');
+                $('.reg_body #upwd').removeClass('error');
+            }
+        }
+
+        //验证姓名
+        if($(this).is("#user_name")){
+            var unameVal=$.trim(this.value);
+            var regUname=/^[\u4E00-\u9FA5\uf900-\ufa2d·s]{2,20}$/;
+            if(unameVal==""){
+                $('.reg_body .err>.error').removeClass('none').addClass('inline').text('请输入姓名');
+                $('.reg_body #user_name').addClass('error');
+            }else if(!regUname.test(unameVal)){
+                $('.reg_body .err>.error').removeClass('none').addClass('inline').text('请填写真实姓名');
+                $('.reg_body #user_name').addClass('error');
+            }else{
+                $('.reg_body .err>.error').removeClass('inline').addClass('none').text('');
+                $('.reg_body #user_name').removeClass('error');
+            }
+        }
+
+        //验证身份证
+        if($(this).is("#id_card")){
+            var cardVal=$.trim(this.value);
+            var regCard=/^[1-9]\d{7}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}$|^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}([0-9]|X)$/;
+            if(cardVal==""){
+                $('.reg_body .err>.error').removeClass('none').addClass('inline').text('请输入身份证');
+                $('.reg_body #id_card').addClass('error');
+            }else if(!regCard.test(cardVal)){
+                $('.reg_body .err>.error').removeClass('none').addClass('inline').text('身份证格式不正确');
+                $('.reg_body #id_card').addClass('error');
+            }else{
+                $('.reg_body .err>.error').removeClass('inline').addClass('none').text('');
+                $('.reg_body #id_card').removeClass('error');
+            }
+        }
+        
+
+        //验证验证码
+        if($(this).is("#ver_code")){
+            var codeVal=$.trim(this.value);
+            var regCode=/^[a-zA-Z0-9]{4}$/
+            if(codeVal==""){
+                $('.reg_body .err>.error').removeClass('none').addClass('inline').text('请输入验证码');
+                $('.reg_body #var_code').addClass('error');
+            }else if(!regCode.test(codeVal)){
+                $('.reg_body .err>.error').removeClass('none').addClass('inline').text('验证码格式不正确');
+                $('.reg_body #var_code').addClass('error');
+            }else{
+                $('.reg_body .err>.error').removeClass('inline').addClass('none').text('');
+                $('.reg_body #ver_code').removeClass('error');
+            }
+        }
+    });
 
 
 })

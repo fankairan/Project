@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>index.html</title>
+	<title>《幻想神域》官方网站-“魔界的反动”震撼开启中</title>
 	  <link rel="shortcut icon" href="favicon.ico">
      <!--  normalize 里面css 初始化  针对浏览器 -->
      <link rel="stylesheet" href="css/normalize.css">
@@ -16,27 +16,27 @@
 <!--  顶部导航栏    -->
      <div id='cyou_top'>
           <header id='head'>
+							 <img src="img/logo/cytop_a2.png" id="ldj" class="fin">
                <div class='top_logo fl'>
-                    <a href="#"></a>
+                    <a href="javascript:void(0);"></a>
                </div>
                <div class='cytop fl'>
-					<a href="">
-						<img src="img/logo/cytop_a1.jpg">
-						<img src="">
-					</a>
-			   </div>
+									<a href="javascript:void(0);">
+										<img src="img/logo/cytop_a2.jpg" id="ld_logo" class="show">
+									</a>
+						   </div>
                <ul class='h_nav fr'>
                     <li class='h_nav_ser' id='h_nav_ser_reg'>
 										     <span class='h_nav_ser_reg_icon'></span>
-                         <a href="#">注册</a>
+                         <a href="javascript:void(0);">注册</a>
                     </li>
                     <li class='h_nav_ser' id='h_nav_ser_rech'>
 										     <span class='h_nav_ser_rech_icon'></span>
-                         <a href="#">充值</a>
+                         <a href="javascript:void(0);">充值</a>
                     </li>
                     <li class='h_nav_ser' id='h_nav_ser_jia'>
 												 <span class='h_nav_ser_jia_icon'></span>
-                         <a href="#">畅游+</a>
+                         <a href="javascript:void(0);">畅游+</a>
                     </li>
                     <li class='h_nav_ser_tips' id='h_nav_ser_gm'>
                          <div class='h_nav_ser_tips_gm'>
@@ -65,9 +65,8 @@
 		 <div id='header_middle'>
 				<h1 class='activtiy'></h1>
 				<div class='game_logo'>
-					<a href="#" title='幻想神域官方网站'></a>
+					<a href="http://127.0.0.1:3000/main.html" title='幻想神域官方网站'></a>
 				</div>	
-				
 				<div class='main_link'>
 					<a href="http://127.0.0.1:3000/main.html" title='进入官网'></a>
 				</div>
@@ -134,7 +133,7 @@
 					</div>
 				</div>
             <!--  game 下载链接  -->
-				<a href="" class='down_butn'></a>
+				<a href="javascript:void(0);" class='down_butn'></a>
            <!--  账户注册  -->
 				<div id='user_reg'>
 					<div class='reg_header'>
@@ -151,136 +150,143 @@
 			  <!--  注册主体   -->
 						<!-- 手机号注册 -->
 					<div class="reg_box">
-						<div class='reg_body' id="phone_reg">
-							<ul class='fl'>
-								<li class='err'>
-									<p id='error' style='display:none;'></p>
-								</li>
-								<li>
-									<label for="phone">手机号码：</label>
-									<input type="tel" name='phone' id='phone' autocomplete='off' placeholder='真实有效手机号码'  onblur='verPhone()'>
-								</li>
-								<li>
-									<label for="email">设置密码：</label>
-									<input type="email" name='email' id='email' placeholder='4-16位与账号不同' onblur='verUpwd'>
-								</li>
-								<li>
-									<label for="user_name">真实姓名：</label>
-									<input type="text" name='user_name' id='user_name' placeholder='通行证归属凭证'>
-								</li>
-								<li>
-									<label for="id_card">身份证号：</label>
-									<input type="text" name='id_card' id='id_card' placeholder='通行证归属凭证'>
-								</li>
-								<li>
-									<label for="ver_code">验证码：</label>
-									<input type="text" id='ver_code'>
-								</li>
-								<li class='ver'>
-									 <canvas class='c3' width='113' height='28'></canvas>
-									<a href="javascript:void(0);" class='toHelp'>换一张</a>
-								</li>
-								<li class='agreement'>
-									<p>
-										<input type="checkbox" id='phoneAgreement' checked>
-										我已阅读并同意&nbsp
-										<a href=""  class='toHelp'>畅游用户协议</a>
-									</p>
-								</li>
-								<li>
-									<a href="#" class='submit'>
-										<input type="button">
-									</a>
-								</li>
-							</ul>
+						<div class='reg_body'>	
+							<form  id="phone_reg">
+									<ul class='fl'>
+										<li class='err'>
+											<p class='error none'></p>
+										</li>
+										<li>
+											<label for="phone">手机号码：</label>
+											<input type="tel" name='phone' id='phone' autocomplete='off' placeholder='真实有效手机号码'>
+										</li>
+										<li>
+											<label for="upwd">设置密码：</label>
+											<input type="possword" name='upwd' id='upwd' placeholder='4-16位与账号不同'>
+										</li>
+										<li>
+											<label for="user_name">真实姓名：</label>
+											<input type="text" name='user_name' id='user_name' placeholder='通行证归属凭证'>
+										</li>
+										<li>
+											<label for="id_card">身份证号：</label>
+											<input type="text" name='id_card' id='id_card' placeholder='通行证归属凭证'>
+										</li>
+										<li>
+											<label for="ver_code">验证码：</label>
+											<input type="text" id='ver_code'>
+										</li>
+										<li class='ver'>
+												<canvas class='c3' width='113' height='28'></canvas>
+											<a href="javascript:void(0);" class='toHelp'>换一张</a>
+										</li>
+										<li class='agreement'>
+											<p>
+												<input type="checkbox" id='phoneAgreement' checked>
+												我已阅读并同意&nbsp
+												<a href=""  class='toHelp'>畅游用户协议</a>
+											</p>
+										</li>
+										<li>
+											<a href="#" class='submit'>
+												<input type="button">
+											</a>
+										</li>
+									</ul>
+							</form>
 						</div>
 						<!-- 邮箱注册 -->
 						<div class='reg_body none' id="email_reg">
-							<ul class='fl'>
-								<li class='err'>
-									<p id='error' style='display:none;'></p>
-								</li>
-								<li>
-									<label for="phone">邮箱：</label>
-									<input type="tel" name='phone' id='phone' autocomplete='off' placeholder='真实有效手机号码'  onblur='verPhone()'>
-								</li>
-								<li>
-									<label for="email">设置密码：</label>
-									<input type="email" name='email' id='email' placeholder='4-16位与账号不同' onblur='verUpwd'>
-								</li>
-								<li>
-									<label for="user_name">真实姓名：</label>
-									<input type="text" name='user_name' id='user_name' placeholder='通行证归属凭证'>
-								</li>
-								<li>
-									<label for="id_card">身份证号：</label>
-									<input type="text" name='id_card' id='id_card' placeholder='通行证归属凭证'>
-								</li>
-								<li>
-									<label for="ver_code">验证码：</label>
-									<input type="text" id='ver_code'>
-								</li>
-								<li class='ver'>
-									 <canvas class='c3' width='113' height='28'></canvas>
-									<a href="javascript:void(0);" class='toHelp'>换一张</a>
-								</li>
-								<li class='agreement'>
-									<p>
-										<input type="checkbox" id='phoneAgreement' checked>
-										我已阅读并同意&nbsp
-										<a href=""  class='toHelp'>畅游用户协议</a>
-									</p>
-								</li>
-								<li>
-									<a href="#" class='submit'>
-										<input type="button">
-									</a>
-								</li>
-							</ul>
+							<form>
+									<ul class='fl'>
+											<li class='err'>
+												<p class='error none'></p>
+											</li>
+											<li>
+												<label for="phone">邮箱：</label>
+												<input type="tel" name='phone' id='phone' autocomplete='off' placeholder='真实有效手机号码'  onblur='verPhone()'>
+											</li>
+											<li>
+												<label for="email">设置密码：</label>
+												<input type="email" name='email' id='email' placeholder='4-16位与账号不同' onblur='verUpwd'>
+											</li>
+											<li>
+												<label for="user_name">真实姓名：</label>
+												<input type="text" name='user_name' id='user_name' placeholder='通行证归属凭证'>
+											</li>
+											<li>
+												<label for="id_card">身份证号：</label>
+												<input type="text" name='id_card' id='id_card' placeholder='通行证归属凭证'>
+											</li>
+											<li>
+												<label for="ver_code">验证码：</label>
+												<input type="text" id='ver_code'>
+											</li>
+											<li class='ver'>
+												 <canvas class='c3' width='113' height='28'></canvas>
+												<a href="javascript:void(0);" class='toHelp'>换一张</a>
+											</li>
+											<li class='agreement'>
+												<p>
+													<input type="checkbox" id='phoneAgreement' checked>
+													我已阅读并同意&nbsp
+													<a href=""  class='toHelp'>畅游用户协议</a>
+												</p>
+											</li>
+											<li>
+												<a href="#" class='submit'>
+													<input type="button">
+												</a>
+											</li>
+										</ul>
+							</form>		
 						</div>
 							<!-- 个性注册 -->
 						<div class='reg_body none' id="person_reg">
-							<ul class='fl'>
-								<li class='err'>
-									<p id='error' style='display:none;'></p>
-								</li>
-								<li>
-									<label for="phone">用户名：</label>
-									<input type="tel" name='phone' id='phone' autocomplete='off' placeholder='真实有效手机号码'  onblur='verPhone()'>
-								</li>
-								<li>
-									<label for="email">设置密码：</label>
-									<input type="email" name='email' id='email' placeholder='4-16位与账号不同' onblur='verUpwd'>
-								</li>
-								<li>
-									<label for="user_name">真实姓名：</label>
-									<input type="text" name='user_name' id='user_name' placeholder='通行证归属凭证'>
-								</li>
-								<li>
-									<label for="id_card">身份证号：</label>
-									<input type="text" name='id_card' id='id_card' placeholder='通行证归属凭证'>
-								</li>
-								<li>
-									<label for="ver_code">验证码：</label>
-									<input type="text" id='ver_code'>
-								</li>
-								<li class='ver'>
-									 <canvas class='c3' width='113' height='28'></canvas>
-									<a href="javascript:void(0);" class='toHelp'>换一张</a>
-								</li>
-								<li class='agreement'>
-									<p>
-										<input type="checkbox" id='phoneAgreement' checked>
-										我已阅读并同意&nbsp
-										<a href=""  class='toHelp'>畅游用户协议</a>
-									</p>
-								</li>
-								<li>
-									<a href="#" class='submit'>
-										<input type="button">
-									</a>
-								</li>
-							</ul>
+								<form action="">
+										<ul class='fl'>
+											<li class='err'>
+												<p class='error none'></p>
+											</li>
+											<li>
+												<label for="phone">用户名：</label>
+												<input type="tel" name='phone' id='phone' autocomplete='off' placeholder='真实有效手机号码'  onblur='verPhone()'>
+											</li>
+											<li>
+												<label for="email">设置密码：</label>
+												<input type="email" name='email' id='email' placeholder='4-16位与账号不同' onblur='verUpwd'>
+											</li>
+											<li>
+												<label for="user_name">真实姓名：</label>
+												<input type="text" name='user_name' id='user_name' placeholder='通行证归属凭证'>
+											</li>
+											<li>
+												<label for="id_card">身份证号：</label>
+												<input type="text" name='id_card' id='id_card' placeholder='通行证归属凭证'>
+											</li>
+											<li>
+												<label for="ver_code">验证码：</label>
+												<input type="text" id='ver_code'>
+											</li>
+											<li class='ver'>
+													<canvas class='c3' width='113' height='28'></canvas>
+												<a href="javascript:void(0);" class='toHelp'>换一张</a>
+											</li>
+											<li class='agreement'>
+												<p>
+													<input type="checkbox" id='phoneAgreement' checked>
+													我已阅读并同意&nbsp
+													<a href=""  class='toHelp'>畅游用户协议</a>
+												</p>
+											</li>
+											<li>
+												<a href="#" class='submit'>
+													<input type="button">
+												</a>
+											</li>
+										</ul>
+								</form>
+						
 						</div>
 	
 					</div>
@@ -292,16 +298,16 @@
 				 <div class="box_top_2">
 					 <ul>
 						 <li>
-							 <a href="#" title="15大职业" class='act'>15大职业</a>
+							 <a href="javascript:void(0);" title="15大职业" class='act'>15大职业</a>
 						 </li>
 						 <li>
-							 <a href="#" title="85金装之路">85金装之路</a>
+							 <a href="javascript:void(0);" title="85金装之路">85金装之路</a>
 						 </li>
 						 <li>
-							 <a href="#" title="四大副本">四大副本</a>
+							 <a href="javascript:void(0);" title="四大副本">四大副本</a>
 						 </li>
 						 <li>
-							 <a href="#" title="御姐の调教">御姐の调教</a>
+							 <a href="javascript:void(0);" title="御姐の调教">御姐の调教</a>
 						 </li>
 					 </ul>
 			     </div>
@@ -311,101 +317,101 @@
 						 <img src="img/icon/tab_new.png">
 						 <ul>
 							 <li class="new_pro pro_style">
-								 <a href="#" title="魔枪">魔枪</a>
+								 <a href="javascript:void(0);" title="魔枪">魔枪</a>
 							 </li>
 							 <li>
-								 <a href="#" title="手里剑">手里剑</a>
+								 <a href="javascript:void(0);" title="手里剑">手里剑</a>
 							 </li>
 							 <li>
-								 <a href="#" title="圣剑">圣剑</a>
+								 <a href="javascript:void(0);" title="圣剑">圣剑</a>
 							 </li>
 							 <li>
-								 <a href="#" title="镰刀">镰刀</a>
+								 <a href="javascript:void(0);" title="镰刀">镰刀</a>
 							 </li>
 							 <li>
-								 <a href="#" title="太刀">太刀</a>
+								 <a href="javascript:void(0);" title="太刀">太刀</a>
 							 </li>
 							 <li>
-								 <a href="#" title="双刀">双刀</a>
+								 <a href="javascript:void(0);" title="双刀">双刀</a>
 							 </li>
 							 <li>
-								 <a href="#" title="拳刃">拳刃</a>
+								 <a href="javascript:void(0);" title="拳刃">拳刃</a>
 							 </li>
 							 <li>
-								 <a href="#" title="剑盾">剑盾</a>
+								 <a href="javascript:void(0);" title="剑盾">剑盾</a>
 							 </li>
 							 <li>
-								 <a href="#" title="双手斧">双手斧</a>
+								 <a href="javascript:void(0);" title="双手斧">双手斧</a>
 							 </li>
 							 <li>
-								 <a href="#" title="法书">法书</a>
+								 <a href="javascript:void(0);" title="法书">法书</a>
 							 </li>
 							 <li>
-								 <a href="#" title="双枪">双枪</a>
+								 <a href="javascript:void(0);" title="双枪">双枪</a>
 							 </li>
 							 <li>
-								 <a href="#" title="双手杖">双手杖</a>
+								 <a href="javascript:void(0);" title="双手杖">双手杖</a>
 							 </li>
 							 <li>
-								 <a href="#" title="小竖琴">小竖琴</a>
+								 <a href="javascript:void(0);" title="小竖琴">小竖琴</a>
 							 </li>
 							 <li>
-								 <a href="#" title="火炮">火炮</a>
+								 <a href="javascript:void(0);" title="火炮">火炮</a>
 							 </li>
 							 <li>
-								 <a href="#" title="战弓">战弓</a>
+								 <a href="javascript:void(0);" title="战弓">战弓</a>
 							 </li>
 						 </ul>
 					 </div>
 
-					 <a href="##" class="btn_top hidden"></a>
-					 <a href="##" class="btn_bot"></a>
+					 <a href="javascript:void(0);" class="btn_top hidden"></a>
+					 <a href="javascript:void(0);" class="btn_bot"></a>
 
 					 <div class="box_body_r">
 						 <div>
-							 <a href='##' title="魔枪"><img src="img/pic/mq.jpg"></a>
+							 <a href='javascript:void(0);' title="魔枪"><img src="img/pic/mq.jpg"></a>
 						 </div>
 						 <div class="hidden">
-							 <a href="#" title="手里剑"><img src="img/pic/slj.jpg"></a>
+							 <a href="javascript:void(0);" title="手里剑"><img src="img/pic/slj.jpg"></a>
 						 </div>
 						 <div class="hidden">
-							 <a href="#" title="圣剑"><img src="img/pic/sj.jpg"></a>
+							 <a href="javascript:void(0);" title="圣剑"><img src="img/pic/sj.jpg"></a>
 						 </div>
 						 <div class="hidden">
-							 <a href="#" title="镰刀"><img src="img/pic/ld.jpg"></a>
+							 <a href="javascript:void(0);" title="镰刀"><img src="img/pic/ld.jpg"></a>
 						 </div>
 						 <div class="hidden">
-							 <a href="#" title="太刀"><img src="img/pic/td.jpg"></a>
+							 <a href="javascript:void(0);" title="太刀"><img src="img/pic/td.jpg"></a>
 						 </div>
 						 <div class="hidden">
-							 <a href="#" title="双刀"><img src="img/pic/sd.jpg"></a>
+							 <a href="javascript:void(0);" title="双刀"><img src="img/pic/sd.jpg"></a>
 						 </div>
 						 <div class="hidden">
-							 <a href="#" title="拳刃"><img src="img/pic/qr.jpg"></a>
+							 <a href="javascript:void(0);" title="拳刃"><img src="img/pic/qr.jpg"></a>
 						 </div>
 						 <div class="hidden">
-							 <a href="#" title="盾剑"><img src="img/pic/jd.jpg"></a>
+							 <a href="javascript:void(0);" title="盾剑"><img src="img/pic/jd.jpg"></a>
 						 </div>
 						 <div class="hidden">
-							 <a href="#" title="双手斧"><img src="img/pic/ssf.jpg"></a>
+							 <a href="javascript:void(0);" title="双手斧"><img src="img/pic/ssf.jpg"></a>
 						 </div>
 						 <div class="hidden">
-							 <a href="#" title="法书"><img src="img/pic/fs.jpg"></a>
+							 <a href="javascript:void(0);" title="法书"><img src="img/pic/fs.jpg"></a>
 						 </div>
 						 <div class="hidden">
-							 <a href="#" title="双枪"><img src="img/pic/sq.jpg"></a>
+							 <a href="javascript:void(0);" title="双枪"><img src="img/pic/sq.jpg"></a>
 						 </div>
 						 <div class="hidden">
-							 <a href="#" title="双手杖"><img src="img/pic/ssz.jpg"></a>
+							 <a href="javascript:void(0);" title="双手杖"><img src="img/pic/ssz.jpg"></a>
 						 </div>
 						 <div class="hidden">
-							 <a href="#" title="小竖琴"><img src="img/pic/xsq.jpg"></a>
+							 <a href="javascript:void(0);" title="小竖琴"><img src="img/pic/xsq.jpg"></a>
 						 </div>
 						 <div class="hidden">
-							 <a href="#" title="火炮"><img src="img/pic/hp.jpg"></a>
+							 <a href="javascript:void(0);" title="火炮"><img src="img/pic/hp.jpg"></a>
 						 </div>
 						 <div class="hidden">
-							 <a href="#" title="战弓"><img src="img/pic/zg.jpg"></a>
+							 <a href="javascript:void(0);" title="战弓"><img src="img/pic/zg.jpg"></a>
 						 </div>
 					 </div>
 				 </div>
@@ -427,22 +433,18 @@
 			<div  id='cover_up' class='none'></div>
 			 <!--主体 底部-->
 			 <div class="box_bottom">
-				 <a href="#" title="逆转的命运开放 85级解禁武器专精开启">
+				 <a href="javascript:void(0);" title="逆转的命运开放 85级解禁武器专精开启">
 					 <img src="img/cover/cover1_13.jpg">
 				 </a>
-				 <a href="#" title="炼金大作战 好运连连奖励不断">
+				 <a href="javascript:void(0);" title="炼金大作战 好运连连奖励不断">
 					 <img src="img/cover/cover1_14.jpg">
 				 </a>
-				 <a href="#" title="寻找最强校园执行官">
+				 <a href="javascript:void(0);" title="寻找最强校园执行官">
 					 <img src="img/cover/cover1_15.jpg">
 				 </a>
-				 <a href="#" title="源神图鉴 认识你的伙伴">
+				 <a href="javascript:void(0);" title="源神图鉴 认识你的伙伴">
 					 <img src="img/cover/cover1_20.jpg">
 				 </a>
-			 </div>
-
-			 <div class="">
-
 			 </div>
 		 </div>
 
@@ -462,18 +464,17 @@
 		    if(xhr.readyState==4 && xhr.status==200){
 			   var res=xhr.responseText
 			   if(res=='0'){
-				  
-				 $('phone').style.borderColor='#ef3737';
-				 $('error').style.display='inline-block';
-			     $('error').innerHTML='该手机号码已经被注册';
+						$('phone').style.borderColor='#ef3737';
+						$('error').style.display='inline-block';
+			      $('error').innerHTML='该手机号码已经被注册';
 			   }else if(res=='1'){
-				 $('phone').style.borderColor='#ccc';
-				 $('error').style.display='none';
+						$('phone').style.borderColor='#ccc';
+						$('error').style.display='none';
 			     chPhone=true;
 			   }else{
-				 $('phone').style.borderColor='#ef3737';
-				 $('error').style.display='inline-block';
-			     $('error').innerHTML=res;
+						$('phone').style.borderColor='#ef3737';
+						$('error').style.display='inline-block';
+				  	$('error').innerHTML=res;
 			   }
 			}
 		  }
@@ -493,32 +494,32 @@
 	<div class="cyou_footer">
 		<footer id="foot">
 			<div class="cyou_footer_l">
-				<a href="#"></a>
+				<a href="javascript:void(0);"></a>
 			</div>
 			<div class="cyou_footer_r">
 				<div>
-					<a href="#"></a>
+					<a href="javascript:void(0);"></a>
 				</div>		
 			</div>
 			<div class="cyou_footer_char">
 				<p>
 					<span>北京畅游时代数码技术有限公司版权所有</span>
 					<span> Copyright © 2011 ChangYou.com Limited. All rights reserved. </span>
-					<a href="#">法律声明</a>
+					<a href="javascript:void(0);">法律声明</a>
 					<span>|</span>
-					<a href="#">联系我们</a>
+					<a href="javascript:void(0);">联系我们</a>
 					<span>|</span>
-					<a href="#">家长监护</a>
+					<a href="javascript:void(0);">家长监护</a>
 				</p>
 				<p>
-					<a href="#" class='highlight'>京网文[2017]10786-1261号</a>
+					<a href="javascript:void(0);" class='highlight'>京网文[2017]10786-1261号</a>
 					<span> | 京ICP证：</span>
 					<span class='highlight'>070525</span>
 					<span> |  ISBN号：</span>
 					<span class='highlight'>978-7-89988-064-7</span>
 				</p>
 				<p>
-					<a href="#" class='highlight'>
+					<a href="javascript:void(0);" class='highlight'>
 						<img src="img/icon/ba.png">
 						京公网安备 11010702000007号
 					</a>
