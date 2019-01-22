@@ -466,6 +466,7 @@ body {
  height: 33px;
  margin: 0 auto;
  background: url(../img/sprites/qr_btn.gif) no-repeat 0px 0px;
+ cursor: pointer;
 }
 
 .submit:hover {
@@ -477,6 +478,7 @@ body {
  height: 33px;
  border: none;
  background: none;
+ cursor: pointer;
 }
 
 /*主体盒子--2*/

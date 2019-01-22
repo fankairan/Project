@@ -204,6 +204,12 @@ $('#main_box_2>div:nth-child(2)>div:last-child>div>a').on('click',function(e){
    //为表单的必填文本框添加提示信息（选择form中的所有后代input元素）
   
     //为表单元素添加失去焦点事件
+
+        var regPh=false;//验证手机号
+        var regUp=false;//验证密码
+        var regUn=false;//验证姓名
+        var regCa=false;//验证身份证
+        var regCo=false;//验证验证码
     $("#phone_reg :input").blur(function(){
         var $parent = $(this).parent();
         //验证手机注册
@@ -214,7 +220,7 @@ $('#main_box_2>div:nth-child(2)>div:last-child>div>a').on('click',function(e){
             var regPhone=/^1[34578]\d{9}$/;
             if(phoneVal==""){
                 $('#phone_reg .err>.error').removeClass('none').addClass('inline').text('请填写手机号');
-                $('#phone_reg #phone').addClass('error');
+                $('#phone_reg #phone').addClass('error');             
             }else if(!regPhone.test(phoneVal)){
                 $('#phone_reg .err>.error').removeClass('none').addClass('inline').text('手机号格式不正确');
                 $('#phone_reg #phone').addClass('error');
@@ -231,6 +237,7 @@ $('#main_box_2>div:nth-child(2)>div:last-child>div>a').on('click',function(e){
                         }else{
                             $('#phone_reg .err>.error').removeClass('inline').addClass('none').text("");
                             $('#phone_reg #phone').removeClass('error');
+                            regPh=true;
                         }
                     }
                 })
@@ -253,6 +260,7 @@ $('#main_box_2>div:nth-child(2)>div:last-child>div>a').on('click',function(e){
             else{
                 $('.reg_body .err>.error').removeClass('inline').addClass('none').text('');
                 $('.reg_body #upwd').removeClass('error');
+                regUp=true;
             }
         }
 
@@ -269,6 +277,7 @@ $('#main_box_2>div:nth-child(2)>div:last-child>div>a').on('click',function(e){
             }else{
                 $('.reg_body .err>.error').removeClass('inline').addClass('none').text('');
                 $('.reg_body #user_name').removeClass('error');
+                regUn=true;
             }
         }
 
@@ -285,6 +294,7 @@ $('#main_box_2>div:nth-child(2)>div:last-child>div>a').on('click',function(e){
             }else{
                 $('.reg_body .err>.error').removeClass('inline').addClass('none').text('');
                 $('.reg_body #id_card').removeClass('error');
+                regCa=true;
             }
         }
         
@@ -302,10 +312,49 @@ $('#main_box_2>div:nth-child(2)>div:last-child>div>a').on('click',function(e){
             }else{
                 $('.reg_body .err>.error').removeClass('inline').addClass('none').text('');
                 $('.reg_body #ver_code').removeClass('error');
+                regCo=true;
             }
         }
     });
 
+    //复选框 同意条款
+    $('#phoneAgreement:checkbox').on('click',function(){
+        console.log(21);
+        var $ch=$(this);
+        $('.submit>input').prop('disabled',!($ch.prop('checked')));
+
+    })
+
+
+  
+    //注册表单提交模块
+    $('.submit>input').on('click',function(){
+        if(regPh&&regUp&&regUn&&regCa&&regCo){
+            $.ajax({
+                type:'post',
+                url:'http://127.0.0.1:3000/user/reg',
+                data:{
+                    phone:$('#phone').val(),
+                    upwd:$('#upwd').val(),
+                    uname:$('#user_name').val(),
+                    card:$('#id_card').val(),
+                    code:$('#ver_code').val()
+                },
+                contentType:'application/x-www-form-urlencoded',
+                success:function(res){
+                    if(res.code==200){
+                        alert(res.msg);
+                        $("#phone_reg :input").val('');
+                    }else{
+                        alert(res.msg);
+                    }
+                }
+
+            })
+        }else{
+            alert('请正确填写注册信息！');
+        }
+    })
 
 })
 

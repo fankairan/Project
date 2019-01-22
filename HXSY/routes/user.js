@@ -29,7 +29,25 @@ router.get('/verPhone',function(req,res){
 });
 
 
+//注册验证路由
+router.post('/reg',function(req,res){
+   var phone=req.body.phone;
+   var upwd=req.body.upwd;
+   var uname=req.body.uname;
+   var card=req.body.card;
+   var code=req.body.code;
 
+   var sql="INSERT INTO phone_reg VALUES(?,?,?,?,?)";
+
+   pool.query(sql,[null,phone,upwd,uname,card],function(err,result){
+     if(err) throw error;
+     if(result.affectedRows>0){
+          res.send({code:200,msg:'注册成功！'});
+     }else{
+          res.send({code:301,msg:'注册失败！'});
+     }
+   })
+})
 
 
 module.exports=router;
