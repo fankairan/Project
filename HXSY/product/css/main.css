@@ -40,7 +40,7 @@
     width: 708px;
  }
 
- .top_nav a {
+ .top_nav > .nav_btn > a {
     float: left;
     width: 118px;
     height: 36px;
@@ -51,13 +51,89 @@
     background: url(../img/nav/nav_other.png) no-repeat;
  }
 
- .top_nav .active{
+ .top_nav > .nav_btn > a.active{
     background: url(../img/nav/nav_index.png) no-repeat;
  }
 
  .nav_btn {
+     position: absolute;
+     top: 0px;
      height: 36px;
+     transition: all 0.6s;
+     z-index: 5;
  }
+
+ .nav_btn.active{
+   top: -18px;
+ }
+
+ .sub_menu{
+   position: absolute;
+   top: 0px;
+   z-index: 3;
+   transition: all 0.6s;
+   /* opacity: 0; */
+ }
+
+ .sub_menu.active{
+   top: 18px;
+
+ }
+
+ .sub_menu li{
+  float: left;
+  width: 109px;
+  padding-top: 5px;
+  margin-right: 9px;
+  background: url(../img/nav/nav_line.png) no-repeat;
+ }
+
+ .sub_menu li a{
+  display: block;
+  padding-left: 27px;
+  line-height: 22px;
+  color: #4c4f5d;
+  font-size: 12px;
+ }
+
+ .sub_menu li a:hover{
+   color: #f60;
+ }
+
+ .sub_menu li.sub_menu_0{
+  background: none;
+} 
+
+ .sub_menu li.sub_menu_1{
+   background-position: -330px 0px;
+   height: 98px;
+ } 
+
+ .sub_menu li.sub_menu_2{
+  background-position: -440px 0px;
+  height: 120px;
+} 
+
+.sub_menuli.sub_menu_3{
+  background-position: 0px 0px;
+  height: 32px;
+} 
+
+.sub_menu li.sub_menu_4{
+  background-position: -330px 0px;
+  height: 54px;
+} 
+
+.sub_menu li.sub_menu_5{
+  background-position: -330px 0px;
+  height: 98px;
+} 
+
+
+
+
+
+
 
  /* --------------  主体顶部导航栏 结束  ---------------*/
 

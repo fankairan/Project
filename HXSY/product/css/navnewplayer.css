@@ -1,8 +1,25 @@
-
 body{
-    background: url(../img/temp2/bjgs_bg_02_20140619.jpg) no-repeat 1000px 55px;
+    background: url(../img//temp2/xsdyc_bg_02_20140619.jpg) no-repeat 1000px 2736px;;
 }
 
 #main .sub_nav>.nav_btn7>a.act{
     background-position: -260px -408px;
+}
+
+.bg_cover{
+    width: 920px;
+    height: 2681px;
+    position: absolute;
+    right: 0px;
+    top: 55px;
+    background: url(../img//temp2/xsdyc_bg_01_20140619.jpg) no-repeat;
+}
+
+#main .middle_content{
+    height: 8034px;
+    width: 740px;
+    position: relative;
+    overflow: hidden;
+    background: url(../img//temp2/xsdyc_content_20140619.jpg) no-repeat;
+
 }

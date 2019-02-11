@@ -1,6 +1,19 @@
 
 $(function(){
 
+    /*------- 顶部导航栏 悬停下拉菜单 --------*/ 
+    $('#header_top>.top_nav>.nav_btn').on('mouseenter',function(){
+        var $nav=$(this);
+        $nav.addClass('active');
+        $nav.prev().removeClass('hide').addClass('active','show');
+    })
+
+    $('#header_top>.top_nav>.sub_menu').on('mouseleave',function(){
+        var $menu=$(this);
+        $menu.next().removeClass('active');
+        $menu.removeClass('active','show').addClass('hide');
+    })
+
     /*  ----------  左侧媒体模块 ----------  */
     $('#content .left_media a img').click(function(){
         alert('系统维护中，敬请谅解');
