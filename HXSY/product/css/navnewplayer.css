@@ -1,5 +1,5 @@
 body{
-    background: url(../img//temp2/xsdyc_bg_02_20140619.jpg) no-repeat 1000px 2736px;;
+    background: url(../img//temp2/xsdyc_bg_01_20140619.jpg) no-repeat 1000px 55px;
 }
 
 #main .sub_nav>.nav_btn7>a.act{
@@ -8,11 +8,11 @@ body{
 
 .bg_cover{
     width: 920px;
-    height: 2681px;
+    height: 5353px;
     position: absolute;
-    right: 0px;
-    top: 55px;
-    background: url(../img//temp2/xsdyc_bg_01_20140619.jpg) no-repeat;
+    left: 1000px;
+    top: 2736px;
+    background: url(../img//temp2/xsdyc_bg_02_20140619.jpg) no-repeat;
 }
 
 #main .middle_content{
@@ -23,3 +23,73 @@ body{
     background: url(../img//temp2/xsdyc_content_20140619.jpg) no-repeat;
 
 }
+
+
+.first_play{
+    margin: 285px 85px 0px 38px;
+}
+
+.first_play .summary{
+    font-size: 14px;
+    text-indent: 2em;
+    line-height: 24px;
+}
+
+.first_play div{
+    float: left;
+    width: 100%;
+    padding-top: 70px;
+}
+
+.first_play div p{
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.first_play div img{
+    padding-top: 10px;
+}
+
+.first_play div h3{
+    position: relative;
+    height: 100%;
+}
+
+.first_play div h3 span{
+    color: #f0f0f0;
+    font: bold 65px/1 '微软雅黑','Microsoft YaHei';
+}
+
+.first_play div h3 strong{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 3px 2px;
+    font: bold 30px/1 '微软雅黑','Microsoft YaHei';
+    background: #fff;
+}
+
+.first_play div h3 strong b{
+    font-weight: 700;
+    color: #ff5400;
+}
+
+
+.first_play div.first_1{
+    width: 280px;
+}
+
+.first_play div.first_2{
+    width: 265px;
+    margin-left: 67px;
+}
+
+.first_play div.first_3 p{
+    position: relative;
+    width: 272px;
+}
+
+.first_play div.first_3 img {
+    margin-top: -156px;
+}
+
