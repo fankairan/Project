@@ -93,3 +93,21 @@ body{
     margin-top: -156px;
 }
 
+.first_play div.first_5 h3,.first_play div.first_6 h3,.first_play div.first_7 h3{
+    float: left;
+    width: 220px;
+    padding-right: 25px;
+}
+
+.first_play div.first_5 p,.first_play div.first_6 p,.first_play div.first_7 p{
+    width: 220px;
+    float: left;
+    clear: left;
+    padding-right: 25px;
+}
+
+.first_play div.first_5 img,.first_play div.first_6 img,.first_play div.first_7 img{
+    position: relative;
+    padding-top: 30px;
+}
+
